@@ -70,8 +70,12 @@ namespace Homework {
                 if(mouseDown) {
                     if(currentShape == ShapeType.Rectangle) {
                         currentRectangle.ToCoords = e.Location;
+                        widthUpDown.Value = currentRectangle.ActualSize.Width;
+                        heightUpDown.Value = currentRectangle.ActualSize.Height;
                     } else if (currentShape == ShapeType.Ellipse) {
                         currentEllipse.ToCoords = e.Location;
+                        widthUpDown.Value = currentEllipse.ActualSize.Width;
+                        heightUpDown.Value = currentEllipse.ActualSize.Height;
                     }
                     screenBox.Invalidate();
                 }
@@ -141,14 +145,49 @@ namespace Homework {
                         rect.Selected = true;
                         found = true;
                         currentRectangle = rect;
+                        currentShape = ShapeType.Rectangle;
+                        widthUpDown.Value = currentRectangle.ActualSize.Width;
+                        heightUpDown.Value = currentRectangle.ActualSize.Height;
                     } else {
                         rect.Selected = false;
+                    }
+                }
+                foreach(Ellipse ell in ellipses) {
+                    if(ell.IsInBounds(e.Location) && !found) {
+                        ell.Selected = true;
+                        found = true;
+                        currentEllipse = ell;
+                        currentShape = ShapeType.Ellipse;
+                        widthUpDown.Value = currentEllipse.ActualSize.Width;
+                        heightUpDown.Value = currentEllipse.ActualSize.Height;
+                    } else {
+                        ell.Selected = false;
                     }
                 }
                 screenBox.Invalidate();
 
             }
 
+        }
+
+        private void widthUpDown_ValueChanged(object sender, EventArgs e) {
+            if(mouseDown) return;
+            if(currentShape == ShapeType.Rectangle) {
+                currentRectangle.ActualSize.Width = (int) widthUpDown.Value;
+            } else if (currentShape == ShapeType.Ellipse) {
+                currentEllipse.ActualSize.Width = (int) widthUpDown.Value;
+            }
+            screenBox.Invalidate();
+        }
+
+        private void heightUpDown_ValueChanged(object sender, EventArgs e) {
+            if(mouseDown) return;
+            if(currentShape == ShapeType.Rectangle) {
+                currentRectangle.ActualSize.Height = (int) heightUpDown.Value;
+            } else if (currentShape == ShapeType.Ellipse) {
+                currentEllipse.ActualSize.Height = (int) heightUpDown.Value;
+            }
+            screenBox.Invalidate();
         }
     }
 }

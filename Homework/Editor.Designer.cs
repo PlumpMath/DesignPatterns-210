@@ -26,7 +26,13 @@
             this.screenBox = new System.Windows.Forms.PictureBox();
             this.shapePicker = new System.Windows.Forms.ListBox();
             this.actionPicker = new System.Windows.Forms.ListBox();
+            this.heightLabel = new System.Windows.Forms.Label();
+            this.heightUpDown = new System.Windows.Forms.NumericUpDown();
+            this.widthUpDown = new System.Windows.Forms.NumericUpDown();
+            this.widthLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // screenBox
@@ -69,11 +75,69 @@
             this.actionPicker.TabIndex = 4;
             this.actionPicker.SelectedIndexChanged += new System.EventHandler(this.actionPicker_SelectedIndexChanged);
             // 
+            // heightLabel
+            // 
+            this.heightLabel.AutoSize = true;
+            this.heightLabel.Location = new System.Drawing.Point(305, 22);
+            this.heightLabel.Name = "heightLabel";
+            this.heightLabel.Size = new System.Drawing.Size(57, 17);
+            this.heightLabel.TabIndex = 5;
+            this.heightLabel.Text = "Height: ";
+            // 
+            // heightUpDown
+            // 
+            this.heightUpDown.Location = new System.Drawing.Point(358, 20);
+            this.heightUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.heightUpDown.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.heightUpDown.Name = "heightUpDown";
+            this.heightUpDown.Size = new System.Drawing.Size(120, 22);
+            this.heightUpDown.TabIndex = 6;
+            this.heightUpDown.ValueChanged += new System.EventHandler(this.heightUpDown_ValueChanged);
+            // 
+            // widthUpDown
+            // 
+            this.widthUpDown.Location = new System.Drawing.Point(358, 53);
+            this.widthUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.widthUpDown.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.widthUpDown.Name = "widthUpDown";
+            this.widthUpDown.Size = new System.Drawing.Size(120, 22);
+            this.widthUpDown.TabIndex = 8;
+            this.widthUpDown.ValueChanged += new System.EventHandler(this.widthUpDown_ValueChanged);
+            // 
+            // widthLabel
+            // 
+            this.widthLabel.AutoSize = true;
+            this.widthLabel.Location = new System.Drawing.Point(305, 55);
+            this.widthLabel.Name = "widthLabel";
+            this.widthLabel.Size = new System.Drawing.Size(48, 17);
+            this.widthLabel.TabIndex = 7;
+            this.widthLabel.Text = "Width:";
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.widthUpDown);
+            this.Controls.Add(this.widthLabel);
+            this.Controls.Add(this.heightUpDown);
+            this.Controls.Add(this.heightLabel);
             this.Controls.Add(this.actionPicker);
             this.Controls.Add(this.shapePicker);
             this.Controls.Add(this.screenBox);
@@ -83,7 +147,10 @@
             this.Text = "Graphic Editor";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Editor_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,6 +159,10 @@
         private System.Windows.Forms.PictureBox screenBox;
         private System.Windows.Forms.ListBox shapePicker;
         private System.Windows.Forms.ListBox actionPicker;
+        private System.Windows.Forms.Label heightLabel;
+        private System.Windows.Forms.NumericUpDown heightUpDown;
+        private System.Windows.Forms.NumericUpDown widthUpDown;
+        private System.Windows.Forms.Label widthLabel;
     }
 }
 

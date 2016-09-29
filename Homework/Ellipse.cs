@@ -27,8 +27,8 @@ namespace Homework {
             }
         }
 
-        public Point ActualCoords { get; set; }
-        public Size ActualSize { get; set; }
+        public Point ActualCoords;
+        public Size ActualSize;
 
         public Color BackgroundColor { get; set; } = Color.Black;
 
