@@ -1,0 +1,9 @@
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\bin\Debug\Homework.exe.config
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\bin\Debug\Homework.exe
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\bin\Debug\Homework.pdb
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.Editor.resources
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.Properties.Resources.resources
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.csproj.GenerateResource.Cache
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.exe
+C:\Users\Mark\Documents\school\Jaar 2016-2017\Design Patterns\Homework\Homework\obj\Debug\Homework.pdb
