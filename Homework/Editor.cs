@@ -21,15 +21,15 @@ namespace Homework {
         Draw
     }
 
+    public interface Command {
+        void Execute(Graphics g);
+        void Undo(Graphics g);
+    }
+
     public partial class Editor : Form {
 
         private bool mouseDown = false;
-        List<Rectangle> rectangles;
-        List<Ellipse> ellipses;
-
-        private ShapeType currentShape;
-        private Rectangle currentRectangle;
-        private Ellipse currentEllipse;
+        List<Shape> shapes;
 
         private ActionType currentAction;
 
@@ -38,25 +38,21 @@ namespace Homework {
             shapePicker.SelectedIndex = 0;
             actionPicker.SelectedIndex = 0;
 
-            rectangles = new List<Rectangle>();
-            ellipses = new List<Ellipse>();
+            shapes = new List<Shape>();
         }
 
         private void ScreenBox_MouseDown(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Draw) {
                 mouseDown = true;
-                if(shapePicker.SelectedItem.ToString() == "Rectangle") {
-                    currentShape = ShapeType.Rectangle;
-                    currentRectangle = new Rectangle(e.Location);
-                    currentRectangle.BackgroundColor = Color.Red;
-                    rectangles.Add(currentRectangle);
-
-                } else if(shapePicker.SelectedItem.ToString() == "Ellipse") {
-                    currentShape = ShapeType.Ellipse;
-                    currentEllipse = new Ellipse(e.Location);
-                    currentEllipse.BackgroundColor = Color.Red;
-                    ellipses.Add(currentEllipse);
+                ShapeType shapeType = shapePicker.SelectedItem.ToString() == "Rectangle" ? ShapeType.Rectangle : ShapeType.Ellipse;
+                Shape currentShape;
+                if(shapeType == ShapeType.Rectangle) {
+                    currentShape = new Rectangle(e.Location, new Size(1, 1), Color.Red);
+                } else {
+                    currentShape = new Ellipse(e.Location, new Size(1, 1), Color.Red);
                 }
+                shapes.Add(currentShape);
+                ShapeSelector.Start(currentShape, e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
                 mouseDown = true;
@@ -68,25 +64,15 @@ namespace Homework {
         private void ScreenBox_MouseMove(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Draw) {
                 if(mouseDown) {
-                    if(currentShape == ShapeType.Rectangle) {
-                        currentRectangle.ToCoords = e.Location;
-                        widthUpDown.Value = currentRectangle.ActualSize.Width;
-                        heightUpDown.Value = currentRectangle.ActualSize.Height;
-                    } else if (currentShape == ShapeType.Ellipse) {
-                        currentEllipse.ToCoords = e.Location;
-                        widthUpDown.Value = currentEllipse.ActualSize.Width;
-                        heightUpDown.Value = currentEllipse.ActualSize.Height;
-                    }
+                    ShapeSelector.Update(e.Location);
+                    Size actualSize = ShapeSelector.GetActualSize();
+                    widthUpDown.Value = actualSize.Width;
+                    heightUpDown.Value = actualSize.Height;
                     screenBox.Invalidate();
                 }
-
             } else if(currentAction == ActionType.Move) {
                 if(mouseDown) {
-                    if(currentShape == ShapeType.Rectangle) {
-                        currentRectangle.ActualCoords = e.Location;
-                    } else if (currentShape == ShapeType.Ellipse) {
-                        currentEllipse.ActualCoords = e.Location;
-                    }
+                    ShapeSelector.Move(e.Location);
                     screenBox.Invalidate();
                 }
 
@@ -98,14 +84,11 @@ namespace Homework {
         private void ScreenBox_MouseUp(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Draw) {
                 mouseDown = false;
+                shapes.Add(ShapeSelector.End(e.Location));
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
                 mouseDown = false;
-                if(currentShape == ShapeType.Rectangle) {
-                    currentRectangle.Selected = false;
-                } else if (currentShape == ShapeType.Ellipse) {
-                    currentEllipse.Selected = false;
-                }
+                ShapeSelector.Move(e.Location);
                 screenBox.Invalidate();
             }
 
@@ -115,13 +98,10 @@ namespace Homework {
         private void screenBox_Paint(object sender, PaintEventArgs e) {
             Graphics g = e.Graphics;
 
-            foreach(Rectangle rect in rectangles) {
-                rect.Draw(g);
+            foreach(Shape shape in shapes) {
+                shape.Draw(g);
             }
 
-            foreach(Ellipse ell in ellipses) {
-                ell.Draw(g);
-            }
         }
 
         private void Editor_Paint(object sender, PaintEventArgs e) {
@@ -140,28 +120,12 @@ namespace Homework {
         private void screenBox_MouseClick(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Select) {
                 bool found = false;
-                foreach(Rectangle rect in rectangles) {
-                    if(rect.IsInBounds(e.Location) && !found) {
-                        rect.Selected = true;
-                        found = true;
-                        currentRectangle = rect;
-                        currentShape = ShapeType.Rectangle;
-                        widthUpDown.Value = currentRectangle.ActualSize.Width;
-                        heightUpDown.Value = currentRectangle.ActualSize.Height;
+                foreach(Shape shape in shapes) {
+                    if(shape.IsInBounds(e.Location) && !found) {
+                        ShapeSelector.Start(shape);
+                        shape.Selected = true;
                     } else {
-                        rect.Selected = false;
-                    }
-                }
-                foreach(Ellipse ell in ellipses) {
-                    if(ell.IsInBounds(e.Location) && !found) {
-                        ell.Selected = true;
-                        found = true;
-                        currentEllipse = ell;
-                        currentShape = ShapeType.Ellipse;
-                        widthUpDown.Value = currentEllipse.ActualSize.Width;
-                        heightUpDown.Value = currentEllipse.ActualSize.Height;
-                    } else {
-                        ell.Selected = false;
+                        shape.Selected = false;
                     }
                 }
                 screenBox.Invalidate();
@@ -172,22 +136,22 @@ namespace Homework {
 
         private void widthUpDown_ValueChanged(object sender, EventArgs e) {
             if(mouseDown) return;
-            if(currentShape == ShapeType.Rectangle) {
-                currentRectangle.ActualSize.Width = (int) widthUpDown.Value;
-            } else if (currentShape == ShapeType.Ellipse) {
-                currentEllipse.ActualSize.Width = (int) widthUpDown.Value;
-            }
+            ShapeSelector.Resize(new Size((int) widthUpDown.Value, (int) heightUpDown.Value));
             screenBox.Invalidate();
         }
 
         private void heightUpDown_ValueChanged(object sender, EventArgs e) {
             if(mouseDown) return;
-            if(currentShape == ShapeType.Rectangle) {
-                currentRectangle.ActualSize.Height = (int) heightUpDown.Value;
-            } else if (currentShape == ShapeType.Ellipse) {
-                currentEllipse.ActualSize.Height = (int) heightUpDown.Value;
-            }
+            ShapeSelector.Resize(new Size((int) widthUpDown.Value, (int) heightUpDown.Value));
             screenBox.Invalidate();
+        }
+
+        private void undoButton_Click(object sender, EventArgs e) {
+
+        }
+
+        private void redoButton_Click(object sender, EventArgs e) {
+
         }
     }
 }

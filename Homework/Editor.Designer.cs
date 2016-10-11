@@ -30,6 +30,8 @@
             this.heightUpDown = new System.Windows.Forms.NumericUpDown();
             this.widthUpDown = new System.Windows.Forms.NumericUpDown();
             this.widthLabel = new System.Windows.Forms.Label();
+            this.undoButton = new System.Windows.Forms.Button();
+            this.redoButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
@@ -129,11 +131,33 @@
             this.widthLabel.TabIndex = 7;
             this.widthLabel.Text = "Width:";
             // 
+            // undoButton
+            // 
+            this.undoButton.Location = new System.Drawing.Point(496, 20);
+            this.undoButton.Name = "undoButton";
+            this.undoButton.Size = new System.Drawing.Size(75, 23);
+            this.undoButton.TabIndex = 9;
+            this.undoButton.Text = "Undo";
+            this.undoButton.UseVisualStyleBackColor = true;
+            this.undoButton.Click += new System.EventHandler(this.undoButton_Click);
+            // 
+            // redoButton
+            // 
+            this.redoButton.Location = new System.Drawing.Point(496, 49);
+            this.redoButton.Name = "redoButton";
+            this.redoButton.Size = new System.Drawing.Size(75, 23);
+            this.redoButton.TabIndex = 10;
+            this.redoButton.Text = "Redo";
+            this.redoButton.UseVisualStyleBackColor = true;
+            this.redoButton.Click += new System.EventHandler(this.redoButton_Click);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.redoButton);
+            this.Controls.Add(this.undoButton);
             this.Controls.Add(this.widthUpDown);
             this.Controls.Add(this.widthLabel);
             this.Controls.Add(this.heightUpDown);
@@ -163,6 +187,8 @@
         private System.Windows.Forms.NumericUpDown heightUpDown;
         private System.Windows.Forms.NumericUpDown widthUpDown;
         private System.Windows.Forms.Label widthLabel;
+        private System.Windows.Forms.Button undoButton;
+        private System.Windows.Forms.Button redoButton;
     }
 }
 
