@@ -16,6 +16,8 @@ namespace Homework {
         public Color BackgroundColor;
         public bool Selected = false;
         public static Stack<Command> history = new Stack<Command>();
+        public static List<Shape> shapes = new List<Shape>();
+
 
         public Shape(int X, int Y, int Width, int Height, Color color) {
             this.X = X;
@@ -23,17 +25,19 @@ namespace Homework {
             this.Width = Width;
             this.Height = Height;
             this.BackgroundColor = color;
-            Shape.history.Push(this);
-            Console.WriteLine(Shape.history.Count);
+            shapes.Add(this);
         }
 
-        public void Execute(Graphics g) {
-            Draw(g);
+        public void Execute() {
+            if(!shapes.Contains(this)) shapes.Add(this);
+            Editor.screen.Invalidate();
         }
 
-        public void Undo(Graphics g) {
-            Command cmd = Shape.history.Pop();
-            cmd.Execute(g);
+        public void Undo() {
+            if(history.Count == 0) return;
+            history.Pop();
+            shapes.Remove(this);
+            Editor.screen.Invalidate();
         }
 
         public void Move(Point coords) {

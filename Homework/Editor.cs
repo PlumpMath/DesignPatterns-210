@@ -22,23 +22,23 @@ namespace Homework {
     }
 
     public interface Command {
-        void Execute(Graphics g);
-        void Undo(Graphics g);
+        void Execute();
+        void Undo();
     }
 
     public partial class Editor : Form {
 
         private bool mouseDown = false;
-        List<Shape> shapes;
-
         private ActionType currentAction;
+        private ShapeIO io;
+        public static PictureBox screen;
 
         public Editor() {
             InitializeComponent();
+            screen = screenBox;
             shapePicker.SelectedIndex = 0;
             actionPicker.SelectedIndex = 0;
-
-            shapes = new List<Shape>();
+            io = new ShapeIO();
         }
 
         private void ScreenBox_MouseDown(object sender, MouseEventArgs e) {
@@ -51,7 +51,7 @@ namespace Homework {
                 } else {
                     currentShape = new Ellipse(e.Location, new Size(1, 1), Color.Red);
                 }
-                shapes.Add(currentShape);
+                currentShape.Execute();
                 ShapeSelector.Start(currentShape, e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
@@ -84,7 +84,7 @@ namespace Homework {
         private void ScreenBox_MouseUp(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Draw) {
                 mouseDown = false;
-                shapes.Add(ShapeSelector.End(e.Location));
+                ShapeSelector.End(e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
                 mouseDown = false;
@@ -98,7 +98,7 @@ namespace Homework {
         private void screenBox_Paint(object sender, PaintEventArgs e) {
             Graphics g = e.Graphics;
 
-            foreach(Shape shape in shapes) {
+            foreach(Shape shape in Shape.shapes) {
                 shape.Draw(g);
             }
 
@@ -120,7 +120,7 @@ namespace Homework {
         private void screenBox_MouseClick(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Select) {
                 bool found = false;
-                foreach(Shape shape in shapes) {
+                foreach(Shape shape in Shape.shapes) {
                     if(shape.IsInBounds(e.Location) && !found) {
                         ShapeSelector.Start(shape);
                         shape.Selected = true;
@@ -147,11 +147,9 @@ namespace Homework {
         }
 
         private void undoButton_Click(object sender, EventArgs e) {
-
+            ShapeSelector.Undo();
+            //io.GenerateSaveFile(Shape.shapes);
         }
 
-        private void redoButton_Click(object sender, EventArgs e) {
-
-        }
     }
 }

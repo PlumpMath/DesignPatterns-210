@@ -21,19 +21,26 @@ namespace Homework {
 
         public static void Start(Shape shape) {
             currentShape = shape;
+            currentShape.Execute();
+        }
+
+        public static void Undo() {
+            if(currentShape == null) return;
+            currentShape.Undo();
         }
 
         public static void Update(Point coords) {
             currentCoords = coords;
             currentShape.Move(GetActualCoords());
             currentShape.Resize(GetActualSize());
+            currentShape.Execute();
         }
 
-        public static Shape End(Point coords) {
+        public static void End(Point coords) {
             currentCoords = coords;
             currentShape.Move(GetActualCoords());
             currentShape.Resize(GetActualSize());
-            return currentShape;
+            currentShape.Execute();
         }
 
         public static void Draw(Graphics g) {
