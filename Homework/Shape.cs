@@ -18,7 +18,6 @@ namespace Homework {
         public static Stack<Command> history = new Stack<Command>();
         public static List<Shape> shapes = new List<Shape>();
 
-
         public Shape(int X, int Y, int Width, int Height, Color color) {
             this.X = X;
             this.Y = Y;
@@ -30,12 +29,11 @@ namespace Homework {
 
         public void Execute() {
             if(!shapes.Contains(this)) shapes.Add(this);
+            history.Push(this);
             Editor.screen.Invalidate();
         }
 
         public void Undo() {
-            if(history.Count == 0) return;
-            history.Pop();
             shapes.Remove(this);
             Editor.screen.Invalidate();
         }

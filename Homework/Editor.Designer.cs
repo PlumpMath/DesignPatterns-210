@@ -32,6 +32,7 @@
             this.widthLabel = new System.Windows.Forms.Label();
             this.undoButton = new System.Windows.Forms.Button();
             this.redoButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
@@ -150,11 +151,22 @@
             this.redoButton.Text = "Redo";
             this.redoButton.UseVisualStyleBackColor = true;
             // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(1193, 22);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 11;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.redoButton);
             this.Controls.Add(this.undoButton);
             this.Controls.Add(this.widthUpDown);
@@ -188,6 +200,7 @@
         private System.Windows.Forms.Label widthLabel;
         private System.Windows.Forms.Button undoButton;
         private System.Windows.Forms.Button redoButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 

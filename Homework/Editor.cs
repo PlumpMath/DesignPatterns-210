@@ -147,9 +147,14 @@ namespace Homework {
         }
 
         private void undoButton_Click(object sender, EventArgs e) {
-            ShapeSelector.Undo();
-            //io.GenerateSaveFile(Shape.shapes);
+            Command cmd = Shape.history.Pop();
+            cmd.Undo();
+            Shape sh = (Shape) cmd;
+            Console.WriteLine(sh.Width + " " + sh.Height);
         }
 
+        private void saveButton_Click(object sender, EventArgs e) {
+            io.GenerateSaveFile(Shape.shapes);
+        }
     }
 }
