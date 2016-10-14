@@ -11,49 +11,63 @@ namespace Homework {
         private static Point startCoords;
         private static Point currentCoords;
         public static Shape currentShape;
+        private static ShapeType shapeType;
+        private static bool Started = false;
 
         private ShapeSelector() { }
 
-        public static void Start(Shape shape, Point coords) {
+        public static void Start(ShapeType shapeType, Point coords) {
             startCoords = coords;
-            currentShape = shape;
+            ShapeSelector.shapeType = shapeType;
+            Started = true;
         }
 
         public static void Start(Shape shape) {
             currentShape = shape;
-            currentShape.Execute();
-        }
-
-        public static void Undo() {
-            if(currentShape == null) return;
-            currentShape.Undo();
+            Started = true;
         }
 
         public static void Update(Point coords) {
             currentCoords = coords;
-            currentShape.Move(GetActualCoords());
-            currentShape.Resize(GetActualSize());
-            currentShape.Execute();
         }
 
         public static void End(Point coords) {
             currentCoords = coords;
-            currentShape.Move(GetActualCoords());
-            currentShape.Resize(GetActualSize());
-            currentShape.Execute();
-        }
+            if(shapeType == ShapeType.Rectangle) {
+                Editor.history.Push(new AddRectangle(GetActualCoords(), GetActualSize()));
 
-        public static void Draw(Graphics g) {
-            if(currentShape == null) return;
-            currentShape.Draw(g, GetActualCoords(), GetActualSize());
+            } else if(shapeType == ShapeType.Ellipse) {
+                Editor.history.Push(new AddEllipse(GetActualCoords(), GetActualSize()));
+
+            }
+            Started = false;
+            Editor.screen.Invalidate();
         }
 
         public static void Move(Point coords) {
+            if(currentShape == null) return;
             currentShape.Move(coords);
+            //TODO: make shapeselector work better and not draw the old one when there's a new one
         }
         
         public static void Resize(Size size) {
+            if(currentShape == null) return;
             currentShape.Resize(size);
+        }
+
+        public static void Draw(Graphics g) {
+            if(!Started) return;
+            if(currentShape != null) {
+                currentShape.Draw(g, GetActualCoords(), GetActualSize());
+                return;
+            }
+            if(shapeType == ShapeType.Rectangle) {
+                SolidBrush brush = new SolidBrush(Color.Red);
+                g.FillRectangle(brush, new System.Drawing.Rectangle(GetActualCoords(), GetActualSize()));
+            } else if(shapeType == ShapeType.Ellipse) {
+                SolidBrush brush = new SolidBrush(Color.Red);
+                g.FillRectangle(brush, new System.Drawing.Rectangle(GetActualCoords(), GetActualSize()));
+            }
         }
 
         public static Point GetActualCoords() {

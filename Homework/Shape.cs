@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Homework {
-    public abstract class Shape : Command {
+    public abstract class Shape {
 
         public int X { private set; get; }
         public int Y { private set; get; }
@@ -15,7 +15,6 @@ namespace Homework {
         public ShapeType shape { private set; get; }
         public Color BackgroundColor;
         public bool Selected = false;
-        public static Stack<Command> history = new Stack<Command>();
         public static List<Shape> shapes = new List<Shape>();
 
         public Shape(int X, int Y, int Width, int Height, Color color) {
@@ -24,18 +23,6 @@ namespace Homework {
             this.Width = Width;
             this.Height = Height;
             this.BackgroundColor = color;
-            shapes.Add(this);
-        }
-
-        public void Execute() {
-            if(!shapes.Contains(this)) shapes.Add(this);
-            history.Push(this);
-            Editor.screen.Invalidate();
-        }
-
-        public void Undo() {
-            shapes.Remove(this);
-            Editor.screen.Invalidate();
         }
 
         public void Move(Point coords) {

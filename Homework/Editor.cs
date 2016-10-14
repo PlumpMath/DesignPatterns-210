@@ -32,6 +32,8 @@ namespace Homework {
         private ActionType currentAction;
         private ShapeIO io;
         public static PictureBox screen;
+        public static Stack<Command> history = new Stack<Command>();
+
 
         public Editor() {
             InitializeComponent();
@@ -45,14 +47,7 @@ namespace Homework {
             if(currentAction == ActionType.Draw) {
                 mouseDown = true;
                 ShapeType shapeType = shapePicker.SelectedItem.ToString() == "Rectangle" ? ShapeType.Rectangle : ShapeType.Ellipse;
-                Shape currentShape;
-                if(shapeType == ShapeType.Rectangle) {
-                    currentShape = new Rectangle(e.Location, new Size(1, 1), Color.Red);
-                } else {
-                    currentShape = new Ellipse(e.Location, new Size(1, 1), Color.Red);
-                }
-                currentShape.Execute();
-                ShapeSelector.Start(currentShape, e.Location);
+                ShapeSelector.Start(shapeType, e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
                 mouseDown = true;
@@ -98,6 +93,7 @@ namespace Homework {
         private void screenBox_Paint(object sender, PaintEventArgs e) {
             Graphics g = e.Graphics;
 
+            ShapeSelector.Draw(e.Graphics);
             foreach(Shape shape in Shape.shapes) {
                 shape.Draw(g);
             }
@@ -147,10 +143,9 @@ namespace Homework {
         }
 
         private void undoButton_Click(object sender, EventArgs e) {
-            Command cmd = Shape.history.Pop();
+            Command cmd = history.Pop();
             cmd.Undo();
-            Shape sh = (Shape) cmd;
-            Console.WriteLine(sh.Width + " " + sh.Height);
+            Editor.screen.Invalidate();
         }
 
         private void saveButton_Click(object sender, EventArgs e) {
