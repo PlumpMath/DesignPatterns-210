@@ -47,6 +47,7 @@ namespace Homework {
             if(currentAction == ActionType.Draw) {
                 mouseDown = true;
                 ShapeType shapeType = shapePicker.SelectedItem.ToString() == "Rectangle" ? ShapeType.Rectangle : ShapeType.Ellipse;
+                Console.WriteLine(shapeType);
                 ShapeSelector.Start(shapeType, e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
@@ -118,7 +119,10 @@ namespace Homework {
                 bool found = false;
                 foreach(Shape shape in Shape.shapes) {
                     if(shape.IsInBounds(e.Location) && !found) {
-                        ShapeSelector.Start(shape);
+                        ShapeSelector.Start(shape, e.Location);
+                        //Size actualSize = ShapeSelector.GetActualSize();
+                        //widthUpDown.Value = actualSize.Width;
+                        //heightUpDown.Value = actualSize.Height;
                         shape.Selected = true;
                     } else {
                         shape.Selected = false;

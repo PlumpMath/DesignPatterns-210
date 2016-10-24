@@ -18,12 +18,15 @@ namespace Homework {
 
         public static void Start(ShapeType shapeType, Point coords) {
             startCoords = coords;
+            currentCoords = coords;
             ShapeSelector.shapeType = shapeType;
             Started = true;
         }
 
-        public static void Start(Shape shape) {
+        public static void Start(Shape shape, Point coords) {
             currentShape = shape;
+            startCoords = coords;
+            currentCoords = coords;
             Started = true;
         }
 
@@ -66,7 +69,7 @@ namespace Homework {
                 g.FillRectangle(brush, new System.Drawing.Rectangle(GetActualCoords(), GetActualSize()));
             } else if(shapeType == ShapeType.Ellipse) {
                 SolidBrush brush = new SolidBrush(Color.Red);
-                g.FillRectangle(brush, new System.Drawing.Rectangle(GetActualCoords(), GetActualSize()));
+                g.FillEllipse(brush, new System.Drawing.Rectangle(GetActualCoords(), GetActualSize()));
             }
         }
 

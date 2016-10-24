@@ -19,6 +19,7 @@ namespace Homework {
             this.Y = coords.Y;
             this.Width = size.Width;
             this.Height = size.Height;
+            Execute();
         }
 
         public AddEllipse(int X, int Y, int Width, int Height) {
@@ -26,6 +27,7 @@ namespace Homework {
             this.Y = Y;
             this.Width = Width;
             this.Height = Height;
+            Execute();
         }
 
         public void Execute() {
