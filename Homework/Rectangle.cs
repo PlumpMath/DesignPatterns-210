@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Homework {
 
 
-    class Rectangle : Shape {
+    class Rectangle : AbstractShape {
 
         public Rectangle(Point coords, Size size, Color color) : base(coords.X, coords.Y, size.Width, size.Height, color) {
         }

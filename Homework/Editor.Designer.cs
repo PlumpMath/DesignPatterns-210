@@ -33,6 +33,8 @@
             this.undoButton = new System.Windows.Forms.Button();
             this.redoButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
+            this.shapeBox = new System.Windows.Forms.ListView();
+            this.groupButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
@@ -41,9 +43,9 @@
             // screenBox
             // 
             this.screenBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.screenBox.Location = new System.Drawing.Point(12, 82);
+            this.screenBox.Location = new System.Drawing.Point(205, 82);
             this.screenBox.Name = "screenBox";
-            this.screenBox.Size = new System.Drawing.Size(1256, 626);
+            this.screenBox.Size = new System.Drawing.Size(1063, 626);
             this.screenBox.TabIndex = 0;
             this.screenBox.TabStop = false;
             this.screenBox.Paint += new System.Windows.Forms.PaintEventHandler(this.screenBox_Paint);
@@ -161,11 +163,30 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // shapeBox
+            // 
+            this.shapeBox.Location = new System.Drawing.Point(12, 82);
+            this.shapeBox.Name = "shapeBox";
+            this.shapeBox.Size = new System.Drawing.Size(187, 516);
+            this.shapeBox.TabIndex = 12;
+            // 
+            // groupButton
+            // 
+            this.groupButton.Location = new System.Drawing.Point(12, 604);
+            this.groupButton.Name = "groupButton";
+            this.groupButton.Size = new System.Drawing.Size(187, 33);
+            this.groupButton.TabIndex = 13;
+            this.groupButton.Text = "Group";
+            this.groupButton.UseVisualStyleBackColor = true;
+            this.groupButton.Click += new System.EventHandler(this.groupButton_Click);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.groupButton);
+            this.Controls.Add(this.shapeBox);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.redoButton);
             this.Controls.Add(this.undoButton);
@@ -201,6 +222,8 @@
         private System.Windows.Forms.Button undoButton;
         private System.Windows.Forms.Button redoButton;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.ListView shapeBox;
+        private System.Windows.Forms.Button groupButton;
     }
 }
 

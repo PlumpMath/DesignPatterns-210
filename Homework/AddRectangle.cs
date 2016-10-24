@@ -12,7 +12,7 @@ namespace Homework {
         private int Y;
         private int Width;
         private int Height;
-        Shape shape;
+        AbstractShape shape;
 
         public AddRectangle(Point coords, Size size) {
             this.X = coords.X;
@@ -32,12 +32,12 @@ namespace Homework {
 
         public void Execute() {
             shape = new Rectangle(X, Y, Width, Height, Color.Red);
-            Shape.shapes.Add(shape);
+            Editor.shapes.Add(shape);
         }
 
         public void Undo() {
             Console.WriteLine("Removing: " + X + " " + Y);
-            Shape.shapes.Remove(shape);
+            Editor.shapes.Remove(shape);
         }
     }
 }

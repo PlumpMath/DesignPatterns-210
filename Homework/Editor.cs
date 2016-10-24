@@ -12,7 +12,8 @@ namespace Homework {
 
     public enum ShapeType {
         Rectangle,
-        Ellipse
+        Ellipse,
+        Group
     }
 
     public enum ActionType {
@@ -33,6 +34,7 @@ namespace Homework {
         private ShapeIO io;
         public static PictureBox screen;
         public static Stack<Command> history = new Stack<Command>();
+        public static List<Shape> shapes = new List<Shape>();
 
 
         public Editor() {
@@ -95,8 +97,19 @@ namespace Homework {
             Graphics g = e.Graphics;
 
             ShapeSelector.Draw(e.Graphics);
-            foreach(Shape shape in Shape.shapes) {
+            shapeBox.Items.Clear();
+            shapeBox.Groups.Clear();
+            foreach(Shape shape in shapes) {
                 shape.Draw(g);
+                if(shape.shape == ShapeType.Group) {
+                    ListViewGroup membersGroup = new ListViewGroup(shape.shape + "_" + shape.ID, HorizontalAlignment.Left);
+                    shapeBox.Groups.Add(membersGroup);
+                    foreach(Shape s in ((CompositeShape)shape).shapes) {
+                        shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
+                    }
+                } else {
+                    shapeBox.Items.Add(shape.shape + "_" + shape.ID);
+                }
             }
 
         }
@@ -117,7 +130,7 @@ namespace Homework {
         private void screenBox_MouseClick(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Select) {
                 bool found = false;
-                foreach(Shape shape in Shape.shapes) {
+                foreach(Shape shape in shapes) {
                     if(shape.IsInBounds(e.Location) && !found) {
                         ShapeSelector.Start(shape, e.Location);
                         //Size actualSize = ShapeSelector.GetActualSize();
@@ -153,7 +166,31 @@ namespace Homework {
         }
 
         private void saveButton_Click(object sender, EventArgs e) {
-            io.GenerateSaveFile(Shape.shapes);
+            io.GenerateSaveFile(shapes);
+        }
+
+        private void groupButton_Click(object sender, EventArgs e) {
+            List<Shape> selected = new List<Shape>();
+            foreach(ListViewItem txt in shapeBox.SelectedItems) {
+                int id = int.Parse(txt.Text.Split('_')[1]);
+                selected.Add(GetShape(id));
+            }
+            CompositeShape comp = new CompositeShape();
+            foreach(Shape s in selected) {
+                shapes.Remove(s);
+            }
+            comp.AddRange(selected);
+            shapes.Add(comp);
+
+            screenBox.Invalidate();
+
+        }
+
+        private Shape GetShape(int ID) {
+            foreach(Shape sh in shapes) {
+                if(sh.ID == ID) return sh;
+            }
+            return null;
         }
     }
 }

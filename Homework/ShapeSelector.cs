@@ -35,6 +35,7 @@ namespace Homework {
         }
 
         public static void End(Point coords) {
+            if(!Started) return;
             currentCoords = coords;
             if(shapeType == ShapeType.Rectangle) {
                 Editor.history.Push(new AddRectangle(GetActualCoords(), GetActualSize()));

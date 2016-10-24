@@ -14,7 +14,7 @@ namespace Homework {
 
             string[] lines = new string[shapes.Count];
             int idx = 0;
-            foreach(Shape shape in shapes) {
+            foreach(AbstractShape shape in shapes) {
                 string type = shape.GetType().ToString().Equals("Homework.Rectangle") ? "rectangle" : "ellipse";
                 lines[idx++] = type + " " + shape.X + " " + shape.Y + " " + shape.Width + " " + shape.Height;
                 Console.WriteLine(type + " " + shape.X + " " + shape.Y + " " + shape.Width + " " + shape.Height);

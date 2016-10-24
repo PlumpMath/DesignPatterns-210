@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Homework {
-    class Ellipse : Shape {
+    class Ellipse : AbstractShape {
         
         public Ellipse(Point coords, Size size, Color color) : base(coords.X, coords.Y, size.Width, size.Height, color) {
         }

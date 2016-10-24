@@ -12,7 +12,7 @@ namespace Homework {
         private int Y;
         private int Width;
         private int Height;
-        private Shape shape;
+        private AbstractShape shape;
 
         public AddEllipse(Point coords, Size size) {
             this.X = coords.X;
@@ -32,11 +32,11 @@ namespace Homework {
 
         public void Execute() {
             shape = new Ellipse(X, Y, Width, Height, Color.Red);
-            Shape.shapes.Add(shape);
+            Editor.shapes.Add(shape);
         }
 
         public void Undo() {
-            Shape.shapes.Remove(shape);
+            Editor.shapes.Remove(shape);
         }
 
     }
