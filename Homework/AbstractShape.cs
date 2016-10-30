@@ -20,18 +20,16 @@ namespace Homework {
             this.Width = Width;
             this.Height = Height;
             this.BackgroundColor = color;
-            //this.subShapes = new CompositeShape();
-            Console.WriteLine("abs");
         }
 
         public override void Move(Point coords) {
-            this.X = coords.X;
-            this.Y = coords.Y;
+            this.X += coords.X;
+            this.Y += coords.Y;
         }
 
         public override void MoveRelative(Point coords) {
-            this.X += coords.X - this.X;
-            this.Y += coords.Y - this.Y;
+            this.X += coords.X;
+            this.Y += coords.Y;
         }
 
         public override void Resize(Size size) {

@@ -47,6 +47,7 @@ namespace Homework {
         }
 
         public override void Move(Point coords) {
+            Console.WriteLine("CS: " + coords.X + " " + coords.Y);
             foreach(Shape s in shapes) {
                 s.MoveRelative(coords);
             }
@@ -61,14 +62,13 @@ namespace Homework {
         }
 
         public override void MoveRelative(Point coords) {
-            throw new NotImplementedException();
+            foreach(Shape s in shapes) {
+                s.MoveRelative(coords);
+            }
         }
 
         public override void Accept(Visitor v) {
             v.Visit(this);
-            foreach(Shape sh in shapes) {
-                sh.Accept(v);
-            }
         }
     }
 }

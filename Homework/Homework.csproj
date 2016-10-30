@@ -50,6 +50,7 @@
     <Compile Include="AddRectangle.cs" />
     <Compile Include="CompositeShape.cs" />
     <Compile Include="IOVisitor.cs" />
+    <Compile Include="MoveVisitor.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>

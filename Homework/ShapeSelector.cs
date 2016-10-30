@@ -27,7 +27,7 @@ namespace Homework {
             currentShape = shape;
             startCoords = coords;
             currentCoords = coords;
-            Started = true;
+            Started = false;
         }
 
         public static void Update(Point coords) {
@@ -50,7 +50,9 @@ namespace Homework {
 
         public static void Move(Point coords) {
             if(currentShape == null) return;
-            currentShape.Move(coords);
+            MoveVisitor move = new MoveVisitor(coords.X - startCoords.X, coords.Y - startCoords.Y);
+            startCoords = coords;
+            currentShape.Accept(move);
             //TODO: make shapeselector work better and not draw the old one when there's a new one
         }
         
