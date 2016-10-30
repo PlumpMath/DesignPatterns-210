@@ -9,6 +9,8 @@ namespace Homework {
     public abstract class Shape {
         public int X { protected set; get; }
         public int Y { protected set; get; }
+        public int Width { protected set; get; }
+        public int Height { protected set; get; }
         public static int MaxID;
         public int ID { private set; get; }
         public ShapeType shape { protected set; get; }

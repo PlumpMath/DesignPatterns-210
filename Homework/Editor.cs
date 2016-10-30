@@ -104,12 +104,16 @@ namespace Homework {
             ShapeSelector.Draw(e.Graphics);
             shapeBox.Items.Clear();
             shapeBox.Groups.Clear();
+            Console.WriteLine(shapes.Count());
             foreach(Shape shape in shapes) {
                 shape.Draw(g);
                 if(shape.shape == ShapeType.Group) {
                     AddGroup(shape);
                 } else {
                     shapeBox.Items.Add(shape.shape + "_" + shape.ID);
+                }
+                if(shape.GetType() == typeof(ShapeWithTitle)) {
+                    ((ShapeWithTitle)shape).DisplayTitle(g);
                 }
             }
 
@@ -213,6 +217,29 @@ namespace Homework {
                 if(sh.ID == ID) return sh;
             }
             return null;
+        }
+
+        private void applyButton_Click(object sender, EventArgs e) {
+            if(currentAction != ActionType.Select) return;
+
+            string top = textTop.Text;
+            string bottom = textBottom.Text;
+            Console.WriteLine("test");
+            Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
+            
+            if(top != null) {
+                titles.Add(TitleLocation.TOP, top);
+            }
+
+            if(bottom != null) {
+                titles.Add(TitleLocation.BOTTOM, bottom);
+            }
+
+            AddText add = new AddText(ShapeSelector.currentShape, titles);
+            history.Push(add);
+
+            screenBox.Invalidate();
+
         }
     }
 }

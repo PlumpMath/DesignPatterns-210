@@ -6,18 +6,25 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Homework {
+    public class Rectangle : Strategy {
 
-
-    class Rectangle : AbstractShape {
-
-        public Rectangle(Point coords, Size size, Color color) : base(coords.X, coords.Y, size.Width, size.Height, color) {
+        private static Rectangle instance;
+        public static Rectangle Instance
+        {
+            get
+            {
+                if(instance == null) {
+                    instance = new Rectangle();
+                }
+                return instance;
+            }
+            private set { }
         }
 
-        public Rectangle(int X, int Y, int Width, int Height, Color color) : base(X, Y, Width, Height, color) {
-        }
-        
-        public override void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
-            SolidBrush brush = new SolidBrush(BackgroundColor);
+        private Rectangle() { }
+
+        public void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
+            SolidBrush brush = new SolidBrush(Color.Red);
             g.FillRectangle(brush, new System.Drawing.Rectangle(new Point(X, Y), new Size(Width, Height)));
             if(Selected) {
                 g.DrawRectangle(new Pen(Color.Black), new System.Drawing.Rectangle(new Point(X, Y), new Size(Width, Height)));

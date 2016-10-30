@@ -7,16 +7,28 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Homework {
-    class Ellipse : AbstractShape {
-        
-        public Ellipse(Point coords, Size size, Color color) : base(coords.X, coords.Y, size.Width, size.Height, color) {
+    public class Ellipse : Strategy {
+
+        private static Ellipse instance;
+        public static Ellipse Instance
+        {
+            get
+            {
+                if(instance == null) {
+                    instance = new Ellipse();
+                }
+                return instance;
+            }
+            private set { }
         }
 
-        public Ellipse(int X, int Y, int Width, int Height, Color color) : base(X, Y, Width, Height, color) {
+
+        private Ellipse() {
+
         }
         
-        public override void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
-            SolidBrush brush = new SolidBrush(BackgroundColor);
+        public void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
+            SolidBrush brush = new SolidBrush(Color.Red);
             g.FillEllipse(brush, new System.Drawing.Rectangle(new Point(X, Y), new Size(Width, Height)));
             if(Selected) {
                 g.DrawEllipse(new Pen(Color.Black), new System.Drawing.Rectangle(new Point(X, Y), new Size(Width, Height)));

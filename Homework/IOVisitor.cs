@@ -18,5 +18,11 @@ namespace Homework {
             string type = cs.GetType().ToString().Substring(9);
             tree.Add(type + " " + cs.shapes.Count());
         }
+
+        public void Visit(ShapeWithTitle s) {
+            string type = s.GetType().ToString().Substring(9);
+            tree.Add(type + " " + cs.shapes.Count());
+        }
+
     }
 }

@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="AddEllipse.cs" />
     <Compile Include="AddRectangle.cs" />
+    <Compile Include="AddText.cs" />
     <Compile Include="CompositeShape.cs" />
+    <Compile Include="Decorator.cs" />
     <Compile Include="IOVisitor.cs" />
     <Compile Include="MoveVisitor.cs" />
     <Compile Include="Rectangle.cs" />
@@ -65,6 +67,7 @@
     <Compile Include="Shape.cs" />
     <Compile Include="ShapeIO.cs" />
     <Compile Include="ShapeSelector.cs" />
+    <Compile Include="ShapeWithTitle.cs" />
     <EmbeddedResource Include="Editor.resx">
       <DependentUpon>Editor.cs</DependentUpon>
     </EmbeddedResource>

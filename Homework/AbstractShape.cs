@@ -6,21 +6,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Homework {
-    public abstract class AbstractShape : Shape {
 
-        public int Width { private set; get; }
-        public int Height { private set; get; }
+    public interface Strategy {
+        void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false);
+    }
+
+    public class AbstractShape : Shape {
+
         public Color BackgroundColor;
 
-        private CompositeShape subShapes;
+        Strategy strategy;
 
-        public AbstractShape(int X, int Y, int Width, int Height, Color color) {
+        public AbstractShape(int X, int Y, int Width, int Height, Color color, Strategy strat) {
             this.X = X;
             this.Y = Y;
             this.Width = Width;
             this.Height = Height;
             this.BackgroundColor = color;
-        }
+            this.strategy = strat;
+
+            // Snap niet waarom je delegate moet gebruiken, en waarom er staat dat de delegate 
+            // een singleton object kan zijn aangezien een delegate een pointer naar een functie is?
+        }   
 
         public override void Move(Point coords) {
             this.X += coords.X;
@@ -45,7 +52,9 @@ namespace Homework {
             Draw(g, location.X, location.Y, size.Width, size.Height, Selected);
         }
     
-        public abstract void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false);
+        public void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
+            strategy.Draw(g, X, Y, Width, Height, Selected);
+        }
 
         public override bool IsInBounds(Point coords) {
             if (X <= coords.X && Y <= coords.Y && X + Width >= coords.X && Y + Height >= coords.Y) return true;

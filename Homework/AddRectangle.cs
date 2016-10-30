@@ -31,12 +31,11 @@ namespace Homework {
         }
 
         public void Execute() {
-            shape = new Rectangle(X, Y, Width, Height, Color.Red);
+            shape = new AbstractShape(X, Y, Width, Height, Color.Red, Rectangle.Instance);
             Editor.shapes.Add(shape);
         }
 
         public void Undo() {
-            Console.WriteLine("Removing: " + X + " " + Y);
             Editor.shapes.Remove(shape);
         }
     }

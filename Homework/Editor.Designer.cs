@@ -35,6 +35,11 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.shapeBox = new System.Windows.Forms.ListView();
             this.groupButton = new System.Windows.Forms.Button();
+            this.textTop = new System.Windows.Forms.TextBox();
+            this.textBottom = new System.Windows.Forms.TextBox();
+            this.labelTop = new System.Windows.Forms.Label();
+            this.labelBottom = new System.Windows.Forms.Label();
+            this.applyButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.screenBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.heightUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.widthUpDown)).BeginInit();
@@ -169,6 +174,7 @@
             this.shapeBox.Name = "shapeBox";
             this.shapeBox.Size = new System.Drawing.Size(187, 516);
             this.shapeBox.TabIndex = 12;
+            this.shapeBox.UseCompatibleStateImageBehavior = false;
             // 
             // groupButton
             // 
@@ -180,11 +186,58 @@
             this.groupButton.UseVisualStyleBackColor = true;
             this.groupButton.Click += new System.EventHandler(this.groupButton_Click);
             // 
+            // textTop
+            // 
+            this.textTop.Location = new System.Drawing.Point(792, 23);
+            this.textTop.Name = "textTop";
+            this.textTop.Size = new System.Drawing.Size(100, 22);
+            this.textTop.TabIndex = 14;
+            // 
+            // textBottom
+            // 
+            this.textBottom.Location = new System.Drawing.Point(792, 49);
+            this.textBottom.Name = "textBottom";
+            this.textBottom.Size = new System.Drawing.Size(100, 22);
+            this.textBottom.TabIndex = 15;
+            // 
+            // labelTop
+            // 
+            this.labelTop.AutoSize = true;
+            this.labelTop.Location = new System.Drawing.Point(730, 22);
+            this.labelTop.Name = "labelTop";
+            this.labelTop.Size = new System.Drawing.Size(37, 17);
+            this.labelTop.TabIndex = 16;
+            this.labelTop.Text = "Top:";
+            // 
+            // labelBottom
+            // 
+            this.labelBottom.AutoSize = true;
+            this.labelBottom.Location = new System.Drawing.Point(730, 49);
+            this.labelBottom.Name = "labelBottom";
+            this.labelBottom.Size = new System.Drawing.Size(56, 17);
+            this.labelBottom.TabIndex = 17;
+            this.labelBottom.Text = "Bottom:";
+            // 
+            // applyButton
+            // 
+            this.applyButton.Location = new System.Drawing.Point(899, 22);
+            this.applyButton.Name = "applyButton";
+            this.applyButton.Size = new System.Drawing.Size(75, 49);
+            this.applyButton.TabIndex = 18;
+            this.applyButton.Text = "Apply";
+            this.applyButton.UseVisualStyleBackColor = true;
+            this.applyButton.Click += new System.EventHandler(this.applyButton_Click);
+            // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.applyButton);
+            this.Controls.Add(this.labelBottom);
+            this.Controls.Add(this.labelTop);
+            this.Controls.Add(this.textBottom);
+            this.Controls.Add(this.textTop);
             this.Controls.Add(this.groupButton);
             this.Controls.Add(this.shapeBox);
             this.Controls.Add(this.saveButton);
@@ -224,6 +277,11 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.ListView shapeBox;
         private System.Windows.Forms.Button groupButton;
+        private System.Windows.Forms.TextBox textTop;
+        private System.Windows.Forms.TextBox textBottom;
+        private System.Windows.Forms.Label labelTop;
+        private System.Windows.Forms.Label labelBottom;
+        private System.Windows.Forms.Button applyButton;
     }
 }
 

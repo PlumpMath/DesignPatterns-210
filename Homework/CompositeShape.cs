@@ -8,11 +8,26 @@ using System.Threading.Tasks;
 namespace Homework {
     public class CompositeShape : Shape {
 
+        public new int Width {
+            private set { }
+            get {
+                return 1;
+            }
+        }
+
+        public new int Height {
+            private set { }
+            get {
+                return 1;
+            }
+        }
+
         public List<Shape> shapes = new List<Shape>();
 
         public CompositeShape() {
             this.shape = ShapeType.Group;
         }
+
 
         public void Add(Shape shape) {
             this.shapes.Add(shape);

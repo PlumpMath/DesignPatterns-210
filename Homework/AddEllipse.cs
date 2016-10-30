@@ -31,7 +31,7 @@ namespace Homework {
         }
 
         public void Execute() {
-            shape = new Ellipse(X, Y, Width, Height, Color.Red);
+            shape = new AbstractShape(X, Y, Width, Height, Color.Red, Ellipse.Instance);
             Editor.shapes.Add(shape);
         }
 
