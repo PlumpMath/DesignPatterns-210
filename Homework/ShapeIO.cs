@@ -9,15 +9,37 @@ using System.Windows.Forms;
 namespace Homework {
     class ShapeIO {
 
+        private List<string> GenerateString(Shape shape) {
+            string type = shape.GetType().ToString().Substring(9);
+
+            List<string> result = new List<string>();
+            if(shape is AbstractShape) {
+                AbstractShape sh = (AbstractShape) shape;
+               result.Add(type + " " + shape.X + " " + shape.Y + " " + sh.Width + " " + sh.Height);
+                Console.WriteLine(type + " " + shape.X + " " + shape.Y + " " + sh.Width + " " + sh.Height);
+            } else if(shape is CompositeShape) {
+               result.Add(type + " " + shape.X + " " + shape.Y);
+                CompositeShape sh = (CompositeShape) shape;
+                foreach(Shape shap in sh.shapes) {
+                    foreach(string s in GenerateString(shap)) {
+                        result.Add("\t" + s);
+                    }
+                }
+
+            }
+            return result;
+        }
 
         public void GenerateSaveFile(List<Shape> shapes) {
 
-            string[] lines = new string[shapes.Count];
-            int idx = 0;
-            foreach(AbstractShape shape in shapes) {
-                string type = shape.GetType().ToString().Equals("Homework.Rectangle") ? "rectangle" : "ellipse";
-                lines[idx++] = type + " " + shape.X + " " + shape.Y + " " + shape.Width + " " + shape.Height;
-                Console.WriteLine(type + " " + shape.X + " " + shape.Y + " " + shape.Width + " " + shape.Height);
+            List<string> lines = new List<string>();
+
+            foreach(Shape shape in shapes) {
+                string type = shape.GetType().ToString().Substring(9);
+                Console.WriteLine(type);
+                foreach(String s in GenerateString(shape)) {
+                    lines.Add(s);
+                }
             }
 
             SaveFileDialog dialog = new SaveFileDialog();

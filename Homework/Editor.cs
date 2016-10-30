@@ -102,16 +102,21 @@ namespace Homework {
             foreach(Shape shape in shapes) {
                 shape.Draw(g);
                 if(shape.shape == ShapeType.Group) {
-                    ListViewGroup membersGroup = new ListViewGroup(shape.shape + "_" + shape.ID, HorizontalAlignment.Left);
-                    shapeBox.Groups.Add(membersGroup);
-                    foreach(Shape s in ((CompositeShape)shape).shapes) {
-                        shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
-                    }
+                    AddGroup(shape);
                 } else {
                     shapeBox.Items.Add(shape.shape + "_" + shape.ID);
                 }
             }
 
+        }
+
+        private void AddGroup(Shape shape) {
+            if(shape.shape != ShapeType.Group) return;
+            ListViewGroup membersGroup = new ListViewGroup(shape.shape + "_" + shape.ID, HorizontalAlignment.Left);
+            shapeBox.Groups.Add(membersGroup);
+            foreach(Shape s in ((CompositeShape)shape).shapes) {
+                shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
+            }
         }
 
         private void Editor_Paint(object sender, PaintEventArgs e) {
@@ -172,8 +177,18 @@ namespace Homework {
         private void groupButton_Click(object sender, EventArgs e) {
             List<Shape> selected = new List<Shape>();
             foreach(ListViewItem txt in shapeBox.SelectedItems) {
-                int id = int.Parse(txt.Text.Split('_')[1]);
-                selected.Add(GetShape(id));
+                if(txt.Group != null) {
+                    int id = int.Parse(txt.Group.ToString().Split('_')[1]);
+                    Console.WriteLine("ID: " + id);
+                    if(txt.Group != null) Console.WriteLine(txt.Group);
+                    selected.Add(GetShape(id));
+                } else {
+                    int id = int.Parse(txt.Text.Split('_')[1]);
+                    Console.WriteLine("ID: " + id);
+                    if(txt.Group != null) Console.WriteLine(txt.Group);
+                    selected.Add(GetShape(id));
+                }
+
             }
             CompositeShape comp = new CompositeShape();
             foreach(Shape s in selected) {
@@ -181,6 +196,7 @@ namespace Homework {
             }
             comp.AddRange(selected);
             shapes.Add(comp);
+            Console.WriteLine("NEW ID: " + comp.ID);
 
             screenBox.Invalidate();
 
@@ -188,6 +204,7 @@ namespace Homework {
 
         private Shape GetShape(int ID) {
             foreach(Shape sh in shapes) {
+                Console.WriteLine(sh.ID + " " + ID);
                 if(sh.ID == ID) return sh;
             }
             return null;
