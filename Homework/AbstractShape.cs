@@ -54,5 +54,9 @@ namespace Homework {
             return false;
         }
 
+        public override void Accept(Visitor v) {
+            v.Visit(this);
+        }
+
     }
 }

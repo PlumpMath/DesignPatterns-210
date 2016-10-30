@@ -49,6 +49,7 @@
     <Compile Include="AddEllipse.cs" />
     <Compile Include="AddRectangle.cs" />
     <Compile Include="CompositeShape.cs" />
+    <Compile Include="IOVisitor.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="Editor.cs">
       <SubType>Form</SubType>

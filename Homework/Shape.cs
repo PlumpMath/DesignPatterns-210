@@ -20,6 +20,7 @@ namespace Homework {
         public abstract void Move(Point coords);
         public abstract void MoveRelative(Point coords);
         public abstract void Resize(Size size);
+        public abstract void Accept(Visitor v);
 
         public Shape(bool temp = false) {
              ID = MaxID++;

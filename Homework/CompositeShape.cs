@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Homework {
-    class CompositeShape : Shape {
+    public class CompositeShape : Shape {
 
         public List<Shape> shapes = new List<Shape>();
 
@@ -62,6 +62,13 @@ namespace Homework {
 
         public override void MoveRelative(Point coords) {
             throw new NotImplementedException();
+        }
+
+        public override void Accept(Visitor v) {
+            v.Visit(this);
+            foreach(Shape sh in shapes) {
+                sh.Accept(v);
+            }
         }
     }
 }

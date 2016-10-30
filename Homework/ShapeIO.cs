@@ -35,11 +35,9 @@ namespace Homework {
             List<string> lines = new List<string>();
 
             foreach(Shape shape in shapes) {
-                string type = shape.GetType().ToString().Substring(9);
-                Console.WriteLine(type);
-                foreach(String s in GenerateString(shape)) {
-                    lines.Add(s);
-                }
+                IOVisitor visitor = new IOVisitor();
+                shape.Accept(visitor);
+                lines.AddRange(visitor.tree);
             }
 
             SaveFileDialog dialog = new SaveFileDialog();

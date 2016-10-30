@@ -27,6 +27,11 @@ namespace Homework {
         void Undo();
     }
 
+    public interface Visitor {
+        void Visit(CompositeShape cs);
+        void Visit(AbstractShape s);
+    }
+
     public partial class Editor : Form {
 
         private bool mouseDown = false;
