@@ -14,15 +14,17 @@ namespace Homework {
     public class AbstractShape : Shape {
 
         public Color BackgroundColor;
-
+        public override int Width { protected set; get; }
+        public override int Height { protected set; get; }
         Strategy strategy;
 
-        public AbstractShape(int X, int Y, int Width, int Height, Color color, Strategy strat) {
+        public AbstractShape(int X, int Y, int Width, int Height, Color color, ShapeType shape, Strategy strat) {
             this.X = X;
             this.Y = Y;
             this.Width = Width;
             this.Height = Height;
             this.BackgroundColor = color;
+            this.shape = shape;
             this.strategy = strat;
 
             // Snap niet waarom je delegate moet gebruiken, en waarom er staat dat de delegate 

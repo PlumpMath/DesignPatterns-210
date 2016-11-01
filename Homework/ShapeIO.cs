@@ -16,7 +16,6 @@ namespace Homework {
             if(shape is AbstractShape) {
                 AbstractShape sh = (AbstractShape) shape;
                result.Add(type + " " + shape.X + " " + shape.Y + " " + sh.Width + " " + sh.Height);
-                Console.WriteLine(type + " " + shape.X + " " + shape.Y + " " + sh.Width + " " + sh.Height);
             } else if(shape is CompositeShape) {
                result.Add(type + " " + shape.X + " " + shape.Y);
                 CompositeShape sh = (CompositeShape) shape;
@@ -35,6 +34,7 @@ namespace Homework {
             List<string> lines = new List<string>();
 
             foreach(Shape shape in shapes) {
+                Console.WriteLine(shape.GetType());
                 IOVisitor visitor = new IOVisitor();
                 shape.Accept(visitor);
                 lines.AddRange(visitor.tree);

@@ -14,6 +14,9 @@ namespace Homework {
             this.Y = Y;
         }
 
+        public void Visit(ShapeWithTitle s) {
+            s.Move(new System.Drawing.Point(X, Y));
+        }
 
         public void Visit(AbstractShape s) {
             s.Move(new System.Drawing.Point(X, Y));

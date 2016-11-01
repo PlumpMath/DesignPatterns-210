@@ -21,7 +21,11 @@ namespace Homework {
 
         public void Visit(ShapeWithTitle s) {
             string type = s.GetType().ToString().Substring(9);
-            tree.Add(type + " " + cs.shapes.Count());
+            string result = type + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height + " ";
+            foreach(TitleLocation loc in s.titles.Keys) {
+                result += loc + " " + s.titles[loc] + " ";
+            }
+            tree.Add(result.TrimEnd());
         }
 
     }

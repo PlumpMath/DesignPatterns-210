@@ -14,11 +14,13 @@ namespace Homework {
         //LEFT
     }
 
-    class ShapeWithTitle : Decorator {
+    public class ShapeWithTitle : Decorator {
 
-        private Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
+        public Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
 
-        private Shape sh;
+        public Shape sh { private set; get; }
+        public override int Width { protected set { } get { return sh.Width; } }
+        public override int Height { protected set { } get { return sh.Width; } }
         private Font font;
 
         public ShapeWithTitle(Shape shape) : base(shape) {
@@ -31,9 +33,7 @@ namespace Homework {
         }
 
         public void DisplayTitle(Graphics g) {
-            Console.WriteLine("displaying: " + titles.Count);
             foreach(TitleLocation loc in titles.Keys) {
-                Console.WriteLine(loc);
                 if(loc == TitleLocation.TOP) {
                     int width = (int) g.MeasureString(titles[TitleLocation.TOP], font).Width;
                     g.DrawString(titles[TitleLocation.TOP], font, Brushes.Black, X + Width/2 - width/2, Y);
@@ -44,5 +44,8 @@ namespace Homework {
             }
         }
 
+        public override void Accept(Visitor v) {
+            v.Visit(this);
+        }
     }
 }

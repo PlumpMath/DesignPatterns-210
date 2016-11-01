@@ -70,6 +70,7 @@
             this.shapePicker.Name = "shapePicker";
             this.shapePicker.Size = new System.Drawing.Size(136, 68);
             this.shapePicker.TabIndex = 3;
+            this.shapePicker.SelectedIndexChanged += new System.EventHandler(this.shapePicker_SelectedIndexChanged);
             // 
             // actionPicker
             // 

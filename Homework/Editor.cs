@@ -30,12 +30,14 @@ namespace Homework {
     public interface Visitor {
         void Visit(CompositeShape cs);
         void Visit(AbstractShape s);
+        void Visit(ShapeWithTitle s);
     }
 
     public partial class Editor : Form {
 
         private bool mouseDown = false;
         private ActionType currentAction;
+        private ShapeType currentShape;
         private ShapeIO io;
         public static PictureBox screen;
         public static Stack<Command> history = new Stack<Command>();
@@ -53,9 +55,7 @@ namespace Homework {
         private void ScreenBox_MouseDown(object sender, MouseEventArgs e) {
             if(currentAction == ActionType.Draw) {
                 mouseDown = true;
-                ShapeType shapeType = shapePicker.SelectedItem.ToString() == "Rectangle" ? ShapeType.Rectangle : ShapeType.Ellipse;
-                Console.WriteLine(shapeType);
-                ShapeSelector.Start(shapeType, e.Location);
+                ShapeSelector.Start(currentShape, e.Location);
                 screenBox.Invalidate();
             } else if(currentAction == ActionType.Move) {
                 mouseDown = true;
@@ -94,8 +94,6 @@ namespace Homework {
                 ShapeSelector.Move(e.Location);
                 screenBox.Invalidate();
             }
-
-
         }
 
         private void screenBox_Paint(object sender, PaintEventArgs e) {
@@ -104,7 +102,6 @@ namespace Homework {
             ShapeSelector.Draw(e.Graphics);
             shapeBox.Items.Clear();
             shapeBox.Groups.Clear();
-            Console.WriteLine(shapes.Count());
             foreach(Shape shape in shapes) {
                 shape.Draw(g);
                 if(shape.shape == ShapeType.Group) {
@@ -123,8 +120,14 @@ namespace Homework {
             if(shape.shape != ShapeType.Group) return;
             ListViewGroup membersGroup = new ListViewGroup(shape.shape + "_" + shape.ID, HorizontalAlignment.Left);
             shapeBox.Groups.Add(membersGroup);
-            foreach(Shape s in ((CompositeShape)shape).shapes) {
-                shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
+            if(shape.GetType() == typeof(CompositeShape)) {
+                foreach(Shape s in ((CompositeShape)shape).shapes) {
+                    shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
+                }
+            } else {
+                foreach (Shape s in ((CompositeShape)((ShapeWithTitle)shape).sh).shapes) {
+                    shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
+                }
             }
         }
 
@@ -188,13 +191,9 @@ namespace Homework {
             foreach(ListViewItem txt in shapeBox.SelectedItems) {
                 if(txt.Group != null) {
                     int id = int.Parse(txt.Group.ToString().Split('_')[1]);
-                    Console.WriteLine("ID: " + id);
-                    if(txt.Group != null) Console.WriteLine(txt.Group);
                     selected.Add(GetShape(id));
                 } else {
                     int id = int.Parse(txt.Text.Split('_')[1]);
-                    Console.WriteLine("ID: " + id);
-                    if(txt.Group != null) Console.WriteLine(txt.Group);
                     selected.Add(GetShape(id));
                 }
 
@@ -205,7 +204,6 @@ namespace Homework {
             }
             comp.AddRange(selected);
             shapes.Add(comp);
-            Console.WriteLine("NEW ID: " + comp.ID);
 
             screenBox.Invalidate();
 
@@ -213,7 +211,6 @@ namespace Homework {
 
         private Shape GetShape(int ID) {
             foreach(Shape sh in shapes) {
-                Console.WriteLine(sh.ID + " " + ID);
                 if(sh.ID == ID) return sh;
             }
             return null;
@@ -224,7 +221,6 @@ namespace Homework {
 
             string top = textTop.Text;
             string bottom = textBottom.Text;
-            Console.WriteLine("test");
             Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
             
             if(top != null) {
@@ -240,6 +236,14 @@ namespace Homework {
 
             screenBox.Invalidate();
 
+        }
+
+        private void shapePicker_SelectedIndexChanged(object sender, EventArgs e) {
+            if(shapePicker.SelectedIndex == 0) {
+                currentShape = ShapeType.Rectangle;
+            } else if(shapePicker.SelectedIndex == 1) {
+                currentShape = ShapeType.Ellipse;
+            } 
         }
     }
 }

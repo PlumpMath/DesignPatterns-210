@@ -31,7 +31,7 @@ namespace Homework {
         }
 
         public void Execute() {
-            shape = new AbstractShape(X, Y, Width, Height, Color.Red, Rectangle.Instance);
+            shape = new AbstractShape(X, Y, Width, Height, Color.Red, ShapeType.Rectangle, Rectangle.Instance);
             Editor.shapes.Add(shape);
         }
 

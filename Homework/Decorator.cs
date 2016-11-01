@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Homework {
-    abstract class Decorator : Shape {
+    public abstract class Decorator : Shape {
 
         protected Shape shapeObj;
 
@@ -14,14 +14,11 @@ namespace Homework {
             this.shapeObj = shape;
             this.X = shape.X;
             this.Y = shape.Y;
+            Console.WriteLine(shape.Width + " " + shape.GetType());
             this.Width = shape.Width;
             this.Height = shape.Height;
             this.shape = shape.shape;
             this.Selected = shape.Selected;
-        }
-
-        public override void Accept(Visitor v) {
-            shapeObj.Accept(v);
         }
 
         public override void Draw(Graphics g) {

@@ -8,17 +8,30 @@ using System.Threading.Tasks;
 namespace Homework {
     public class CompositeShape : Shape {
 
-        public new int Width {
-            private set { }
+        public override int Width {
+            protected set { }
             get {
-                return 1;
+                int maxX = shapes[0].X;
+                int minX = shapes[0].X;
+                foreach(Shape sh in shapes) {
+                    if(sh.X + sh.Width > maxX) maxX = sh.X + sh.Width;
+                    if(sh.X < minX) minX = sh.X;
+                }
+                Console.WriteLine("Width: " + (maxX - minX));
+                return maxX - minX;
             }
         }
 
-        public new int Height {
-            private set { }
+        public override int Height {
+            protected set { }
             get {
-                return 1;
+                int maxY = shapes[0].Y;
+                int minY = shapes[0].Y;
+                foreach(Shape sh in shapes) {
+                    if(sh.X > maxY) maxY = sh.X;
+                    if(sh.X < minY) minY = sh.X;
+                }
+                return maxY - minY;
             }
         }
 
@@ -62,7 +75,6 @@ namespace Homework {
         }
 
         public override void Move(Point coords) {
-            Console.WriteLine("CS: " + coords.X + " " + coords.Y);
             foreach(Shape s in shapes) {
                 s.MoveRelative(coords);
             }
