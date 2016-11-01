@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_shape" kind="class" language="C#" prot="public" abstract="yes">
+    <compoundname>Homework::Shape</compoundname>
+    <derivedcompoundref refid="class_homework_1_1_abstract_shape" prot="public" virt="non-virtual">Homework.AbstractShape</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_composite_shape" prot="public" virt="non-virtual">Homework.CompositeShape</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_composit_shape_with_title" prot="public" virt="non-virtual">Homework.CompositShapeWithTitle</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_decorator" prot="public" virt="non-virtual">Homework.Decorator</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_shape_with_title" prot="public" virt="non-virtual">Homework.ShapeWithTitle</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_homework_1_1_shape_1a7ef7151cfd078491b08e3c0e6d4a85e2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>abstract int</type>
+        <definition>abstract int Homework.Shape.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="10" column="1" bodyfile="Shape.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_1af0a4da6aeda3507851b25ef96fb6564d" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>abstract int</type>
+        <definition>abstract int Homework.Shape.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="11" column="1" bodyfile="Shape.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_1ab6b0da0ec84880e68c910b6991f480b0" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>abstract int</type>
+        <definition>abstract int Homework.Shape.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="12" column="1" bodyfile="Shape.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_1ac7a94895e82fff1ce6d6bf6d8ef0cda6" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>abstract int</type>
+        <definition>abstract int Homework.Shape.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="13" column="1" bodyfile="Shape.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_1ada73e29583ac3b58ffbd1996ac6209fa" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type>int</type>
+        <definition>int Homework.Shape.ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="15" column="1" bodyfile="Shape.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type><ref refid="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529" kindref="member">ShapeType</ref></type>
+        <definition>ShapeType Homework.Shape.shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="16" column="1" bodyfile="Shape.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_shape_1a1c89048778ba1ce5f855391b5bbea784" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Homework.Shape.MaxID</definition>
+        <argsstring></argsstring>
+        <name>MaxID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="14" column="1" bodyfile="Shape.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Homework.Shape.Selected</definition>
+        <argsstring></argsstring>
+        <name>Selected</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="17" column="1" bodyfile="Shape.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.Draw</definition>
+        <argsstring>(Graphics g, Point coords, Size size, bool selected=false)</argsstring>
+        <name>Draw</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a0fef4f333ef8d071c1a3e1531a40fbe3">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1a02fbbb23a00579664760d9f459d73078">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1aea459cbcb61a91b4c4ac7d1dbc4ec34b">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1a46f03cc7014ec2722d4c457098df798a">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1a8e4afa618f928f6ef4932035661451d2">Draw</reimplementedby>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.Draw</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>Draw</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a35a589f1dbfb86a270cf570cf972ebca">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1af3e217f64d6c9deffd3fff13d94ff279">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1aee60b1d9f24eec48cdfed0bfdb7a1171">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1aa60fb2e8f8c0919a617eb33bd9740442">Draw</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1a60e7ae60951a348e0c28acd00faa07d1">Draw</reimplementedby>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool Homework.Shape.IsInBounds</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>IsInBounds</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a695dbd76c27fc208d5dd705a9742a93e">IsInBounds</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1af2ed11c431651cf9a712ace419945115">IsInBounds</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1afddc731df2e9af0b70e1bc92250d9125">IsInBounds</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1a661c1892e364db569c1318ba6b532ee1">IsInBounds</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1ace7d4691102aa202755231f3a80e7521">IsInBounds</reimplementedby>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="21" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.Move</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>Move</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a02ffdd93260ddf0af92d15022f4e8752">Move</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1a537c4ef3c16e0adf038d20713604cdca">Move</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1ace0d569a976ab0bb94daed7f9fd96e09">Move</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a">Move</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0">Move</reimplementedby>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.MoveRelative</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>MoveRelative</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a9b497f2a9725f50e4d3c49e49ab2cd58">MoveRelative</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1a68c2c93bc8d03c40adb8eaeda1d8e41a">MoveRelative</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1a7dc4ef208f54685ec3e6938083cdcd0e">MoveRelative</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922">MoveRelative</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53">MoveRelative</reimplementedby>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.Resize</definition>
+        <argsstring>(Size size)</argsstring>
+        <name>Resize</name>
+        <reimplementedby refid="class_homework_1_1_decorator_1a51c68c1174b7cf2bda583fd7759c43c8">Resize</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1a0a972dd64c7f8036b85b3a3e0b0782c6">Resize</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1a8000cbe6655177a060af5310526ecba9">Resize</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564">Resize</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26">Resize</reimplementedby>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1ae2b2446361f66180410475707c0a3204" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void Homework.Shape.Accept</definition>
+        <argsstring>(Visitor v)</argsstring>
+        <name>Accept</name>
+        <reimplementedby refid="class_homework_1_1_composit_shape_with_title_1ac84d6f6229b75d13b9973d1040fa9385">Accept</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_shape_with_title_1a8f73bf6f63e9004472a60cffc436a1d1">Accept</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_abstract_shape_1aaa9567a35e047266ed0b11205a63b53f">Accept</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7">Accept</reimplementedby>
+        <param>
+          <type><ref refid="interface_homework_1_1_visitor" kindref="compound">Visitor</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.Shape.Shape</definition>
+        <argsstring>(bool temp=false)</argsstring>
+        <name>Shape</name>
+        <param>
+          <type>bool</type>
+          <declname>temp</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Shape.cs" line="27" column="1" bodyfile="Shape.cs" bodystart="27" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="58">
+        <label>Homework.CompositeShape</label>
+        <link refid="class_homework_1_1_composite_shape"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Homework.Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+      <node id="61">
+        <label>Homework.ShapeWithTitle</label>
+        <link refid="class_homework_1_1_shape_with_title"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>Homework.CompositShapeWithTitle</label>
+        <link refid="class_homework_1_1_composit_shape_with_title"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Homework.Decorator</label>
+        <link refid="class_homework_1_1_decorator"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Homework.AbstractShape</label>
+        <link refid="class_homework_1_1_abstract_shape"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Shape.cs" line="9" column="1" bodyfile="Shape.cs" bodystart="9" bodyend="31"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_shape_1ae2b2446361f66180410475707c0a3204" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>Accept</name></member>
+      <member refid="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_shape_1ac7a94895e82fff1ce6d6bf6d8ef0cda6" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_shape_1ada73e29583ac3b58ffbd1996ac6209fa" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>ID</name></member>
+      <member refid="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>IsInBounds</name></member>
+      <member refid="class_homework_1_1_shape_1a1c89048778ba1ce5f855391b5bbea784" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>MaxID</name></member>
+      <member refid="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>Move</name></member>
+      <member refid="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>MoveRelative</name></member>
+      <member refid="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343" prot="public" virt="pure-virtual"><scope>Homework::Shape</scope><name>Resize</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>Shape</name></member>
+      <member refid="class_homework_1_1_shape_1ab6b0da0ec84880e68c910b6991f480b0" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_shape_1a7ef7151cfd078491b08e3c0e6d4a85e2" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>X</name></member>
+      <member refid="class_homework_1_1_shape_1af0a4da6aeda3507851b25ef96fb6564d" prot="public" virt="non-virtual"><scope>Homework::Shape</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

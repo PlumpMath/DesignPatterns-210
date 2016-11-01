@@ -16,6 +16,9 @@ namespace Homework {
         public Color BackgroundColor;
         public override int Width { protected set; get; }
         public override int Height { protected set; get; }
+        public override int X { protected set; get; }
+        public override int Y { protected set; get; }
+
         Strategy strategy;
 
         public AbstractShape(int X, int Y, int Width, int Height, Color color, ShapeType shape, Strategy strat) {

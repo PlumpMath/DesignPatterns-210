@@ -26,5 +26,9 @@ namespace Homework {
             cs.Move(new System.Drawing.Point(X, Y));
         }
 
+        public void Visit(CompositShapeWithTitle cs) {
+
+        }
+
     }
 }

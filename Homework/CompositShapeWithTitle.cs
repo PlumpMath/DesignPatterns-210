@@ -7,14 +7,7 @@ using System.Threading.Tasks;
 
 namespace Homework {
 
-    public enum TitleLocation {
-        TOP,
-        BOTTOM,
-        //RIGHT,
-        //LEFT
-    }
-
-    public class ShapeWithTitle : Shape {
+    public class CompositShapeWithTitle : Shape {
 
         public Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
 
@@ -23,10 +16,11 @@ namespace Homework {
         public override int Height { protected set { } get { return tempShape.Width; } }
         public override int X { protected set { } get { return tempShape.X; } }
         public override int Y { protected set { } get { return tempShape.Y; } }
+        public List<Shape> shapes = new List<Shape>();
 
         private Font font;
 
-        public ShapeWithTitle(Shape shape) {
+        public CompositShapeWithTitle(Shape shape) {
             this.tempShape = shape;
             font = new Font(new FontFamily("Times New Roman"), 32, FontStyle.Regular, GraphicsUnit.Pixel);
         }
@@ -49,6 +43,9 @@ namespace Homework {
 
         public override void Accept(Visitor v) {
             v.Visit(this);
+            foreach(Shape sh in shapes) {
+                sh.Accept(v);
+            }
         }
 
         public override void Draw(Graphics g) {

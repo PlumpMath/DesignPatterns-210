@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_shape_i_o" kind="class" language="C#" prot="public">
+    <compoundname>Homework::ShapeIO</compoundname>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_homework_1_1_shape_i_o_1a9dbfe5b26eab561d8bbf3e35728f1155" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Homework.ShapeIO.GenerateString</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>GenerateString</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeIO.cs" line="12" column="1" bodyfile="ShapeIO.cs" bodystart="12" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_shape_i_o_1a799a0bf017c1da12b351be7f2d06a455" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.ShapeIO.GenerateSaveFile</definition>
+        <argsstring>(List&lt; Shape &gt; shapes)</argsstring>
+        <name>GenerateSaveFile</name>
+        <param>
+          <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+          <declname>shapes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeIO.cs" line="32" column="1" bodyfile="ShapeIO.cs" bodystart="32" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ShapeIO.cs" line="10" column="1" bodyfile="ShapeIO.cs" bodystart="10" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_shape_i_o_1a799a0bf017c1da12b351be7f2d06a455" prot="public" virt="non-virtual"><scope>Homework::ShapeIO</scope><name>GenerateSaveFile</name></member>
+      <member refid="class_homework_1_1_shape_i_o_1a9dbfe5b26eab561d8bbf3e35728f1155" prot="private" virt="non-virtual"><scope>Homework::ShapeIO</scope><name>GenerateString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

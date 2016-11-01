@@ -28,10 +28,32 @@ namespace Homework {
                 int maxY = shapes[0].Y;
                 int minY = shapes[0].Y;
                 foreach(Shape sh in shapes) {
-                    if(sh.X > maxY) maxY = sh.X;
-                    if(sh.X < minY) minY = sh.X;
+                    if(sh.Y + sh.Height > maxY) maxY = sh.Y + sh.Height;
+                    if(sh.Y < minY) minY = sh.Y;
                 }
                 return maxY - minY;
+            }
+        }
+
+        public override int X {
+            protected set { }
+            get {
+                int minX = shapes[0].X;
+                foreach(Shape sh in shapes) {
+                    if(sh.X < minX) minX = sh.X;
+                }
+                return minX;
+            }
+        }
+
+        public override int Y {
+            protected set { }
+            get {
+                int minY = shapes[0].Y;
+                foreach(Shape sh in shapes) {
+                    if(sh.Y < minY) minY = sh.Y;
+                }
+                return minY;
             }
         }
 
@@ -75,9 +97,10 @@ namespace Homework {
         }
 
         public override void Move(Point coords) {
-            foreach(Shape s in shapes) {
-                s.MoveRelative(coords);
-            }
+            //MoveRelative(coords);
+            //foreach(Shape s in shapes) {
+            //    s.MoveRelative(coords);
+            //}
         }
 
         public override void Resize(Size size) {
@@ -89,13 +112,16 @@ namespace Homework {
         }
 
         public override void MoveRelative(Point coords) {
-            foreach(Shape s in shapes) {
-                s.MoveRelative(coords);
-            }
+            //foreach(Shape s in shapes) {
+            //    s.MoveRelative(coords);
+            //}
         }
 
         public override void Accept(Visitor v) {
             v.Visit(this);
+            foreach(Shape sh in shapes) {
+                sh.Accept(v);
+            }
         }
     }
 }

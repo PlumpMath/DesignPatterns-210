@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace Homework {
     public abstract class Shape {
-        public int X { protected set; get; }
-        public int Y { protected set; get; }
+        public abstract int X { protected set; get; }
+        public abstract int Y { protected set; get; }
         public abstract int Width { protected set; get; }
         public abstract int Height { protected set; get; }
         public static int MaxID;

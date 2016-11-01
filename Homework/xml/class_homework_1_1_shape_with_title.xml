@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_shape_with_title" kind="class" language="C#" prot="public">
+    <compoundname>Homework::ShapeWithTitle</compoundname>
+    <basecompoundref refid="class_homework_1_1_shape" prot="public" virt="non-virtual">Homework.Shape</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_shape_with_title_1af28ea6e2d37cb12c761b8433b74a6be2" prot="public" static="no" mutable="no">
+        <type>Dictionary&lt; <ref refid="namespace_homework_1a69372a08804283df76865465f45e81fb" kindref="member">TitleLocation</ref>, string &gt;</type>
+        <definition>Dictionary&lt;TitleLocation, string&gt; Homework.ShapeWithTitle.titles</definition>
+        <argsstring></argsstring>
+        <name>titles</name>
+        <initializer>= new Dictionary&lt;<ref refid="namespace_homework_1a69372a08804283df76865465f45e81fb" kindref="member">TitleLocation</ref>, string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="19" column="1" bodyfile="ShapeWithTitle.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_homework_1_1_shape_with_title_1a8500a9d3a1d16d6535a8d89fad919b97" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="yes" protectedsettable="no">
+        <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+        <definition>Shape Homework.ShapeWithTitle.tempShape</definition>
+        <argsstring></argsstring>
+        <name>tempShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="21" column="1" bodyfile="ShapeWithTitle.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_with_title_1a51c6813da70d74bba85cfb80923c7cf2" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.ShapeWithTitle.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="22" column="1" bodyfile="ShapeWithTitle.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_with_title_1a53c4a3d30e199d35680f295092b94686" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.ShapeWithTitle.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="23" column="1" bodyfile="ShapeWithTitle.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_with_title_1a70ba68460e8a8067420a8157de0133bf" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.ShapeWithTitle.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="24" column="1" bodyfile="ShapeWithTitle.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_shape_with_title_1a1333132c347db70c121c420635c26667" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.ShapeWithTitle.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="25" column="1" bodyfile="ShapeWithTitle.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_shape_with_title_1ac724e07d03a2380dbfb316acb02ba3af" prot="private" static="no" mutable="no">
+        <type>Font</type>
+        <definition>Font Homework.ShapeWithTitle.font</definition>
+        <argsstring></argsstring>
+        <name>font</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="27" column="1" bodyfile="ShapeWithTitle.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a481c923e558234f6f7ce3f5d820e8adc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.ShapeWithTitle.ShapeWithTitle</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>ShapeWithTitle</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="29" column="1" bodyfile="ShapeWithTitle.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1ae3309c2c5e5b32822f08dbb7417084ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.ShapeWithTitle.AddTitle</definition>
+        <argsstring>(Dictionary&lt; TitleLocation, string &gt; titles)</argsstring>
+        <name>AddTitle</name>
+        <param>
+          <type>Dictionary&lt; <ref refid="namespace_homework_1a69372a08804283df76865465f45e81fb" kindref="member">TitleLocation</ref>, string &gt;</type>
+          <declname>titles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="34" column="1" bodyfile="ShapeWithTitle.cs" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a4be170d19f0ccf55eb4b8451c19180ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.ShapeWithTitle.DisplayTitle</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>DisplayTitle</name>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="38" column="1" bodyfile="ShapeWithTitle.cs" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a8f73bf6f63e9004472a60cffc436a1d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.Accept</definition>
+        <argsstring>(Visitor v)</argsstring>
+        <name>Accept</name>
+        <reimplements refid="class_homework_1_1_shape_1ae2b2446361f66180410475707c0a3204">Accept</reimplements>
+        <param>
+          <type><ref refid="interface_homework_1_1_visitor" kindref="compound">Visitor</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="50" column="1" bodyfile="ShapeWithTitle.cs" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1aa60fb2e8f8c0919a617eb33bd9740442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.Draw</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="54" column="1" bodyfile="ShapeWithTitle.cs" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a46f03cc7014ec2722d4c457098df798a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.Draw</definition>
+        <argsstring>(Graphics g, Point coords, Size size, bool selected=false)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="59" column="1" bodyfile="ShapeWithTitle.cs" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1afddc731df2e9af0b70e1bc92250d9125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Homework.ShapeWithTitle.IsInBounds</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>IsInBounds</name>
+        <reimplements refid="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88">IsInBounds</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="64" column="1" bodyfile="ShapeWithTitle.cs" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.Move</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>Move</name>
+        <reimplements refid="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0">Move</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="68" column="1" bodyfile="ShapeWithTitle.cs" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.MoveRelative</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>MoveRelative</name>
+        <reimplements refid="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b">MoveRelative</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="73" column="1" bodyfile="ShapeWithTitle.cs" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.Resize</definition>
+        <argsstring>(Size size)</argsstring>
+        <name>Resize</name>
+        <reimplements refid="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343">Resize</reimplements>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="78" column="1" bodyfile="ShapeWithTitle.cs" bodystart="78" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="68">
+        <label>Homework.ShapeWithTitle</label>
+        <link refid="class_homework_1_1_shape_with_title"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="70">
+        <label>Homework.ShapeWithTitle</label>
+        <link refid="class_homework_1_1_shape_with_title"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="ShapeWithTitle.cs" line="17" column="1" bodyfile="ShapeWithTitle.cs" bodystart="17" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_shape_with_title_1a8f73bf6f63e9004472a60cffc436a1d1" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Accept</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1ae3309c2c5e5b32822f08dbb7417084ac" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>AddTitle</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a4be170d19f0ccf55eb4b8451c19180ae" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>DisplayTitle</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1aa60fb2e8f8c0919a617eb33bd9740442" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a46f03cc7014ec2722d4c457098df798a" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1ac724e07d03a2380dbfb316acb02ba3af" prot="private" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>font</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a53c4a3d30e199d35680f295092b94686" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_shape_1ada73e29583ac3b58ffbd1996ac6209fa" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>ID</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1afddc731df2e9af0b70e1bc92250d9125" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>IsInBounds</name></member>
+      <member refid="class_homework_1_1_shape_1a1c89048778ba1ce5f855391b5bbea784" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>MaxID</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Move</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>MoveRelative</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Resize</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Shape</name></member>
+      <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a481c923e558234f6f7ce3f5d820e8adc" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>ShapeWithTitle</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a8500a9d3a1d16d6535a8d89fad919b97" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>tempShape</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1af28ea6e2d37cb12c761b8433b74a6be2" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>titles</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a51c6813da70d74bba85cfb80923c7cf2" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a70ba68460e8a8067420a8157de0133bf" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>X</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a1333132c347db70c121c420635c26667" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

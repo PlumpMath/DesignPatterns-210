@@ -18,7 +18,12 @@ namespace Homework {
         }
 
         public void Execute() {
-            shape = new ShapeWithTitle(oldShape);
+            if(ShapeSelector.currentShape.GetType() == typeof(ShapeWithTitle)) {
+                shape = (ShapeWithTitle)oldShape;
+            } else {
+                shape = new ShapeWithTitle(oldShape);
+            }
+
             ShapeSelector.currentShape = shape;
             shape.AddTitle(titles);
             Editor.shapes.Remove(oldShape);

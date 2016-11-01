@@ -1,0 +1,334 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_composite_shape" kind="class" language="C#" prot="public">
+    <compoundname>Homework::CompositeShape</compoundname>
+    <basecompoundref refid="class_homework_1_1_shape" prot="public" virt="non-virtual">Homework.Shape</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_homework_1_1_composite_shape_1aeae0d71fa8612989d8b27edca0ace3df" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.CompositeShape.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="11" column="1" bodyfile="CompositeShape.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_composite_shape_1aa5fdb637085bbce43154c76efd098222" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.CompositeShape.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="25" column="1" bodyfile="CompositeShape.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_composite_shape_1ae1184d6b3b945fd3fa96b2eafd93baac" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.CompositeShape.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="38" column="1" bodyfile="CompositeShape.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_homework_1_1_composite_shape_1a5c1e243aad316db915c20feff20434c9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
+        <type>override int</type>
+        <definition>override int Homework.CompositeShape.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="49" column="1" bodyfile="CompositeShape.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_composite_shape_1a5a2be2383164b8c01b64225fba157351" prot="public" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+        <definition>List&lt;Shape&gt; Homework.CompositeShape.shapes</definition>
+        <argsstring></argsstring>
+        <name>shapes</name>
+        <initializer>= new List&lt;<ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="60" column="1" bodyfile="CompositeShape.cs" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1acd3f768e5c598d81d1c97cd3f5aed695" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.CompositeShape.CompositeShape</definition>
+        <argsstring>()</argsstring>
+        <name>CompositeShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="62" column="1" bodyfile="CompositeShape.cs" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1aecf6111c47f9c56993d405f2c64b72b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.CompositeShape.Add</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>Add</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="67" column="1" bodyfile="CompositeShape.cs" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a5d75b11fce4b433793e44af08c374490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.CompositeShape.Remove</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="71" column="1" bodyfile="CompositeShape.cs" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a60e7ae60951a348e0c28acd00faa07d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.Draw</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="75" column="1" bodyfile="CompositeShape.cs" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1aa89db853a0fbb1a412f1a8254b57053a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.CompositeShape.AddRange</definition>
+        <argsstring>(List&lt; Shape &gt; selected)</argsstring>
+        <name>AddRange</name>
+        <param>
+          <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="81" column="1" bodyfile="CompositeShape.cs" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1ace7d4691102aa202755231f3a80e7521" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Homework.CompositeShape.IsInBounds</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>IsInBounds</name>
+        <reimplements refid="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88">IsInBounds</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="85" column="1" bodyfile="CompositeShape.cs" bodystart="85" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.Move</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>Move</name>
+        <reimplements refid="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0">Move</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="99" column="1" bodyfile="CompositeShape.cs" bodystart="99" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.Resize</definition>
+        <argsstring>(Size size)</argsstring>
+        <name>Resize</name>
+        <reimplements refid="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343">Resize</reimplements>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="106" column="1" bodyfile="CompositeShape.cs" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a8e4afa618f928f6ef4932035661451d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.Draw</definition>
+        <argsstring>(Graphics g, Point coords, Size size, bool selected=false)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="110" column="1" bodyfile="CompositeShape.cs" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.MoveRelative</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>MoveRelative</name>
+        <reimplements refid="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b">MoveRelative</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="114" column="1" bodyfile="CompositeShape.cs" bodystart="114" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.Accept</definition>
+        <argsstring>(Visitor v)</argsstring>
+        <name>Accept</name>
+        <reimplements refid="class_homework_1_1_shape_1ae2b2446361f66180410475707c0a3204">Accept</reimplements>
+        <param>
+          <type><ref refid="interface_homework_1_1_visitor" kindref="compound">Visitor</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="120" column="1" bodyfile="CompositeShape.cs" bodystart="120" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>Homework.CompositeShape</label>
+        <link refid="class_homework_1_1_composite_shape"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="23">
+        <label>Homework.CompositeShape</label>
+        <link refid="class_homework_1_1_composite_shape"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+    </collaborationgraph>
+    <location file="CompositeShape.cs" line="9" column="1" bodyfile="CompositeShape.cs" bodystart="9" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Accept</name></member>
+      <member refid="class_homework_1_1_composite_shape_1aecf6111c47f9c56993d405f2c64b72b6" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Add</name></member>
+      <member refid="class_homework_1_1_composite_shape_1aa89db853a0fbb1a412f1a8254b57053a" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>AddRange</name></member>
+      <member refid="class_homework_1_1_composite_shape_1acd3f768e5c598d81d1c97cd3f5aed695" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>CompositeShape</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a60e7ae60951a348e0c28acd00faa07d1" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a8e4afa618f928f6ef4932035661451d2" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_composite_shape_1aa5fdb637085bbce43154c76efd098222" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_shape_1ada73e29583ac3b58ffbd1996ac6209fa" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>ID</name></member>
+      <member refid="class_homework_1_1_composite_shape_1ace7d4691102aa202755231f3a80e7521" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>IsInBounds</name></member>
+      <member refid="class_homework_1_1_shape_1a1c89048778ba1ce5f855391b5bbea784" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>MaxID</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Move</name></member>
+      <member refid="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>MoveRelative</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a5d75b11fce4b433793e44af08c374490" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Remove</name></member>
+      <member refid="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Resize</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Shape</name></member>
+      <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a5a2be2383164b8c01b64225fba157351" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>shapes</name></member>
+      <member refid="class_homework_1_1_composite_shape_1aeae0d71fa8612989d8b27edca0ace3df" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_composite_shape_1ae1184d6b3b945fd3fa96b2eafd93baac" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>X</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a5c1e243aad316db915c20feff20434c9" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

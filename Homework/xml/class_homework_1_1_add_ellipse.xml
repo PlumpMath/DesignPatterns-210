@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_add_ellipse" kind="class" language="C#" prot="public">
+    <compoundname>Homework::AddEllipse</compoundname>
+    <basecompoundref refid="interface_homework_1_1_command" prot="public" virt="non-virtual">Homework.Command</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_add_ellipse_1ab49282651b60daa0b2bec0a0939a77dc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddEllipse.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="11" column="1" bodyfile="AddEllipse.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_ellipse_1a313d8b902417e1530b17e41e50467d91" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddEllipse.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="12" column="1" bodyfile="AddEllipse.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_ellipse_1ad87262647f7408002c52f657d4b1f3a8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddEllipse.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="13" column="1" bodyfile="AddEllipse.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_ellipse_1a3d27708f6fbb8f3b5995072eb652a74c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddEllipse.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="14" column="1" bodyfile="AddEllipse.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_ellipse_1a3b6769636b23033b687c1ddc03489ef2" prot="private" static="no" mutable="no">
+        <type><ref refid="class_homework_1_1_abstract_shape" kindref="compound">AbstractShape</ref></type>
+        <definition>AbstractShape Homework.AddEllipse.shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="15" column="1" bodyfile="AddEllipse.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_add_ellipse_1aa8d1fcfa48f78a341f80c5cfabe34178" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.AddEllipse.AddEllipse</definition>
+        <argsstring>(Point coords, Size size)</argsstring>
+        <name>AddEllipse</name>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="17" column="1" bodyfile="AddEllipse.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_ellipse_1a6c12bd78f36af2fef50c78926932f9ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.AddEllipse.AddEllipse</definition>
+        <argsstring>(int X, int Y, int Width, int Height)</argsstring>
+        <name>AddEllipse</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="25" column="1" bodyfile="AddEllipse.cs" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_ellipse_1a22c29e2da6e7a04a77f4d572c6259216" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddEllipse.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <reimplements refid="interface_homework_1_1_command_1a525feb3aaffd0e6cc93843c5e632cc8b">Execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="33" column="1" bodyfile="AddEllipse.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_ellipse_1a086ff5a52acd2736d2d5fe39f8eff1c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddEllipse.Undo</definition>
+        <argsstring>()</argsstring>
+        <name>Undo</name>
+        <reimplements refid="interface_homework_1_1_command_1aeba07682e678fd5b9a5158a3a65fc2f7">Undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddEllipse.cs" line="38" column="1" bodyfile="AddEllipse.cs" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>Homework.AddEllipse</label>
+        <link refid="class_homework_1_1_add_ellipse"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>Homework.AddEllipse</label>
+        <link refid="class_homework_1_1_add_ellipse"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="AddEllipse.cs" line="9" column="1" bodyfile="AddEllipse.cs" bodystart="9" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_add_ellipse_1aa8d1fcfa48f78a341f80c5cfabe34178" prot="public" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>AddEllipse</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a6c12bd78f36af2fef50c78926932f9ce" prot="public" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>AddEllipse</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a22c29e2da6e7a04a77f4d572c6259216" prot="public" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>Execute</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a3d27708f6fbb8f3b5995072eb652a74c" prot="private" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a3b6769636b23033b687c1ddc03489ef2" prot="private" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a086ff5a52acd2736d2d5fe39f8eff1c3" prot="public" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>Undo</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1ad87262647f7408002c52f657d4b1f3a8" prot="private" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1ab49282651b60daa0b2bec0a0939a77dc" prot="private" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>X</name></member>
+      <member refid="class_homework_1_1_add_ellipse_1a313d8b902417e1530b17e41e50467d91" prot="private" virt="non-virtual"><scope>Homework::AddEllipse</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

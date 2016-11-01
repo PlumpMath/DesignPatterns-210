@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="interface_homework_1_1_command" kind="interface" language="C#" prot="public">
+    <compoundname>Homework::Command</compoundname>
+    <derivedcompoundref refid="class_homework_1_1_add_ellipse" prot="public" virt="non-virtual">Homework.AddEllipse</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_add_rectangle" prot="public" virt="non-virtual">Homework.AddRectangle</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_add_text" prot="public" virt="non-virtual">Homework.AddText</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_homework_1_1_command_1a525feb3aaffd0e6cc93843c5e632cc8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Command.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <reimplementedby refid="class_homework_1_1_add_text_1a4937c30b9583114e492e32e726865128">Execute</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_add_rectangle_1a152826c8c1042811bc21013fbdaf754b">Execute</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_add_ellipse_1a22c29e2da6e7a04a77f4d572c6259216">Execute</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_homework_1_1_command_1aeba07682e678fd5b9a5158a3a65fc2f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Command.Undo</definition>
+        <argsstring>()</argsstring>
+        <name>Undo</name>
+        <reimplementedby refid="class_homework_1_1_add_text_1abc3108851ca085de2c6d19898be8313d">Undo</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_add_rectangle_1a5d686ac129e61b880e766d81b7295e69">Undo</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_add_ellipse_1a086ff5a52acd2736d2d5fe39f8eff1c3">Undo</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Homework.AddEllipse</label>
+        <link refid="class_homework_1_1_add_ellipse"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Homework.AddRectangle</label>
+        <link refid="class_homework_1_1_add_rectangle"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Homework.Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+      <node id="19">
+        <label>Homework.AddText</label>
+        <link refid="class_homework_1_1_add_text"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Editor.cs" line="25" column="1" bodyfile="Editor.cs" bodystart="25" bodyend="28"/>
+    <listofallmembers>
+      <member refid="interface_homework_1_1_command_1a525feb3aaffd0e6cc93843c5e632cc8b" prot="public" virt="non-virtual"><scope>Homework::Command</scope><name>Execute</name></member>
+      <member refid="interface_homework_1_1_command_1aeba07682e678fd5b9a5158a3a65fc2f7" prot="public" virt="non-virtual"><scope>Homework::Command</scope><name>Undo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

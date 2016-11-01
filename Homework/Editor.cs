@@ -28,9 +28,10 @@ namespace Homework {
     }
 
     public interface Visitor {
-        void Visit(CompositeShape cs);
+        void Visit(CompositeShape s);
         void Visit(AbstractShape s);
         void Visit(ShapeWithTitle s);
+        void Visit(CompositShapeWithTitle s);
     }
 
     public partial class Editor : Form {
@@ -109,9 +110,6 @@ namespace Homework {
                 } else {
                     shapeBox.Items.Add(shape.shape + "_" + shape.ID);
                 }
-                if(shape.GetType() == typeof(ShapeWithTitle)) {
-                    ((ShapeWithTitle)shape).DisplayTitle(g);
-                }
             }
 
         }
@@ -125,7 +123,7 @@ namespace Homework {
                     shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
                 }
             } else {
-                foreach (Shape s in ((CompositeShape)((ShapeWithTitle)shape).sh).shapes) {
+                foreach (Shape s in ((CompositeShape)((ShapeWithTitle)shape).tempShape).shapes) {
                     shapeBox.Items.Add(new ListViewItem() { Text = s.shape + "_" + s.ID, Group = membersGroup });
                 }
             }
@@ -231,6 +229,7 @@ namespace Homework {
                 titles.Add(TitleLocation.BOTTOM, bottom);
             }
 
+            
             AddText add = new AddText(ShapeSelector.currentShape, titles);
             history.Push(add);
 

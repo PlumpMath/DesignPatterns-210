@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_add_rectangle" kind="class" language="C#" prot="public">
+    <compoundname>Homework::AddRectangle</compoundname>
+    <basecompoundref refid="interface_homework_1_1_command" prot="public" virt="non-virtual">Homework.Command</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_add_rectangle_1a8afea2338b2586ff0d6998b2318f1691" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddRectangle.X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="11" column="1" bodyfile="AddRectangle.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_rectangle_1a43e7e82b16fe1004e745e21f65e54db8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddRectangle.Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="12" column="1" bodyfile="AddRectangle.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_rectangle_1a385e65a3bbe8201a8ab0c858698b1005" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddRectangle.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="13" column="1" bodyfile="AddRectangle.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_rectangle_1aef0114f64be563a430e02fa30e8d9036" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Homework.AddRectangle.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="14" column="1" bodyfile="AddRectangle.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_rectangle_1a8a600e079298532173885a912c19c0c9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_homework_1_1_abstract_shape" kindref="compound">AbstractShape</ref></type>
+        <definition>AbstractShape Homework.AddRectangle.shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="15" column="1" bodyfile="AddRectangle.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_add_rectangle_1aab38fb2e9926c60c15223f163df28b32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.AddRectangle.AddRectangle</definition>
+        <argsstring>(Point coords, Size size)</argsstring>
+        <name>AddRectangle</name>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="17" column="1" bodyfile="AddRectangle.cs" bodystart="17" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_rectangle_1a9d7a99cac77a4eaa81c4b98e032da69f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.AddRectangle.AddRectangle</definition>
+        <argsstring>(int X, int Y, int Width, int Height)</argsstring>
+        <name>AddRectangle</name>
+        <param>
+          <type>int</type>
+          <declname>X</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="25" column="1" bodyfile="AddRectangle.cs" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_rectangle_1a152826c8c1042811bc21013fbdaf754b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddRectangle.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <reimplements refid="interface_homework_1_1_command_1a525feb3aaffd0e6cc93843c5e632cc8b">Execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="33" column="1" bodyfile="AddRectangle.cs" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_rectangle_1a5d686ac129e61b880e766d81b7295e69" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddRectangle.Undo</definition>
+        <argsstring>()</argsstring>
+        <name>Undo</name>
+        <reimplements refid="interface_homework_1_1_command_1aeba07682e678fd5b9a5158a3a65fc2f7">Undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddRectangle.cs" line="38" column="1" bodyfile="AddRectangle.cs" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>Homework.AddRectangle</label>
+        <link refid="class_homework_1_1_add_rectangle"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>Homework.AddRectangle</label>
+        <link refid="class_homework_1_1_add_rectangle"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+    </collaborationgraph>
+    <location file="AddRectangle.cs" line="9" column="1" bodyfile="AddRectangle.cs" bodystart="9" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_add_rectangle_1aab38fb2e9926c60c15223f163df28b32" prot="public" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>AddRectangle</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a9d7a99cac77a4eaa81c4b98e032da69f" prot="public" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>AddRectangle</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a152826c8c1042811bc21013fbdaf754b" prot="public" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>Execute</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1aef0114f64be563a430e02fa30e8d9036" prot="private" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a8a600e079298532173885a912c19c0c9" prot="private" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a5d686ac129e61b880e766d81b7295e69" prot="public" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>Undo</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a385e65a3bbe8201a8ab0c858698b1005" prot="private" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a8afea2338b2586ff0d6998b2318f1691" prot="private" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>X</name></member>
+      <member refid="class_homework_1_1_add_rectangle_1a43e7e82b16fe1004e745e21f65e54db8" prot="private" virt="non-virtual"><scope>Homework::AddRectangle</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

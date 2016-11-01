@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_i_o_visitor" kind="class" language="C#" prot="public">
+    <compoundname>Homework::IOVisitor</compoundname>
+    <basecompoundref refid="interface_homework_1_1_visitor" prot="public" virt="non-virtual">Homework.Visitor</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_i_o_visitor_1a3cfa5a8529a4c872f175582d0d698d41" prot="public" static="no" mutable="no">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; Homework.IOVisitor.tree</definition>
+        <argsstring></argsstring>
+        <name>tree</name>
+        <initializer>= new List&lt;string&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IOVisitor.cs" line="10" column="1" bodyfile="IOVisitor.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_i_o_visitor_1abfffad40f1c110ad2953816872a6159f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.IOVisitor.Visit</definition>
+        <argsstring>(AbstractShape s)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="interface_homework_1_1_visitor_1a94fead2dffb376c5a7accebd4db7073c">Visit</reimplements>
+        <param>
+          <type><ref refid="class_homework_1_1_abstract_shape" kindref="compound">AbstractShape</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IOVisitor.cs" line="12" column="1" bodyfile="IOVisitor.cs" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_i_o_visitor_1a28925f80c65047c9ea3033090d864679" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.IOVisitor.Visit</definition>
+        <argsstring>(CompositeShape cs)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="interface_homework_1_1_visitor_1a534cfe0604faad546a003fc25f4ccdda">Visit</reimplements>
+        <param>
+          <type><ref refid="class_homework_1_1_composite_shape" kindref="compound">CompositeShape</ref></type>
+          <declname>cs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IOVisitor.cs" line="17" column="1" bodyfile="IOVisitor.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_i_o_visitor_1a3d2f4a416729fc5bb1ed9d752541f25f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.IOVisitor.Visit</definition>
+        <argsstring>(ShapeWithTitle s)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="interface_homework_1_1_visitor_1ab30e0ce7ebebaa32e479c6cd506d5b62">Visit</reimplements>
+        <param>
+          <type><ref refid="class_homework_1_1_shape_with_title" kindref="compound">ShapeWithTitle</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IOVisitor.cs" line="22" column="1" bodyfile="IOVisitor.cs" bodystart="22" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_i_o_visitor_1a4c325c47dde9ffa12c52cd06b6f4f70b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.IOVisitor.Visit</definition>
+        <argsstring>(CompositShapeWithTitle s)</argsstring>
+        <name>Visit</name>
+        <reimplements refid="interface_homework_1_1_visitor_1afae3f9b041edf81884141ae50d5f075f">Visit</reimplements>
+        <param>
+          <type><ref refid="class_homework_1_1_composit_shape_with_title" kindref="compound">CompositShapeWithTitle</ref></type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="IOVisitor.cs" line="31" column="1" bodyfile="IOVisitor.cs" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>Homework.IOVisitor</label>
+        <link refid="class_homework_1_1_i_o_visitor"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>Visitor</label>
+        <link refid="interface_homework_1_1_visitor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>Homework.IOVisitor</label>
+        <link refid="class_homework_1_1_i_o_visitor"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>Visitor</label>
+        <link refid="interface_homework_1_1_visitor"/>
+      </node>
+    </collaborationgraph>
+    <location file="IOVisitor.cs" line="8" column="1" bodyfile="IOVisitor.cs" bodystart="8" bodyend="35"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_i_o_visitor_1a3cfa5a8529a4c872f175582d0d698d41" prot="public" virt="non-virtual"><scope>Homework::IOVisitor</scope><name>tree</name></member>
+      <member refid="class_homework_1_1_i_o_visitor_1abfffad40f1c110ad2953816872a6159f" prot="public" virt="non-virtual"><scope>Homework::IOVisitor</scope><name>Visit</name></member>
+      <member refid="class_homework_1_1_i_o_visitor_1a28925f80c65047c9ea3033090d864679" prot="public" virt="non-virtual"><scope>Homework::IOVisitor</scope><name>Visit</name></member>
+      <member refid="class_homework_1_1_i_o_visitor_1a3d2f4a416729fc5bb1ed9d752541f25f" prot="public" virt="non-virtual"><scope>Homework::IOVisitor</scope><name>Visit</name></member>
+      <member refid="class_homework_1_1_i_o_visitor_1a4c325c47dde9ffa12c52cd06b6f4f70b" prot="public" virt="non-virtual"><scope>Homework::IOVisitor</scope><name>Visit</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

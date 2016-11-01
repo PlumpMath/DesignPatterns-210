@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_program" kind="class" language="C#" prot="public">
+    <compoundname>Homework::Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_homework_1_1_program_1aa9d21fc209d52cce363aeacd43f2840f" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Homework.Program.Main</definition>
+        <argsstring>()</argsstring>
+        <name>Main</name>
+        <briefdescription>
+<para>The main entry point for the application. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Program.cs" line="13" column="1" bodyfile="Program.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Program.cs" line="8" column="1" bodyfile="Program.cs" bodystart="8" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_program_1aa9d21fc209d52cce363aeacd43f2840f" prot="private" virt="non-virtual"><scope>Homework::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

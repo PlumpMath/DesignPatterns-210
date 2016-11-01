@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_decorator" kind="class" language="C#" prot="public">
+    <compoundname>Homework::Decorator</compoundname>
+    <basecompoundref refid="class_homework_1_1_shape" prot="public" virt="non-virtual">Homework.Shape</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_decorator_1af4c0f4c699c6c544d389be96bc78b776" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+        <definition>Shape Homework.Decorator.shapeObj</definition>
+        <argsstring></argsstring>
+        <name>shapeObj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="11" column="1" bodyfile="Decorator.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a5f5a185c8672519ebeab4ec07217988a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.Decorator.Decorator</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>Decorator</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="13" column="1" bodyfile="Decorator.cs" bodystart="13" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a35a589f1dbfb86a270cf570cf972ebca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.Decorator.Draw</definition>
+        <argsstring>(Graphics g)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="24" column="1" bodyfile="Decorator.cs" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a0fef4f333ef8d071c1a3e1531a40fbe3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.Decorator.Draw</definition>
+        <argsstring>(Graphics g, Point coords, Size size, bool selected=false)</argsstring>
+        <name>Draw</name>
+        <reimplements refid="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a">Draw</reimplements>
+        <param>
+          <type>Graphics</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="28" column="1" bodyfile="Decorator.cs" bodystart="28" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a695dbd76c27fc208d5dd705a9742a93e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override bool</type>
+        <definition>override bool Homework.Decorator.IsInBounds</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>IsInBounds</name>
+        <reimplements refid="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88">IsInBounds</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="32" column="1" bodyfile="Decorator.cs" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a02ffdd93260ddf0af92d15022f4e8752" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.Decorator.Move</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>Move</name>
+        <reimplements refid="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0">Move</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="36" column="1" bodyfile="Decorator.cs" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a9b497f2a9725f50e4d3c49e49ab2cd58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.Decorator.MoveRelative</definition>
+        <argsstring>(Point coords)</argsstring>
+        <name>MoveRelative</name>
+        <reimplements refid="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b">MoveRelative</reimplements>
+        <param>
+          <type>Point</type>
+          <declname>coords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="40" column="1" bodyfile="Decorator.cs" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_decorator_1a51c68c1174b7cf2bda583fd7759c43c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.Decorator.Resize</definition>
+        <argsstring>(Size size)</argsstring>
+        <name>Resize</name>
+        <reimplements refid="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343">Resize</reimplements>
+        <param>
+          <type>Size</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Decorator.cs" line="44" column="1" bodyfile="Decorator.cs" bodystart="44" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+      <node id="29">
+        <label>Homework.Decorator</label>
+        <link refid="class_homework_1_1_decorator"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="33">
+        <label>Homework.Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+      <node id="32">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+      <node id="31">
+        <label>Homework.Decorator</label>
+        <link refid="class_homework_1_1_decorator"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>shapeObj</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Decorator.cs" line="9" column="1" bodyfile="Decorator.cs" bodystart="9" bodyend="47"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_shape_1ae2b2446361f66180410475707c0a3204" prot="public" virt="pure-virtual"><scope>Homework::Decorator</scope><name>Accept</name></member>
+      <member refid="class_homework_1_1_decorator_1a5f5a185c8672519ebeab4ec07217988a" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Decorator</name></member>
+      <member refid="class_homework_1_1_decorator_1a35a589f1dbfb86a270cf570cf972ebca" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_decorator_1a0fef4f333ef8d071c1a3e1531a40fbe3" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>Draw</name></member>
+      <member refid="class_homework_1_1_shape_1ac7a94895e82fff1ce6d6bf6d8ef0cda6" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Height</name></member>
+      <member refid="class_homework_1_1_shape_1ada73e29583ac3b58ffbd1996ac6209fa" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>ID</name></member>
+      <member refid="class_homework_1_1_decorator_1a695dbd76c27fc208d5dd705a9742a93e" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>IsInBounds</name></member>
+      <member refid="class_homework_1_1_shape_1a1c89048778ba1ce5f855391b5bbea784" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>MaxID</name></member>
+      <member refid="class_homework_1_1_decorator_1a02ffdd93260ddf0af92d15022f4e8752" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>Move</name></member>
+      <member refid="class_homework_1_1_decorator_1a9b497f2a9725f50e4d3c49e49ab2cd58" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>MoveRelative</name></member>
+      <member refid="class_homework_1_1_decorator_1a51c68c1174b7cf2bda583fd7759c43c8" prot="public" virt="virtual"><scope>Homework::Decorator</scope><name>Resize</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Shape</name></member>
+      <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_decorator_1af4c0f4c699c6c544d389be96bc78b776" prot="protected" virt="non-virtual"><scope>Homework::Decorator</scope><name>shapeObj</name></member>
+      <member refid="class_homework_1_1_shape_1ab6b0da0ec84880e68c910b6991f480b0" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Width</name></member>
+      <member refid="class_homework_1_1_shape_1a7ef7151cfd078491b08e3c0e6d4a85e2" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>X</name></member>
+      <member refid="class_homework_1_1_shape_1af0a4da6aeda3507851b25ef96fb6564d" prot="public" virt="non-virtual"><scope>Homework::Decorator</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

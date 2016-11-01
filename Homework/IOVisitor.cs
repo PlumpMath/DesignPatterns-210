@@ -28,5 +28,9 @@ namespace Homework {
             tree.Add(result.TrimEnd());
         }
 
+        public void Visit(CompositShapeWithTitle s) {
+
+        }
+
     }
 }

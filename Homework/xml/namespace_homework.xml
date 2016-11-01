@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespace_homework" kind="namespace" language="C#">
+    <compoundname>Homework</compoundname>
+    <innerclass refid="class_homework_1_1_abstract_shape" prot="public">Homework::AbstractShape</innerclass>
+    <innerclass refid="class_homework_1_1_add_ellipse" prot="public">Homework::AddEllipse</innerclass>
+    <innerclass refid="class_homework_1_1_add_rectangle" prot="public">Homework::AddRectangle</innerclass>
+    <innerclass refid="class_homework_1_1_add_text" prot="public">Homework::AddText</innerclass>
+    <innerclass refid="interface_homework_1_1_command" prot="public">Homework::Command</innerclass>
+    <innerclass refid="class_homework_1_1_composite_shape" prot="public">Homework::CompositeShape</innerclass>
+    <innerclass refid="class_homework_1_1_composit_shape_with_title" prot="public">Homework::CompositShapeWithTitle</innerclass>
+    <innerclass refid="class_homework_1_1_decorator" prot="public">Homework::Decorator</innerclass>
+    <innerclass refid="class_homework_1_1_editor" prot="public">Homework::Editor</innerclass>
+    <innerclass refid="class_homework_1_1_ellipse" prot="public">Homework::Ellipse</innerclass>
+    <innerclass refid="class_homework_1_1_i_o_visitor" prot="public">Homework::IOVisitor</innerclass>
+    <innerclass refid="class_homework_1_1_move_visitor" prot="public">Homework::MoveVisitor</innerclass>
+    <innerclass refid="class_homework_1_1_program" prot="public">Homework::Program</innerclass>
+    <innerclass refid="class_homework_1_1_rectangle" prot="public">Homework::Rectangle</innerclass>
+    <innerclass refid="class_homework_1_1_shape" prot="public">Homework::Shape</innerclass>
+    <innerclass refid="class_homework_1_1_shape_i_o" prot="public">Homework::ShapeIO</innerclass>
+    <innerclass refid="class_homework_1_1_shape_selector" prot="public">Homework::ShapeSelector</innerclass>
+    <innerclass refid="class_homework_1_1_shape_with_title" prot="public">Homework::ShapeWithTitle</innerclass>
+    <innerclass refid="interface_homework_1_1_strategy" prot="public">Homework::Strategy</innerclass>
+    <innerclass refid="interface_homework_1_1_visitor" prot="public">Homework::Visitor</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529" prot="public" static="no">
+        <name>ShapeType</name>
+        <enumvalue id="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529ace9291906a4c3b042650b70d7f3b152e" prot="public">
+          <name>Rectangle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529a119518c2134c46108179369f0ce81fa2" prot="public">
+          <name>Ellipse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529a03937134cedab9078be39a77ee3a48a0" prot="public">
+          <name>Group</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="13" column="1" bodyfile="Editor.cs" bodystart="13" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411" prot="public" static="no">
+        <name>ActionType</name>
+        <enumvalue id="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411a6bc362dbf494c61ea117fe3c71ca48a5" prot="public">
+          <name>Move</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411ae0626222614bdee31951d84c64e5e9ff" prot="public">
+          <name>Select</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411a2d03c2d5a7ec65ef4619e0582c272ec2" prot="public">
+          <name>Draw</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="19" column="1" bodyfile="Editor.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_homework_1a69372a08804283df76865465f45e81fb" prot="public" static="no">
+        <name>TitleLocation</name>
+        <enumvalue id="namespace_homework_1a69372a08804283df76865465f45e81fba6705777b712ee811e76fb07162081d63" prot="public">
+          <name>TOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_homework_1a69372a08804283df76865465f45e81fba1fabf63de5c96c78e2a40805bcdeb73b" prot="public">
+          <name>BOTTOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="10" column="1" bodyfile="ShapeWithTitle.cs" bodystart="10" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="AbstractShape.cs" line="8" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,798 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_editor" kind="class" language="C#" prot="public">
+    <compoundname>Homework::Editor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a5aa87fa7a324482d89b53d677fb693c8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Homework.Editor.mouseDown</definition>
+        <argsstring></argsstring>
+        <name>mouseDown</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="39" column="1" bodyfile="Editor.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1ac3676aff41bb3f5a8e8fcb7089572a0f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411" kindref="member">ActionType</ref></type>
+        <definition>ActionType Homework.Editor.currentAction</definition>
+        <argsstring></argsstring>
+        <name>currentAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="40" column="1" bodyfile="Editor.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a9b4a805b93c66cbd292746a731925e94" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529" kindref="member">ShapeType</ref></type>
+        <definition>ShapeType Homework.Editor.currentShape</definition>
+        <argsstring></argsstring>
+        <name>currentShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="41" column="1" bodyfile="Editor.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a1fe347115bfa168bf39129512ec665d7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_homework_1_1_shape_i_o" kindref="compound">ShapeIO</ref></type>
+        <definition>ShapeIO Homework.Editor.io</definition>
+        <argsstring></argsstring>
+        <name>io</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="42" column="1" bodyfile="Editor.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1aec020d9677db43fe0cad31568fba955f" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Homework.Editor.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="6" column="1" bodyfile="Editor.Designer.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a19c2f0cd9814a1043550db9045b48aca" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.PictureBox</type>
+        <definition>System.Windows.Forms.PictureBox Homework.Editor.screenBox</definition>
+        <argsstring></argsstring>
+        <name>screenBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="269" column="1" bodyfile="Editor.Designer.cs" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1aba5376f7ba6f0d78bec933f909eea4e3" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ListBox</type>
+        <definition>System.Windows.Forms.ListBox Homework.Editor.shapePicker</definition>
+        <argsstring></argsstring>
+        <name>shapePicker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="270" column="1" bodyfile="Editor.Designer.cs" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a1ab2bed3b6ef3b83c796cf36d758be40" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ListBox</type>
+        <definition>System.Windows.Forms.ListBox Homework.Editor.actionPicker</definition>
+        <argsstring></argsstring>
+        <name>actionPicker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="271" column="1" bodyfile="Editor.Designer.cs" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a563355e14aa4a46a9553695b740a1ef3" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Homework.Editor.heightLabel</definition>
+        <argsstring></argsstring>
+        <name>heightLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="272" column="1" bodyfile="Editor.Designer.cs" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a593a4ac62a0dae2e960df9542bd09ec2" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.NumericUpDown</type>
+        <definition>System.Windows.Forms.NumericUpDown Homework.Editor.heightUpDown</definition>
+        <argsstring></argsstring>
+        <name>heightUpDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="273" column="1" bodyfile="Editor.Designer.cs" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a2b6fcd15029254177dfcb72565bf34b7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.NumericUpDown</type>
+        <definition>System.Windows.Forms.NumericUpDown Homework.Editor.widthUpDown</definition>
+        <argsstring></argsstring>
+        <name>widthUpDown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="274" column="1" bodyfile="Editor.Designer.cs" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a2cd508b653d14eb7c5009c0c379cf8ea" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Homework.Editor.widthLabel</definition>
+        <argsstring></argsstring>
+        <name>widthLabel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="275" column="1" bodyfile="Editor.Designer.cs" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1afbafe3f66906c8743d3601a0054f3349" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Homework.Editor.undoButton</definition>
+        <argsstring></argsstring>
+        <name>undoButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="276" column="1" bodyfile="Editor.Designer.cs" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a7d08b158962b8f5dfc3e733ac24fc0b0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Homework.Editor.redoButton</definition>
+        <argsstring></argsstring>
+        <name>redoButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="277" column="1" bodyfile="Editor.Designer.cs" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1ad68f160c664a7e550944c5632492d83e" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Homework.Editor.saveButton</definition>
+        <argsstring></argsstring>
+        <name>saveButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="278" column="1" bodyfile="Editor.Designer.cs" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a30f8e2590cd118e958975152e4896650" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ListView</type>
+        <definition>System.Windows.Forms.ListView Homework.Editor.shapeBox</definition>
+        <argsstring></argsstring>
+        <name>shapeBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="279" column="1" bodyfile="Editor.Designer.cs" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1ab7a69c683068d45f1e74a610bbb9fbf0" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Homework.Editor.groupButton</definition>
+        <argsstring></argsstring>
+        <name>groupButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="280" column="1" bodyfile="Editor.Designer.cs" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a9e6f9143e9aa90a0205df25a968958f8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox Homework.Editor.textTop</definition>
+        <argsstring></argsstring>
+        <name>textTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="281" column="1" bodyfile="Editor.Designer.cs" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1ac55fa265191009fe91ff44edad3521f8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox Homework.Editor.textBottom</definition>
+        <argsstring></argsstring>
+        <name>textBottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="282" column="1" bodyfile="Editor.Designer.cs" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a31bcbd3018135ef57e595161650824c7" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Homework.Editor.labelTop</definition>
+        <argsstring></argsstring>
+        <name>labelTop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="283" column="1" bodyfile="Editor.Designer.cs" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a7aef9969f3138894bf0a41cd5bd84f7a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Homework.Editor.labelBottom</definition>
+        <argsstring></argsstring>
+        <name>labelBottom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="284" column="1" bodyfile="Editor.Designer.cs" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a28d209849216cc1a84abe59e639218fd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Homework.Editor.applyButton</definition>
+        <argsstring></argsstring>
+        <name>applyButton</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="285" column="1" bodyfile="Editor.Designer.cs" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a1029c68cb6c4975d555682924df59c5e" prot="public" static="yes" mutable="no">
+        <type>PictureBox</type>
+        <definition>PictureBox Homework.Editor.screen</definition>
+        <argsstring></argsstring>
+        <name>screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="43" column="1" bodyfile="Editor.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1aa07707a830cc5c78b735b17f52987c50" prot="public" static="yes" mutable="no">
+        <type>Stack&lt; <ref refid="interface_homework_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>Stack&lt;Command&gt; Homework.Editor.history</definition>
+        <argsstring></argsstring>
+        <name>history</name>
+        <initializer>= new Stack&lt;<ref refid="interface_homework_1_1_command" kindref="compound">Command</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="44" column="1" bodyfile="Editor.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1a3eeed90cd8ba4e9e971b120ea8933364" prot="public" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+        <definition>List&lt;Shape&gt; Homework.Editor.shapes</definition>
+        <argsstring></argsstring>
+        <name>shapes</name>
+        <initializer>= new List&lt;<ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="45" column="1" bodyfile="Editor.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_editor_1af7e645b021ae5e7b7305771672b54891" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.Editor.Editor</definition>
+        <argsstring>()</argsstring>
+        <name>Editor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="48" column="1" bodyfile="Editor.cs" bodystart="48" bodyend="54"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_homework_1_1_editor_1aaab75f3ea3852e65ecef82ff213c3171" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.ScreenBox_MouseDown</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>ScreenBox_MouseDown</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="56" column="1" bodyfile="Editor.cs" bodystart="56" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a0a04fee22ff5bdbb1f9fe1dd1e926719" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.ScreenBox_MouseMove</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>ScreenBox_MouseMove</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="68" column="1" bodyfile="Editor.cs" bodystart="68" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a93878eaf12f30950d58a9c7b1f251f83" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.ScreenBox_MouseUp</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>ScreenBox_MouseUp</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="88" column="1" bodyfile="Editor.cs" bodystart="88" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a34a119dcfac90678deed8db26b940d69" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.screenBox_Paint</definition>
+        <argsstring>(object sender, PaintEventArgs e)</argsstring>
+        <name>screenBox_Paint</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>PaintEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="100" column="1" bodyfile="Editor.cs" bodystart="100" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1af35793b794f5255a7132be0d32ff85f0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.AddGroup</definition>
+        <argsstring>(Shape shape)</argsstring>
+        <name>AddGroup</name>
+        <param>
+          <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="117" column="1" bodyfile="Editor.cs" bodystart="117" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a7c85f43d03fb5a3aa3d401df9af4fac3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.Editor_Paint</definition>
+        <argsstring>(object sender, PaintEventArgs e)</argsstring>
+        <name>Editor_Paint</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>PaintEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="132" column="1" bodyfile="Editor.cs" bodystart="132" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1aff6ec21ef2692737d18ff1a019f25543" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.actionPicker_SelectedIndexChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>actionPicker_SelectedIndexChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="135" column="1" bodyfile="Editor.cs" bodystart="135" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1abe9d3370dcfb41cd13463f0c067e8444" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.screenBox_MouseClick</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>screenBox_MouseClick</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="145" column="1" bodyfile="Editor.cs" bodystart="145" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1ae3d500a4b43b0d536e76b9a94093de4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.widthUpDown_ValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>widthUpDown_ValueChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="165" column="1" bodyfile="Editor.cs" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a20fb4651a436343514336d708cc31589" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.heightUpDown_ValueChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>heightUpDown_ValueChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="171" column="1" bodyfile="Editor.cs" bodystart="171" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a1096f0d7c96be3c2a1d8818f9118529e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.undoButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>undoButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="177" column="1" bodyfile="Editor.cs" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1ad3ccc0a8fc2bdac4b6ead8535320943c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.saveButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>saveButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="183" column="1" bodyfile="Editor.cs" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1ae54a9fee8b7335f2e3c02e334bacded0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.groupButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>groupButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="187" column="1" bodyfile="Editor.cs" bodystart="187" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a4a973ade57a3484c0b958809157264e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
+        <definition>Shape Homework.Editor.GetShape</definition>
+        <argsstring>(int ID)</argsstring>
+        <name>GetShape</name>
+        <param>
+          <type>int</type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="210" column="1" bodyfile="Editor.cs" bodystart="210" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a311e1d6856e7f745071d8b426dfa2949" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.applyButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>applyButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="217" column="1" bodyfile="Editor.cs" bodystart="217" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a83057291e7c7298c2140578ba60d27e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.shapePicker_SelectedIndexChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>shapePicker_SelectedIndexChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="240" column="1" bodyfile="Editor.cs" bodystart="240" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1a49f4bde07afef6f6b480f2e1a0f2c0ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="25" column="1" bodyfile="Editor.Designer.cs" bodystart="25" bodyend="265"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_homework_1_1_editor_1a517c3ef383bf47d72b507943cf22d2ae" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Homework.Editor.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.Designer.cs" line="12" column="1" bodyfile="Editor.Designer.cs" bodystart="12" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>Form</label>
+      </node>
+      <node id="34">
+        <label>Homework.Editor</label>
+        <link refid="class_homework_1_1_editor"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="37">
+        <label>Form</label>
+      </node>
+      <node id="36">
+        <label>Homework.Editor</label>
+        <link refid="class_homework_1_1_editor"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Editor.cs" line="37" column="1" bodyfile="Editor.cs" bodystart="37" bodyend="247"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_editor_1a1ab2bed3b6ef3b83c796cf36d758be40" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>actionPicker</name></member>
+      <member refid="class_homework_1_1_editor_1aff6ec21ef2692737d18ff1a019f25543" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>actionPicker_SelectedIndexChanged</name></member>
+      <member refid="class_homework_1_1_editor_1af35793b794f5255a7132be0d32ff85f0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>AddGroup</name></member>
+      <member refid="class_homework_1_1_editor_1a28d209849216cc1a84abe59e639218fd" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>applyButton</name></member>
+      <member refid="class_homework_1_1_editor_1a311e1d6856e7f745071d8b426dfa2949" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>applyButton_Click</name></member>
+      <member refid="class_homework_1_1_editor_1aec020d9677db43fe0cad31568fba955f" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>components</name></member>
+      <member refid="class_homework_1_1_editor_1ac3676aff41bb3f5a8e8fcb7089572a0f" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>currentAction</name></member>
+      <member refid="class_homework_1_1_editor_1a9b4a805b93c66cbd292746a731925e94" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>currentShape</name></member>
+      <member refid="class_homework_1_1_editor_1a517c3ef383bf47d72b507943cf22d2ae" prot="protected" virt="non-virtual"><scope>Homework::Editor</scope><name>Dispose</name></member>
+      <member refid="class_homework_1_1_editor_1af7e645b021ae5e7b7305771672b54891" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>Editor</name></member>
+      <member refid="class_homework_1_1_editor_1a7c85f43d03fb5a3aa3d401df9af4fac3" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>Editor_Paint</name></member>
+      <member refid="class_homework_1_1_editor_1a4a973ade57a3484c0b958809157264e4" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>GetShape</name></member>
+      <member refid="class_homework_1_1_editor_1ab7a69c683068d45f1e74a610bbb9fbf0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>groupButton</name></member>
+      <member refid="class_homework_1_1_editor_1ae54a9fee8b7335f2e3c02e334bacded0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>groupButton_Click</name></member>
+      <member refid="class_homework_1_1_editor_1a563355e14aa4a46a9553695b740a1ef3" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>heightLabel</name></member>
+      <member refid="class_homework_1_1_editor_1a593a4ac62a0dae2e960df9542bd09ec2" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>heightUpDown</name></member>
+      <member refid="class_homework_1_1_editor_1a20fb4651a436343514336d708cc31589" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>heightUpDown_ValueChanged</name></member>
+      <member refid="class_homework_1_1_editor_1aa07707a830cc5c78b735b17f52987c50" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>history</name></member>
+      <member refid="class_homework_1_1_editor_1a49f4bde07afef6f6b480f2e1a0f2c0ae" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>InitializeComponent</name></member>
+      <member refid="class_homework_1_1_editor_1a1fe347115bfa168bf39129512ec665d7" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>io</name></member>
+      <member refid="class_homework_1_1_editor_1a7aef9969f3138894bf0a41cd5bd84f7a" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>labelBottom</name></member>
+      <member refid="class_homework_1_1_editor_1a31bcbd3018135ef57e595161650824c7" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>labelTop</name></member>
+      <member refid="class_homework_1_1_editor_1a5aa87fa7a324482d89b53d677fb693c8" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>mouseDown</name></member>
+      <member refid="class_homework_1_1_editor_1a7d08b158962b8f5dfc3e733ac24fc0b0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>redoButton</name></member>
+      <member refid="class_homework_1_1_editor_1ad68f160c664a7e550944c5632492d83e" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>saveButton</name></member>
+      <member refid="class_homework_1_1_editor_1ad3ccc0a8fc2bdac4b6ead8535320943c" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>saveButton_Click</name></member>
+      <member refid="class_homework_1_1_editor_1a1029c68cb6c4975d555682924df59c5e" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>screen</name></member>
+      <member refid="class_homework_1_1_editor_1a19c2f0cd9814a1043550db9045b48aca" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>screenBox</name></member>
+      <member refid="class_homework_1_1_editor_1abe9d3370dcfb41cd13463f0c067e8444" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>screenBox_MouseClick</name></member>
+      <member refid="class_homework_1_1_editor_1aaab75f3ea3852e65ecef82ff213c3171" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>ScreenBox_MouseDown</name></member>
+      <member refid="class_homework_1_1_editor_1a0a04fee22ff5bdbb1f9fe1dd1e926719" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>ScreenBox_MouseMove</name></member>
+      <member refid="class_homework_1_1_editor_1a93878eaf12f30950d58a9c7b1f251f83" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>ScreenBox_MouseUp</name></member>
+      <member refid="class_homework_1_1_editor_1a34a119dcfac90678deed8db26b940d69" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>screenBox_Paint</name></member>
+      <member refid="class_homework_1_1_editor_1a30f8e2590cd118e958975152e4896650" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>shapeBox</name></member>
+      <member refid="class_homework_1_1_editor_1aba5376f7ba6f0d78bec933f909eea4e3" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>shapePicker</name></member>
+      <member refid="class_homework_1_1_editor_1a83057291e7c7298c2140578ba60d27e1" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>shapePicker_SelectedIndexChanged</name></member>
+      <member refid="class_homework_1_1_editor_1a3eeed90cd8ba4e9e971b120ea8933364" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>shapes</name></member>
+      <member refid="class_homework_1_1_editor_1ac55fa265191009fe91ff44edad3521f8" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>textBottom</name></member>
+      <member refid="class_homework_1_1_editor_1a9e6f9143e9aa90a0205df25a968958f8" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>textTop</name></member>
+      <member refid="class_homework_1_1_editor_1afbafe3f66906c8743d3601a0054f3349" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>undoButton</name></member>
+      <member refid="class_homework_1_1_editor_1a1096f0d7c96be3c2a1d8818f9118529e" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>undoButton_Click</name></member>
+      <member refid="class_homework_1_1_editor_1a2cd508b653d14eb7c5009c0c379cf8ea" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>widthLabel</name></member>
+      <member refid="class_homework_1_1_editor_1a2b6fcd15029254177dfcb72565bf34b7" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>widthUpDown</name></member>
+      <member refid="class_homework_1_1_editor_1ae3d500a4b43b0d536e76b9a94093de4b" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>widthUpDown_ValueChanged</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
