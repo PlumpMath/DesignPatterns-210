@@ -49,6 +49,7 @@ namespace Homework {
 
         public override void Accept(Visitor v) {
             v.Visit(this);
+            tempShape.Accept(v);
         }
 
         public override void Draw(Graphics g) {
@@ -66,17 +67,20 @@ namespace Homework {
         }
 
         public override void Move(Point coords) {
-            Console.WriteLine("movingg");
             tempShape.Move(coords);
         }
 
         public override void MoveRelative(Point coords) {
-            Console.WriteLine("moving");
             tempShape.MoveRelative(coords);
         }
 
         public override void Resize(Size size) {
             tempShape.Resize(size);
         }
+
+        public override void SetSelected(bool selected) {
+            tempShape.SetSelected(selected);
+        }
+
     }
 }

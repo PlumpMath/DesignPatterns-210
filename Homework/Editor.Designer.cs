@@ -158,6 +158,7 @@
             this.redoButton.TabIndex = 10;
             this.redoButton.Text = "Redo";
             this.redoButton.UseVisualStyleBackColor = true;
+            this.redoButton.Click += new System.EventHandler(this.redoButton_Click);
             // 
             // saveButton
             // 

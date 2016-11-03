@@ -8,28 +8,33 @@ namespace Homework {
     class IOVisitor : Visitor {
 
         public List<string> tree = new List<string>();
+        int depth = 0;
+        int idx;
+        int maxidx;
 
         public void Visit(AbstractShape s) {
-            string type = s.GetType().ToString().Substring(9);
-            tree.Add(type + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height);
+            tree.Add(new String('\t', depth) + depth + " " + s.shape + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height);
+            idx++;
+            if(idx == maxidx) {
+                idx = 0;
+                depth--;
+            }
         }
 
         public void Visit(CompositeShape cs) {
-            string type = cs.GetType().ToString().Substring(9);
-            tree.Add(type + " " + cs.shapes.Count());
+            tree.Add(new String('\t', depth) + depth + " " + "group " + cs.shapes.Count());
+            maxidx = cs.shapes.Count();
+            
+            depth++;
+
+
         }
 
         public void Visit(ShapeWithTitle s) {
-            string type = s.GetType().ToString().Substring(9);
-            string result = type + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height + " ";
+            string result = new String('\t', depth) + depth + " " + "ornament ";
             foreach(TitleLocation loc in s.titles.Keys) {
-                result += loc + " " + s.titles[loc] + " ";
+                tree.Add(result + loc + " " + s.titles[loc]);
             }
-            tree.Add(result.TrimEnd());
-        }
-
-        public void Visit(CompositShapeWithTitle s) {
-
         }
 
     }

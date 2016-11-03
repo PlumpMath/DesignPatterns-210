@@ -14,11 +14,12 @@ namespace Homework {
         public static int MaxID;
         public int ID { private set; get; }
         public ShapeType shape { protected set; get; }
-        public bool Selected = false;
+        protected bool Selected = false;
 
         public abstract void Draw(Graphics g, Point coords, Size size, bool selected = false);
         public abstract void Draw(Graphics g);
         public abstract bool IsInBounds(Point coords);
+        public abstract void SetSelected(bool selected);
         public abstract void Move(Point coords);
         public abstract void MoveRelative(Point coords);
         public abstract void Resize(Size size);

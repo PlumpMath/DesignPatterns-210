@@ -17,7 +17,6 @@ namespace Homework {
                     if(sh.X + sh.Width > maxX) maxX = sh.X + sh.Width;
                     if(sh.X < minX) minX = sh.X;
                 }
-                Console.WriteLine("Width: " + (maxX - minX));
                 return maxX - minX;
             }
         }
@@ -82,6 +81,13 @@ namespace Homework {
             shapes.AddRange(selected);
         }
 
+        public override void SetSelected(bool selected) {
+            this.Selected = selected;
+            foreach(Shape sh in shapes) {
+                sh.SetSelected(selected);
+            }
+        }
+
         public override bool IsInBounds(Point coords) {
             bool found = false;
             foreach(Shape s in shapes) {
@@ -89,9 +95,6 @@ namespace Homework {
                     found = true;
                     break;
                 }
-            }
-            foreach(Shape s in shapes) {
-                s.Selected = found;
             }
             return found;
         }

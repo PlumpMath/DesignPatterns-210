@@ -19,6 +19,10 @@ namespace Homework {
             this.Y = coords.Y;
             this.Width = size.Width;
             this.Height = size.Height;
+            shape = new AbstractShape(X, Y, Width, Height, Color.Red, ShapeType.Rectangle, Rectangle.Instance);
+            Editor.history.Push(this);
+            Editor.future.Clear();
+            Console.WriteLine("History count: " + Editor.history.Count);
             Execute();
         }
 
@@ -27,11 +31,14 @@ namespace Homework {
             this.Y = Y;
             this.Width = Width;
             this.Height = Height;
+            shape = new AbstractShape(X, Y, Width, Height, Color.Red, ShapeType.Rectangle, Rectangle.Instance);
+            Editor.history.Push(this);
+            Editor.future.Clear();
+            Console.WriteLine("History count: " + Editor.history.Count);
             Execute();
         }
 
         public void Execute() {
-            shape = new AbstractShape(X, Y, Width, Height, Color.Red, ShapeType.Rectangle, Rectangle.Instance);
             Editor.shapes.Add(shape);
         }
 

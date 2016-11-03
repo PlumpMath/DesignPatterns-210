@@ -34,7 +34,6 @@ namespace Homework {
             List<string> lines = new List<string>();
 
             foreach(Shape shape in shapes) {
-                Console.WriteLine(shape.GetType());
                 IOVisitor visitor = new IOVisitor();
                 shape.Accept(visitor);
                 lines.AddRange(visitor.tree);

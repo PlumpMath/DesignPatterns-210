@@ -31,7 +31,6 @@ namespace Homework {
         void Visit(CompositeShape s);
         void Visit(AbstractShape s);
         void Visit(ShapeWithTitle s);
-        void Visit(CompositShapeWithTitle s);
     }
 
     public partial class Editor : Form {
@@ -42,6 +41,7 @@ namespace Homework {
         private ShapeIO io;
         public static PictureBox screen;
         public static Stack<Command> history = new Stack<Command>();
+        public static Stack<Command> future = new Stack<Command>();
         public static List<Shape> shapes = new List<Shape>();
 
 
@@ -151,9 +151,11 @@ namespace Homework {
                         //Size actualSize = ShapeSelector.GetActualSize();
                         //widthUpDown.Value = actualSize.Width;
                         //heightUpDown.Value = actualSize.Height;
-                        shape.Selected = true;
+                        SelectVisitor svisitor = new SelectVisitor(true);
+                        shape.Accept(svisitor);
                     } else {
-                        shape.Selected = false;
+                        SelectVisitor svisitor = new SelectVisitor(false);
+                        shape.Accept(svisitor);
                     }
                 }
                 screenBox.Invalidate();
@@ -175,8 +177,15 @@ namespace Homework {
         }
 
         private void undoButton_Click(object sender, EventArgs e) {
+            Console.WriteLine("History count: " + history.Count);
+            Console.WriteLine(shapes.Count);
+            if(history.Count == 0) {
+                System.Windows.Forms.MessageBox.Show("Nothing more to undo!");
+                return;
+            }
             Command cmd = history.Pop();
             cmd.Undo();
+            future.Push(cmd);
             Editor.screen.Invalidate();
         }
 
@@ -189,19 +198,16 @@ namespace Homework {
             foreach(ListViewItem txt in shapeBox.SelectedItems) {
                 if(txt.Group != null) {
                     int id = int.Parse(txt.Group.ToString().Split('_')[1]);
-                    selected.Add(GetShape(id));
+                    Shape sh = GetShape(id);
+                    if(!selected.Contains(sh)) selected.Add(sh);
                 } else {
                     int id = int.Parse(txt.Text.Split('_')[1]);
                     selected.Add(GetShape(id));
                 }
 
             }
-            CompositeShape comp = new CompositeShape();
-            foreach(Shape s in selected) {
-                shapes.Remove(s);
-            }
-            comp.AddRange(selected);
-            shapes.Add(comp);
+
+            AddGroup add = new AddGroup(selected);
 
             screenBox.Invalidate();
 
@@ -221,17 +227,16 @@ namespace Homework {
             string bottom = textBottom.Text;
             Dictionary<TitleLocation, string> titles = new Dictionary<TitleLocation, string>();
             
-            if(top != null) {
+            if(!string.IsNullOrWhiteSpace(top)) {
                 titles.Add(TitleLocation.TOP, top);
             }
 
-            if(bottom != null) {
+            if(!string.IsNullOrWhiteSpace(bottom)) {
                 titles.Add(TitleLocation.BOTTOM, bottom);
             }
 
             
             AddText add = new AddText(ShapeSelector.currentShape, titles);
-            history.Push(add);
 
             screenBox.Invalidate();
 
@@ -243,6 +248,18 @@ namespace Homework {
             } else if(shapePicker.SelectedIndex == 1) {
                 currentShape = ShapeType.Ellipse;
             } 
+        }
+
+        private void redoButton_Click(object sender, EventArgs e) {
+            Console.WriteLine("History count: " + history.Count);
+            if(future.Count == 0) {
+                System.Windows.Forms.MessageBox.Show("Nothing more to redo!");
+                return;
+            }
+            Command cmd = future.Pop();
+            cmd.Execute();
+            history.Push(cmd);
+            Editor.screen.Invalidate();
         }
     }
 }

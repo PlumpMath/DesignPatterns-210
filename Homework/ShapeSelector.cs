@@ -38,11 +38,9 @@ namespace Homework {
             if(!Started) return;
             currentCoords = coords;
             if(shapeType == ShapeType.Rectangle) {
-                Editor.history.Push(new AddRectangle(GetActualCoords(), GetActualSize()));
-
+                new AddRectangle(GetActualCoords(), GetActualSize());
             } else if(shapeType == ShapeType.Ellipse) {
-                Editor.history.Push(new AddEllipse(GetActualCoords(), GetActualSize()));
-
+                new AddEllipse(GetActualCoords(), GetActualSize());
             }
             Started = false;
             Editor.screen.Invalidate();

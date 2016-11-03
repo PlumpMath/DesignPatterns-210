@@ -50,15 +50,15 @@ namespace Homework {
         }
         
         public override void Draw(Graphics g) {
-            Draw(g, X, Y, Width, Height, Selected);
+            Draw(g, X, Y, Width, Height, this.Selected);
         }
 
         public override void Draw(Graphics g, Point location, Size size, bool Selected = false) {
-            Draw(g, location.X, location.Y, size.Width, size.Height, Selected);
+            Draw(g, location.X, location.Y, size.Width, size.Height, this.Selected);
         }
     
         public void Draw(Graphics g, int X, int Y, int Width, int Height, bool Selected = false) {
-            strategy.Draw(g, X, Y, Width, Height, Selected);
+            strategy.Draw(g, X, Y, Width, Height, this.Selected);
         }
 
         public override bool IsInBounds(Point coords) {
@@ -68,6 +68,10 @@ namespace Homework {
 
         public override void Accept(Visitor v) {
             v.Visit(this);
+        }
+
+        public override void SetSelected(bool selected) {
+            this.Selected = selected;
         }
 
     }

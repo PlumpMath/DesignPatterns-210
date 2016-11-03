@@ -14,18 +14,23 @@ namespace Homework {
         public AddText(Shape shape, Dictionary<TitleLocation, string> titles) {
             this.oldShape = shape;
             this.titles = titles;
+
+            Console.WriteLine("Old shape: " + (oldShape.GetType() == typeof(ShapeWithTitle)));
+            if(oldShape.GetType() == typeof(ShapeWithTitle)) {
+                this.shape = (ShapeWithTitle)oldShape;
+            } else {
+                this.shape = new ShapeWithTitle(oldShape);
+            }
+            this.shape.AddTitle(titles);
+            Editor.history.Push(this);
+
+            Editor.future.Clear();
+            Console.WriteLine("History count: " + Editor.history.Count);
             Execute();
         }
 
         public void Execute() {
-            if(ShapeSelector.currentShape.GetType() == typeof(ShapeWithTitle)) {
-                shape = (ShapeWithTitle)oldShape;
-            } else {
-                shape = new ShapeWithTitle(oldShape);
-            }
-
             ShapeSelector.currentShape = shape;
-            shape.AddTitle(titles);
             Editor.shapes.Remove(oldShape);
             Editor.shapes.Add(shape);
         }
