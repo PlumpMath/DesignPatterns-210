@@ -51,20 +51,20 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="72">
+      <node id="70">
         <label>Homework.Strategy</label>
         <link refid="interface_homework_1_1_strategy"/>
       </node>
-      <node id="73">
+      <node id="71">
         <label>Homework.Ellipse</label>
         <link refid="class_homework_1_1_ellipse"/>
-        <childnode refid="72" relation="public-inheritance">
+        <childnode refid="70" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="74">
+      <node id="72">
         <label>Homework.Rectangle</label>
         <link refid="class_homework_1_1_rectangle"/>
-        <childnode refid="72" relation="public-inheritance">
+        <childnode refid="70" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

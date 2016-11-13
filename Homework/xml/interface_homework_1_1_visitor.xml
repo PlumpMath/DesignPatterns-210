@@ -4,12 +4,14 @@
     <compoundname>Homework::Visitor</compoundname>
     <derivedcompoundref refid="class_homework_1_1_i_o_visitor" prot="public" virt="non-virtual">Homework.IOVisitor</derivedcompoundref>
     <derivedcompoundref refid="class_homework_1_1_move_visitor" prot="public" virt="non-virtual">Homework.MoveVisitor</derivedcompoundref>
+    <derivedcompoundref refid="class_homework_1_1_select_visitor" prot="public" virt="non-virtual">Homework.SelectVisitor</derivedcompoundref>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="interface_homework_1_1_visitor_1a534cfe0604faad546a003fc25f4ccdda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Homework.Visitor.Visit</definition>
         <argsstring>(CompositeShape s)</argsstring>
         <name>Visit</name>
+        <reimplementedby refid="class_homework_1_1_select_visitor_1ac6bf9e5185dbc34b548b066b7762fd4d">Visit</reimplementedby>
         <reimplementedby refid="class_homework_1_1_i_o_visitor_1a28925f80c65047c9ea3033090d864679">Visit</reimplementedby>
         <reimplementedby refid="class_homework_1_1_move_visitor_1a23538606499e6a073aed5cb36879d221">Visit</reimplementedby>
         <param>
@@ -30,6 +32,7 @@
         <argsstring>(AbstractShape s)</argsstring>
         <name>Visit</name>
         <reimplementedby refid="class_homework_1_1_i_o_visitor_1abfffad40f1c110ad2953816872a6159f">Visit</reimplementedby>
+        <reimplementedby refid="class_homework_1_1_select_visitor_1a0c3dc6de0f9f883620b79df5843e57fb">Visit</reimplementedby>
         <reimplementedby refid="class_homework_1_1_move_visitor_1a1070d9a54c9369ac0251b46a09d3674f">Visit</reimplementedby>
         <param>
           <type><ref refid="class_homework_1_1_abstract_shape" kindref="compound">AbstractShape</ref></type>
@@ -48,6 +51,7 @@
         <definition>void Homework.Visitor.Visit</definition>
         <argsstring>(ShapeWithTitle s)</argsstring>
         <name>Visit</name>
+        <reimplementedby refid="class_homework_1_1_select_visitor_1a0819d2520722f798ce4d91fe72ef1ae2">Visit</reimplementedby>
         <reimplementedby refid="class_homework_1_1_move_visitor_1a9787622818bd53056e741c9ba5cca31b">Visit</reimplementedby>
         <reimplementedby refid="class_homework_1_1_i_o_visitor_1a3d2f4a416729fc5bb1ed9d752541f25f">Visit</reimplementedby>
         <param>
@@ -62,54 +66,40 @@
         </inbodydescription>
         <location file="Editor.cs" line="33" column="1"/>
       </memberdef>
-      <memberdef kind="function" id="interface_homework_1_1_visitor_1afae3f9b041edf81884141ae50d5f075f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Homework.Visitor.Visit</definition>
-        <argsstring>(CompositShapeWithTitle s)</argsstring>
-        <name>Visit</name>
-        <reimplementedby refid="class_homework_1_1_move_visitor_1a6346d9bbaf6720ba97dfda6d0eda6692">Visit</reimplementedby>
-        <reimplementedby refid="class_homework_1_1_i_o_visitor_1a4c325c47dde9ffa12c52cd06b6f4f70b">Visit</reimplementedby>
-        <param>
-          <type><ref refid="class_homework_1_1_composit_shape_with_title" kindref="compound">CompositShapeWithTitle</ref></type>
-          <declname>s</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Editor.cs" line="34" column="1"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="77">
+      <node id="75">
         <label>Homework.IOVisitor</label>
         <link refid="class_homework_1_1_i_o_visitor"/>
-        <childnode refid="76" relation="public-inheritance">
+        <childnode refid="74" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="76">
+      <node id="74">
         <label>Homework.Visitor</label>
         <link refid="interface_homework_1_1_visitor"/>
       </node>
-      <node id="78">
+      <node id="76">
         <label>Homework.MoveVisitor</label>
         <link refid="class_homework_1_1_move_visitor"/>
-        <childnode refid="76" relation="public-inheritance">
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>Homework.SelectVisitor</label>
+        <link refid="class_homework_1_1_select_visitor"/>
+        <childnode refid="74" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="Editor.cs" line="30" column="1" bodyfile="Editor.cs" bodystart="30" bodyend="35"/>
+    <location file="Editor.cs" line="30" column="1" bodyfile="Editor.cs" bodystart="30" bodyend="34"/>
     <listofallmembers>
       <member refid="interface_homework_1_1_visitor_1a534cfe0604faad546a003fc25f4ccdda" prot="public" virt="non-virtual"><scope>Homework::Visitor</scope><name>Visit</name></member>
       <member refid="interface_homework_1_1_visitor_1a94fead2dffb376c5a7accebd4db7073c" prot="public" virt="non-virtual"><scope>Homework::Visitor</scope><name>Visit</name></member>
       <member refid="interface_homework_1_1_visitor_1ab30e0ce7ebebaa32e479c6cd506d5b62" prot="public" virt="non-virtual"><scope>Homework::Visitor</scope><name>Visit</name></member>
-      <member refid="interface_homework_1_1_visitor_1afae3f9b041edf81884141ae50d5f075f" prot="public" virt="non-virtual"><scope>Homework::Visitor</scope><name>Visit</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -107,60 +107,41 @@
         </inbodydescription>
         <location file="MoveVisitor.cs" line="25" column="1" bodyfile="MoveVisitor.cs" bodystart="25" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="class_homework_1_1_move_visitor_1a6346d9bbaf6720ba97dfda6d0eda6692" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Homework.MoveVisitor.Visit</definition>
-        <argsstring>(CompositShapeWithTitle cs)</argsstring>
-        <name>Visit</name>
-        <reimplements refid="interface_homework_1_1_visitor_1afae3f9b041edf81884141ae50d5f075f">Visit</reimplements>
-        <param>
-          <type><ref refid="class_homework_1_1_composit_shape_with_title" kindref="compound">CompositShapeWithTitle</ref></type>
-          <declname>cs</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="MoveVisitor.cs" line="29" column="1" bodyfile="MoveVisitor.cs" bodystart="29" bodyend="31"/>
-      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="46">
+      <node id="42">
         <label>Homework.MoveVisitor</label>
         <link refid="class_homework_1_1_move_visitor"/>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="43" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="43">
         <label>Visitor</label>
         <link refid="interface_homework_1_1_visitor"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="48">
+      <node id="44">
         <label>Homework.MoveVisitor</label>
         <link refid="class_homework_1_1_move_visitor"/>
-        <childnode refid="49" relation="public-inheritance">
+        <childnode refid="45" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="49">
+      <node id="45">
         <label>Visitor</label>
         <link refid="interface_homework_1_1_visitor"/>
       </node>
     </collaborationgraph>
-    <location file="MoveVisitor.cs" line="8" column="1" bodyfile="MoveVisitor.cs" bodystart="8" bodyend="33"/>
+    <location file="MoveVisitor.cs" line="8" column="1" bodyfile="MoveVisitor.cs" bodystart="8" bodyend="29"/>
     <listofallmembers>
       <member refid="class_homework_1_1_move_visitor_1aec077caa71590ba0f6544cf86125d430" prot="public" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>MoveVisitor</name></member>
       <member refid="class_homework_1_1_move_visitor_1a9787622818bd53056e741c9ba5cca31b" prot="public" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>Visit</name></member>
       <member refid="class_homework_1_1_move_visitor_1a1070d9a54c9369ac0251b46a09d3674f" prot="public" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>Visit</name></member>
       <member refid="class_homework_1_1_move_visitor_1a23538606499e6a073aed5cb36879d221" prot="public" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>Visit</name></member>
-      <member refid="class_homework_1_1_move_visitor_1a6346d9bbaf6720ba97dfda6d0eda6692" prot="public" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>Visit</name></member>
       <member refid="class_homework_1_1_move_visitor_1a9d1ad0ce2f4c6f67d561af5b7f21f2ed" prot="private" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>X</name></member>
       <member refid="class_homework_1_1_move_visitor_1afc1772238b139ea75a4bb70500968441" prot="private" virt="non-virtual"><scope>Homework::MoveVisitor</scope><name>Y</name></member>
     </listofallmembers>

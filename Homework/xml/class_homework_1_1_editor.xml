@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="39" column="1" bodyfile="Editor.cs" bodystart="39" bodyend="-1"/>
+        <location file="Editor.cs" line="38" column="1" bodyfile="Editor.cs" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1ac3676aff41bb3f5a8e8fcb7089572a0f" prot="private" static="no" mutable="no">
         <type><ref refid="namespace_homework_1a28cb2f900811c1e216a8ea3df8b7e411" kindref="member">ActionType</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="40" column="1" bodyfile="Editor.cs" bodystart="40" bodyend="-1"/>
+        <location file="Editor.cs" line="39" column="1" bodyfile="Editor.cs" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a9b4a805b93c66cbd292746a731925e94" prot="private" static="no" mutable="no">
         <type><ref refid="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529" kindref="member">ShapeType</ref></type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="41" column="1" bodyfile="Editor.cs" bodystart="41" bodyend="-1"/>
+        <location file="Editor.cs" line="40" column="1" bodyfile="Editor.cs" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a1fe347115bfa168bf39129512ec665d7" prot="private" static="no" mutable="no">
         <type><ref refid="class_homework_1_1_shape_i_o" kindref="compound">ShapeIO</ref></type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="42" column="1" bodyfile="Editor.cs" bodystart="42" bodyend="-1"/>
+        <location file="Editor.cs" line="41" column="1" bodyfile="Editor.cs" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1aec020d9677db43fe0cad31568fba955f" prot="private" static="no" mutable="no">
         <type>System.ComponentModel.IContainer</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="269" column="1" bodyfile="Editor.Designer.cs" bodystart="269" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="270" column="1" bodyfile="Editor.Designer.cs" bodystart="270" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1aba5376f7ba6f0d78bec933f909eea4e3" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.ListBox</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="270" column="1" bodyfile="Editor.Designer.cs" bodystart="270" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="271" column="1" bodyfile="Editor.Designer.cs" bodystart="271" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a1ab2bed3b6ef3b83c796cf36d758be40" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.ListBox</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="271" column="1" bodyfile="Editor.Designer.cs" bodystart="271" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="272" column="1" bodyfile="Editor.Designer.cs" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a563355e14aa4a46a9553695b740a1ef3" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Label</type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="272" column="1" bodyfile="Editor.Designer.cs" bodystart="272" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="273" column="1" bodyfile="Editor.Designer.cs" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a593a4ac62a0dae2e960df9542bd09ec2" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.NumericUpDown</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="273" column="1" bodyfile="Editor.Designer.cs" bodystart="273" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="274" column="1" bodyfile="Editor.Designer.cs" bodystart="274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a2b6fcd15029254177dfcb72565bf34b7" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.NumericUpDown</type>
@@ -147,7 +147,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="274" column="1" bodyfile="Editor.Designer.cs" bodystart="274" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="275" column="1" bodyfile="Editor.Designer.cs" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a2cd508b653d14eb7c5009c0c379cf8ea" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Label</type>
@@ -160,7 +160,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="275" column="1" bodyfile="Editor.Designer.cs" bodystart="275" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="276" column="1" bodyfile="Editor.Designer.cs" bodystart="276" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1afbafe3f66906c8743d3601a0054f3349" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="276" column="1" bodyfile="Editor.Designer.cs" bodystart="276" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="277" column="1" bodyfile="Editor.Designer.cs" bodystart="277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a7d08b158962b8f5dfc3e733ac24fc0b0" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -186,7 +186,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="277" column="1" bodyfile="Editor.Designer.cs" bodystart="277" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="278" column="1" bodyfile="Editor.Designer.cs" bodystart="278" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1ad68f160c664a7e550944c5632492d83e" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -199,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="278" column="1" bodyfile="Editor.Designer.cs" bodystart="278" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="279" column="1" bodyfile="Editor.Designer.cs" bodystart="279" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a30f8e2590cd118e958975152e4896650" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.ListView</type>
@@ -212,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="279" column="1" bodyfile="Editor.Designer.cs" bodystart="279" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="280" column="1" bodyfile="Editor.Designer.cs" bodystart="280" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1ab7a69c683068d45f1e74a610bbb9fbf0" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -225,7 +225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="280" column="1" bodyfile="Editor.Designer.cs" bodystart="280" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="281" column="1" bodyfile="Editor.Designer.cs" bodystart="281" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a9e6f9143e9aa90a0205df25a968958f8" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.TextBox</type>
@@ -238,7 +238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="281" column="1" bodyfile="Editor.Designer.cs" bodystart="281" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="282" column="1" bodyfile="Editor.Designer.cs" bodystart="282" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1ac55fa265191009fe91ff44edad3521f8" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.TextBox</type>
@@ -251,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="282" column="1" bodyfile="Editor.Designer.cs" bodystart="282" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="283" column="1" bodyfile="Editor.Designer.cs" bodystart="283" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a31bcbd3018135ef57e595161650824c7" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Label</type>
@@ -264,7 +264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="283" column="1" bodyfile="Editor.Designer.cs" bodystart="283" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="284" column="1" bodyfile="Editor.Designer.cs" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a7aef9969f3138894bf0a41cd5bd84f7a" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Label</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="284" column="1" bodyfile="Editor.Designer.cs" bodystart="284" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="285" column="1" bodyfile="Editor.Designer.cs" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1a28d209849216cc1a84abe59e639218fd" prot="private" static="no" mutable="no">
         <type>System.Windows.Forms.Button</type>
@@ -290,7 +290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="285" column="1" bodyfile="Editor.Designer.cs" bodystart="285" bodyend="-1"/>
+        <location file="Editor.Designer.cs" line="286" column="1" bodyfile="Editor.Designer.cs" bodystart="286" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-attrib">
@@ -305,13 +305,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="43" column="1" bodyfile="Editor.cs" bodystart="43" bodyend="-1"/>
+        <location file="Editor.cs" line="42" column="1" bodyfile="Editor.cs" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_homework_1_1_editor_1aa07707a830cc5c78b735b17f52987c50" prot="public" static="yes" mutable="no">
         <type>Stack&lt; <ref refid="interface_homework_1_1_command" kindref="compound">Command</ref> &gt;</type>
         <definition>Stack&lt;Command&gt; Homework.Editor.history</definition>
         <argsstring></argsstring>
         <name>history</name>
+        <initializer>= new Stack&lt;<ref refid="interface_homework_1_1_command" kindref="compound">Command</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="43" column="1" bodyfile="Editor.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_editor_1ac73d0d236a08c87914b7e7a81d24c47a" prot="public" static="yes" mutable="no">
+        <type>Stack&lt; <ref refid="interface_homework_1_1_command" kindref="compound">Command</ref> &gt;</type>
+        <definition>Stack&lt;Command&gt; Homework.Editor.future</definition>
+        <argsstring></argsstring>
+        <name>future</name>
         <initializer>= new Stack&lt;<ref refid="interface_homework_1_1_command" kindref="compound">Command</ref>&gt;()</initializer>
         <briefdescription>
         </briefdescription>
@@ -514,7 +528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="145" column="1" bodyfile="Editor.cs" bodystart="145" bodyend="163"/>
+        <location file="Editor.cs" line="145" column="1" bodyfile="Editor.cs" bodystart="145" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1ae3d500a4b43b0d536e76b9a94093de4b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -535,7 +549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="165" column="1" bodyfile="Editor.cs" bodystart="165" bodyend="169"/>
+        <location file="Editor.cs" line="167" column="1" bodyfile="Editor.cs" bodystart="167" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a20fb4651a436343514336d708cc31589" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -556,7 +570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="171" column="1" bodyfile="Editor.cs" bodystart="171" bodyend="175"/>
+        <location file="Editor.cs" line="173" column="1" bodyfile="Editor.cs" bodystart="173" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a1096f0d7c96be3c2a1d8818f9118529e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -577,7 +591,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="177" column="1" bodyfile="Editor.cs" bodystart="177" bodyend="181"/>
+        <location file="Editor.cs" line="179" column="1" bodyfile="Editor.cs" bodystart="179" bodyend="190"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1ad3ccc0a8fc2bdac4b6ead8535320943c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -598,7 +612,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="183" column="1" bodyfile="Editor.cs" bodystart="183" bodyend="185"/>
+        <location file="Editor.cs" line="192" column="1" bodyfile="Editor.cs" bodystart="192" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1ae54a9fee8b7335f2e3c02e334bacded0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -619,7 +633,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="187" column="1" bodyfile="Editor.cs" bodystart="187" bodyend="208"/>
+        <location file="Editor.cs" line="196" column="1" bodyfile="Editor.cs" bodystart="196" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a4a973ade57a3484c0b958809157264e4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref></type>
@@ -636,7 +650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="210" column="1" bodyfile="Editor.cs" bodystart="210" bodyend="215"/>
+        <location file="Editor.cs" line="216" column="1" bodyfile="Editor.cs" bodystart="216" bodyend="221"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a311e1d6856e7f745071d8b426dfa2949" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -657,7 +671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="217" column="1" bodyfile="Editor.cs" bodystart="217" bodyend="238"/>
+        <location file="Editor.cs" line="223" column="1" bodyfile="Editor.cs" bodystart="223" bodyend="243"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a83057291e7c7298c2140578ba60d27e1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -678,7 +692,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.cs" line="240" column="1" bodyfile="Editor.cs" bodystart="240" bodyend="246"/>
+        <location file="Editor.cs" line="245" column="1" bodyfile="Editor.cs" bodystart="245" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_editor_1ad8cb7d465031ed051238f3ca92a39376" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.Editor.redoButton_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>redoButton_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Editor.cs" line="253" column="1" bodyfile="Editor.cs" bodystart="253" bodyend="263"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_editor_1a49f4bde07afef6f6b480f2e1a0f2c0ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -691,7 +726,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Editor.Designer.cs" line="25" column="1" bodyfile="Editor.Designer.cs" bodystart="25" bodyend="265"/>
+        <location file="Editor.Designer.cs" line="25" column="1" bodyfile="Editor.Designer.cs" bodystart="25" bodyend="266"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -726,28 +761,28 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="35">
+      <node id="31">
         <label>Form</label>
       </node>
-      <node id="34">
+      <node id="30">
         <label>Homework.Editor</label>
         <link refid="class_homework_1_1_editor"/>
-        <childnode refid="35" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="37">
+      <node id="33">
         <label>Form</label>
       </node>
-      <node id="36">
+      <node id="32">
         <label>Homework.Editor</label>
         <link refid="class_homework_1_1_editor"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="Editor.cs" line="37" column="1" bodyfile="Editor.cs" bodystart="37" bodyend="247"/>
+    <location file="Editor.cs" line="36" column="1" bodyfile="Editor.cs" bodystart="36" bodyend="264"/>
     <listofallmembers>
       <member refid="class_homework_1_1_editor_1a1ab2bed3b6ef3b83c796cf36d758be40" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>actionPicker</name></member>
       <member refid="class_homework_1_1_editor_1aff6ec21ef2692737d18ff1a019f25543" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>actionPicker_SelectedIndexChanged</name></member>
@@ -760,6 +795,7 @@
       <member refid="class_homework_1_1_editor_1a517c3ef383bf47d72b507943cf22d2ae" prot="protected" virt="non-virtual"><scope>Homework::Editor</scope><name>Dispose</name></member>
       <member refid="class_homework_1_1_editor_1af7e645b021ae5e7b7305771672b54891" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>Editor</name></member>
       <member refid="class_homework_1_1_editor_1a7c85f43d03fb5a3aa3d401df9af4fac3" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>Editor_Paint</name></member>
+      <member refid="class_homework_1_1_editor_1ac73d0d236a08c87914b7e7a81d24c47a" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>future</name></member>
       <member refid="class_homework_1_1_editor_1a4a973ade57a3484c0b958809157264e4" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>GetShape</name></member>
       <member refid="class_homework_1_1_editor_1ab7a69c683068d45f1e74a610bbb9fbf0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>groupButton</name></member>
       <member refid="class_homework_1_1_editor_1ae54a9fee8b7335f2e3c02e334bacded0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>groupButton_Click</name></member>
@@ -773,6 +809,7 @@
       <member refid="class_homework_1_1_editor_1a31bcbd3018135ef57e595161650824c7" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>labelTop</name></member>
       <member refid="class_homework_1_1_editor_1a5aa87fa7a324482d89b53d677fb693c8" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>mouseDown</name></member>
       <member refid="class_homework_1_1_editor_1a7d08b158962b8f5dfc3e733ac24fc0b0" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>redoButton</name></member>
+      <member refid="class_homework_1_1_editor_1ad8cb7d465031ed051238f3ca92a39376" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>redoButton_Click</name></member>
       <member refid="class_homework_1_1_editor_1ad68f160c664a7e550944c5632492d83e" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>saveButton</name></member>
       <member refid="class_homework_1_1_editor_1ad3ccc0a8fc2bdac4b6ead8535320943c" prot="private" virt="non-virtual"><scope>Homework::Editor</scope><name>saveButton_Click</name></member>
       <member refid="class_homework_1_1_editor_1a1029c68cb6c4975d555682924df59c5e" prot="public" virt="non-virtual"><scope>Homework::Editor</scope><name>screen</name></member>

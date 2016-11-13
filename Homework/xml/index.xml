@@ -16,6 +16,7 @@
     <member refid="class_homework_1_1_abstract_shape_1a33a4c0c3ea44dea73d940b7f73e16a56" kind="function"><name>Draw</name></member>
     <member refid="class_homework_1_1_abstract_shape_1a661c1892e364db569c1318ba6b532ee1" kind="function"><name>IsInBounds</name></member>
     <member refid="class_homework_1_1_abstract_shape_1aaa9567a35e047266ed0b11205a63b53f" kind="function"><name>Accept</name></member>
+    <member refid="class_homework_1_1_abstract_shape_1a4a01ad113c78e20d4a38795d55efcd8f" kind="function"><name>SetSelected</name></member>
   </compound>
   <compound refid="class_homework_1_1_add_ellipse" kind="class"><name>Homework::AddEllipse</name>
     <member refid="class_homework_1_1_add_ellipse_1ab49282651b60daa0b2bec0a0939a77dc" kind="variable"><name>X</name></member>
@@ -27,6 +28,13 @@
     <member refid="class_homework_1_1_add_ellipse_1a6c12bd78f36af2fef50c78926932f9ce" kind="function"><name>AddEllipse</name></member>
     <member refid="class_homework_1_1_add_ellipse_1a22c29e2da6e7a04a77f4d572c6259216" kind="function"><name>Execute</name></member>
     <member refid="class_homework_1_1_add_ellipse_1a086ff5a52acd2736d2d5fe39f8eff1c3" kind="function"><name>Undo</name></member>
+  </compound>
+  <compound refid="class_homework_1_1_add_group" kind="class"><name>Homework::AddGroup</name>
+    <member refid="class_homework_1_1_add_group_1a72af21de81b6ecb6ad479970d5029a1a" kind="variable"><name>newshape</name></member>
+    <member refid="class_homework_1_1_add_group_1a95dcbbbd1208d6e1393ff0a44323883e" kind="variable"><name>selected</name></member>
+    <member refid="class_homework_1_1_add_group_1acc5ffc7abec438afb6423506943c51dd" kind="function"><name>AddGroup</name></member>
+    <member refid="class_homework_1_1_add_group_1a07f53cb6732b9f72f8ff758713d63d58" kind="function"><name>Execute</name></member>
+    <member refid="class_homework_1_1_add_group_1a23bca8ffe30e85096bbef95543329004" kind="function"><name>Undo</name></member>
   </compound>
   <compound refid="class_homework_1_1_add_rectangle" kind="class"><name>Homework::AddRectangle</name>
     <member refid="class_homework_1_1_add_rectangle_1a8afea2338b2586ff0d6998b2318f1691" kind="variable"><name>X</name></member>
@@ -62,42 +70,13 @@
     <member refid="class_homework_1_1_composite_shape_1a5d75b11fce4b433793e44af08c374490" kind="function"><name>Remove</name></member>
     <member refid="class_homework_1_1_composite_shape_1a60e7ae60951a348e0c28acd00faa07d1" kind="function"><name>Draw</name></member>
     <member refid="class_homework_1_1_composite_shape_1aa89db853a0fbb1a412f1a8254b57053a" kind="function"><name>AddRange</name></member>
+    <member refid="class_homework_1_1_composite_shape_1a97a1bdabd47e1377d8e4d4b4061f94fe" kind="function"><name>SetSelected</name></member>
     <member refid="class_homework_1_1_composite_shape_1ace7d4691102aa202755231f3a80e7521" kind="function"><name>IsInBounds</name></member>
     <member refid="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0" kind="function"><name>Move</name></member>
     <member refid="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26" kind="function"><name>Resize</name></member>
     <member refid="class_homework_1_1_composite_shape_1a8e4afa618f928f6ef4932035661451d2" kind="function"><name>Draw</name></member>
     <member refid="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53" kind="function"><name>MoveRelative</name></member>
     <member refid="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7" kind="function"><name>Accept</name></member>
-  </compound>
-  <compound refid="class_homework_1_1_composit_shape_with_title" kind="class"><name>Homework::CompositShapeWithTitle</name>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a323d998ee77dc5a6f79cfbf51d4dd0eb" kind="variable"><name>titles</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1adfcef03f05bf2306439a3af314df62f6" kind="variable"><name>shapes</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a92557264f4a64c665bf44f51ac98bb8e" kind="property"><name>tempShape</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a3a32265a840db43ddca6a04db2bd5b22" kind="property"><name>Width</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1abdb4b299d4f8ef6bb7eeb5e6f278e497" kind="property"><name>Height</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a38847434bde58bf6727383af6ca52b00" kind="property"><name>X</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a55c6fc4eb54ab150de9e4ea5ef0d98fb" kind="property"><name>Y</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1ae03921d77537a7c81bd4d39c74b860db" kind="variable"><name>font</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a0bb721015a02cb078705b0f5e49048c0" kind="function"><name>CompositShapeWithTitle</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a4e4467c946642a27aeeb232625877f30" kind="function"><name>AddTitle</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a67a75526d4f094f1c4b1a356494a0884" kind="function"><name>DisplayTitle</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1ac84d6f6229b75d13b9973d1040fa9385" kind="function"><name>Accept</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1af3e217f64d6c9deffd3fff13d94ff279" kind="function"><name>Draw</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a02fbbb23a00579664760d9f459d73078" kind="function"><name>Draw</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1af2ed11c431651cf9a712ace419945115" kind="function"><name>IsInBounds</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1ace0d569a976ab0bb94daed7f9fd96e09" kind="function"><name>Move</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a7dc4ef208f54685ec3e6938083cdcd0e" kind="function"><name>MoveRelative</name></member>
-    <member refid="class_homework_1_1_composit_shape_with_title_1a8000cbe6655177a060af5310526ecba9" kind="function"><name>Resize</name></member>
-  </compound>
-  <compound refid="class_homework_1_1_decorator" kind="class"><name>Homework::Decorator</name>
-    <member refid="class_homework_1_1_decorator_1af4c0f4c699c6c544d389be96bc78b776" kind="variable"><name>shapeObj</name></member>
-    <member refid="class_homework_1_1_decorator_1a5f5a185c8672519ebeab4ec07217988a" kind="function"><name>Decorator</name></member>
-    <member refid="class_homework_1_1_decorator_1a35a589f1dbfb86a270cf570cf972ebca" kind="function"><name>Draw</name></member>
-    <member refid="class_homework_1_1_decorator_1a0fef4f333ef8d071c1a3e1531a40fbe3" kind="function"><name>Draw</name></member>
-    <member refid="class_homework_1_1_decorator_1a695dbd76c27fc208d5dd705a9742a93e" kind="function"><name>IsInBounds</name></member>
-    <member refid="class_homework_1_1_decorator_1a02ffdd93260ddf0af92d15022f4e8752" kind="function"><name>Move</name></member>
-    <member refid="class_homework_1_1_decorator_1a9b497f2a9725f50e4d3c49e49ab2cd58" kind="function"><name>MoveRelative</name></member>
-    <member refid="class_homework_1_1_decorator_1a51c68c1174b7cf2bda583fd7759c43c8" kind="function"><name>Resize</name></member>
   </compound>
   <compound refid="class_homework_1_1_editor" kind="class"><name>Homework::Editor</name>
     <member refid="class_homework_1_1_editor_1a5aa87fa7a324482d89b53d677fb693c8" kind="variable"><name>mouseDown</name></member>
@@ -124,6 +103,7 @@
     <member refid="class_homework_1_1_editor_1a28d209849216cc1a84abe59e639218fd" kind="variable"><name>applyButton</name></member>
     <member refid="class_homework_1_1_editor_1a1029c68cb6c4975d555682924df59c5e" kind="variable"><name>screen</name></member>
     <member refid="class_homework_1_1_editor_1aa07707a830cc5c78b735b17f52987c50" kind="variable"><name>history</name></member>
+    <member refid="class_homework_1_1_editor_1ac73d0d236a08c87914b7e7a81d24c47a" kind="variable"><name>future</name></member>
     <member refid="class_homework_1_1_editor_1a3eeed90cd8ba4e9e971b120ea8933364" kind="variable"><name>shapes</name></member>
     <member refid="class_homework_1_1_editor_1af7e645b021ae5e7b7305771672b54891" kind="function"><name>Editor</name></member>
     <member refid="class_homework_1_1_editor_1aaab75f3ea3852e65ecef82ff213c3171" kind="function"><name>ScreenBox_MouseDown</name></member>
@@ -142,6 +122,7 @@
     <member refid="class_homework_1_1_editor_1a4a973ade57a3484c0b958809157264e4" kind="function"><name>GetShape</name></member>
     <member refid="class_homework_1_1_editor_1a311e1d6856e7f745071d8b426dfa2949" kind="function"><name>applyButton_Click</name></member>
     <member refid="class_homework_1_1_editor_1a83057291e7c7298c2140578ba60d27e1" kind="function"><name>shapePicker_SelectedIndexChanged</name></member>
+    <member refid="class_homework_1_1_editor_1ad8cb7d465031ed051238f3ca92a39376" kind="function"><name>redoButton_Click</name></member>
     <member refid="class_homework_1_1_editor_1a49f4bde07afef6f6b480f2e1a0f2c0ae" kind="function"><name>InitializeComponent</name></member>
     <member refid="class_homework_1_1_editor_1a517c3ef383bf47d72b507943cf22d2ae" kind="function"><name>Dispose</name></member>
   </compound>
@@ -153,10 +134,12 @@
   </compound>
   <compound refid="class_homework_1_1_i_o_visitor" kind="class"><name>Homework::IOVisitor</name>
     <member refid="class_homework_1_1_i_o_visitor_1a3cfa5a8529a4c872f175582d0d698d41" kind="variable"><name>tree</name></member>
+    <member refid="class_homework_1_1_i_o_visitor_1a17c5f105121353511583145761d05354" kind="variable"><name>depth</name></member>
+    <member refid="class_homework_1_1_i_o_visitor_1a8b4c92aa7d51826f94ff81fd3c236b27" kind="variable"><name>idx</name></member>
+    <member refid="class_homework_1_1_i_o_visitor_1a73295c3aa6e159613df87731f8157d17" kind="variable"><name>maxidx</name></member>
     <member refid="class_homework_1_1_i_o_visitor_1abfffad40f1c110ad2953816872a6159f" kind="function"><name>Visit</name></member>
     <member refid="class_homework_1_1_i_o_visitor_1a28925f80c65047c9ea3033090d864679" kind="function"><name>Visit</name></member>
     <member refid="class_homework_1_1_i_o_visitor_1a3d2f4a416729fc5bb1ed9d752541f25f" kind="function"><name>Visit</name></member>
-    <member refid="class_homework_1_1_i_o_visitor_1a4c325c47dde9ffa12c52cd06b6f4f70b" kind="function"><name>Visit</name></member>
   </compound>
   <compound refid="class_homework_1_1_move_visitor" kind="class"><name>Homework::MoveVisitor</name>
     <member refid="class_homework_1_1_move_visitor_1a9d1ad0ce2f4c6f67d561af5b7f21f2ed" kind="variable"><name>X</name></member>
@@ -165,7 +148,6 @@
     <member refid="class_homework_1_1_move_visitor_1a9787622818bd53056e741c9ba5cca31b" kind="function"><name>Visit</name></member>
     <member refid="class_homework_1_1_move_visitor_1a1070d9a54c9369ac0251b46a09d3674f" kind="function"><name>Visit</name></member>
     <member refid="class_homework_1_1_move_visitor_1a23538606499e6a073aed5cb36879d221" kind="function"><name>Visit</name></member>
-    <member refid="class_homework_1_1_move_visitor_1a6346d9bbaf6720ba97dfda6d0eda6692" kind="function"><name>Visit</name></member>
   </compound>
   <compound refid="class_homework_1_1_program" kind="class"><name>Homework::Program</name>
     <member refid="class_homework_1_1_program_1aa9d21fc209d52cce363aeacd43f2840f" kind="function"><name>Main</name></member>
@@ -175,6 +157,13 @@
     <member refid="class_homework_1_1_rectangle_1a2927c8985477eb27dbbd497c5e03db73" kind="property"><name>Instance</name></member>
     <member refid="class_homework_1_1_rectangle_1aa69735a8622c29f36328828a88ff7628" kind="function"><name>Rectangle</name></member>
     <member refid="class_homework_1_1_rectangle_1a4e1ebef8aba5c45bc4168c31bf925c0c" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_homework_1_1_select_visitor" kind="class"><name>Homework::SelectVisitor</name>
+    <member refid="class_homework_1_1_select_visitor_1aab4fc8c6b00e60e4e30412c1c39031b6" kind="variable"><name>selected</name></member>
+    <member refid="class_homework_1_1_select_visitor_1a15efb3ace81f8ac8282fed36b9de47fe" kind="function"><name>SelectVisitor</name></member>
+    <member refid="class_homework_1_1_select_visitor_1a0819d2520722f798ce4d91fe72ef1ae2" kind="function"><name>Visit</name></member>
+    <member refid="class_homework_1_1_select_visitor_1a0c3dc6de0f9f883620b79df5843e57fb" kind="function"><name>Visit</name></member>
+    <member refid="class_homework_1_1_select_visitor_1ac6bf9e5185dbc34b548b066b7762fd4d" kind="function"><name>Visit</name></member>
   </compound>
   <compound refid="class_homework_1_1_shape" kind="class"><name>Homework::Shape</name>
     <member refid="class_homework_1_1_shape_1a7ef7151cfd078491b08e3c0e6d4a85e2" kind="property"><name>X</name></member>
@@ -188,6 +177,7 @@
     <member refid="class_homework_1_1_shape_1aec5c8b0a9a1eeb27422a423441ecfd2a" kind="function"><name>Draw</name></member>
     <member refid="class_homework_1_1_shape_1af3b61604a31e19bdf8e3fc5caec567c2" kind="function"><name>Draw</name></member>
     <member refid="class_homework_1_1_shape_1a70964e3645c32867f55e5d42d488bf88" kind="function"><name>IsInBounds</name></member>
+    <member refid="class_homework_1_1_shape_1afcf5cf0a1101811a086d82b5b6128609" kind="function"><name>SetSelected</name></member>
     <member refid="class_homework_1_1_shape_1afe73690f4c3f61ca4648a56e1b1da5b0" kind="function"><name>Move</name></member>
     <member refid="class_homework_1_1_shape_1a58c4a68df696c964c4b3b3ec4644211b" kind="function"><name>MoveRelative</name></member>
     <member refid="class_homework_1_1_shape_1abddd492b2d122b85b5fd7270855ab343" kind="function"><name>Resize</name></member>
@@ -233,6 +223,7 @@
     <member refid="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a" kind="function"><name>Move</name></member>
     <member refid="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922" kind="function"><name>MoveRelative</name></member>
     <member refid="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564" kind="function"><name>Resize</name></member>
+    <member refid="class_homework_1_1_shape_with_title_1a015d44ef2badab610a07efcb84dbff5e" kind="function"><name>SetSelected</name></member>
   </compound>
   <compound refid="interface_homework_1_1_strategy" kind="interface"><name>Homework::Strategy</name>
     <member refid="interface_homework_1_1_strategy_1a04bd6e0922342ba5bac8930ad4270263" kind="function"><name>Draw</name></member>
@@ -241,7 +232,6 @@
     <member refid="interface_homework_1_1_visitor_1a534cfe0604faad546a003fc25f4ccdda" kind="function"><name>Visit</name></member>
     <member refid="interface_homework_1_1_visitor_1a94fead2dffb376c5a7accebd4db7073c" kind="function"><name>Visit</name></member>
     <member refid="interface_homework_1_1_visitor_1ab30e0ce7ebebaa32e479c6cd506d5b62" kind="function"><name>Visit</name></member>
-    <member refid="interface_homework_1_1_visitor_1afae3f9b041edf81884141ae50d5f075f" kind="function"><name>Visit</name></member>
   </compound>
   <compound refid="namespace_homework" kind="namespace"><name>Homework</name>
     <member refid="namespace_homework_1ab1cfd7e10182ab6e389c900d51f00529" kind="enum"><name>ShapeType</name></member>
@@ -280,15 +270,13 @@
   </compound>
   <compound refid="_add_ellipse_8cs" kind="file"><name>AddEllipse.cs</name>
   </compound>
+  <compound refid="_add_group_8cs" kind="file"><name>AddGroup.cs</name>
+  </compound>
   <compound refid="_add_rectangle_8cs" kind="file"><name>AddRectangle.cs</name>
   </compound>
   <compound refid="_add_text_8cs" kind="file"><name>AddText.cs</name>
   </compound>
   <compound refid="_composite_shape_8cs" kind="file"><name>CompositeShape.cs</name>
-  </compound>
-  <compound refid="_composit_shape_with_title_8cs" kind="file"><name>CompositShapeWithTitle.cs</name>
-  </compound>
-  <compound refid="_decorator_8cs" kind="file"><name>Decorator.cs</name>
   </compound>
   <compound refid="_editor_8cs" kind="file"><name>Editor.cs</name>
   </compound>
@@ -303,6 +291,8 @@
   <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
   </compound>
   <compound refid="_rectangle_8cs" kind="file"><name>Rectangle.cs</name>
+  </compound>
+  <compound refid="_select_visitor_8cs" kind="file"><name>SelectVisitor.cs</name>
   </compound>
   <compound refid="_shape_8cs" kind="file"><name>Shape.cs</name>
   </compound>

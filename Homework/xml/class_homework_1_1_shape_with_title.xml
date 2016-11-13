@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="50" column="1" bodyfile="ShapeWithTitle.cs" bodystart="50" bodyend="52"/>
+        <location file="ShapeWithTitle.cs" line="50" column="1" bodyfile="ShapeWithTitle.cs" bodystart="50" bodyend="53"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1aa60fb2e8f8c0919a617eb33bd9740442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -187,7 +187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="54" column="1" bodyfile="ShapeWithTitle.cs" bodystart="54" bodyend="57"/>
+        <location file="ShapeWithTitle.cs" line="55" column="1" bodyfile="ShapeWithTitle.cs" bodystart="55" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a46f03cc7014ec2722d4c457098df798a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="59" column="1" bodyfile="ShapeWithTitle.cs" bodystart="59" bodyend="62"/>
+        <location file="ShapeWithTitle.cs" line="60" column="1" bodyfile="ShapeWithTitle.cs" bodystart="60" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1afddc731df2e9af0b70e1bc92250d9125" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override bool</type>
@@ -236,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="64" column="1" bodyfile="ShapeWithTitle.cs" bodystart="64" bodyend="66"/>
+        <location file="ShapeWithTitle.cs" line="65" column="1" bodyfile="ShapeWithTitle.cs" bodystart="65" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="68" column="1" bodyfile="ShapeWithTitle.cs" bodystart="68" bodyend="71"/>
+        <location file="ShapeWithTitle.cs" line="69" column="1" bodyfile="ShapeWithTitle.cs" bodystart="69" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -272,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="73" column="1" bodyfile="ShapeWithTitle.cs" bodystart="73" bodyend="76"/>
+        <location file="ShapeWithTitle.cs" line="73" column="1" bodyfile="ShapeWithTitle.cs" bodystart="73" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -290,7 +290,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeWithTitle.cs" line="78" column="1" bodyfile="ShapeWithTitle.cs" bodystart="78" bodyend="80"/>
+        <location file="ShapeWithTitle.cs" line="77" column="1" bodyfile="ShapeWithTitle.cs" bodystart="77" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_shape_with_title_1a015d44ef2badab610a07efcb84dbff5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.ShapeWithTitle.SetSelected</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>SetSelected</name>
+        <reimplements refid="class_homework_1_1_shape_1afcf5cf0a1101811a086d82b5b6128609">SetSelected</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ShapeWithTitle.cs" line="81" column="1" bodyfile="ShapeWithTitle.cs" bodystart="81" bodyend="83"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -298,6 +316,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
+      <node id="66">
+        <label>Homework.ShapeWithTitle</label>
+        <link refid="class_homework_1_1_shape_with_title"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Shape</label>
+        <link refid="class_homework_1_1_shape"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="68">
         <label>Homework.ShapeWithTitle</label>
         <link refid="class_homework_1_1_shape_with_title"/>
@@ -308,20 +338,8 @@
         <label>Shape</label>
         <link refid="class_homework_1_1_shape"/>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="70">
-        <label>Homework.ShapeWithTitle</label>
-        <link refid="class_homework_1_1_shape_with_title"/>
-        <childnode refid="71" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="71">
-        <label>Shape</label>
-        <link refid="class_homework_1_1_shape"/>
-      </node>
     </collaborationgraph>
-    <location file="ShapeWithTitle.cs" line="17" column="1" bodyfile="ShapeWithTitle.cs" bodystart="17" bodyend="81"/>
+    <location file="ShapeWithTitle.cs" line="17" column="1" bodyfile="ShapeWithTitle.cs" bodystart="17" bodyend="85"/>
     <listofallmembers>
       <member refid="class_homework_1_1_shape_with_title_1a8f73bf6f63e9004472a60cffc436a1d1" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Accept</name></member>
       <member refid="class_homework_1_1_shape_with_title_1ae3309c2c5e5b32822f08dbb7417084ac" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>AddTitle</name></member>
@@ -336,7 +354,8 @@
       <member refid="class_homework_1_1_shape_with_title_1a3632d19030afc12d298e7b38728e156a" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Move</name></member>
       <member refid="class_homework_1_1_shape_with_title_1aa3f61e7ed8e0adb85418cc8676704922" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>MoveRelative</name></member>
       <member refid="class_homework_1_1_shape_with_title_1ad8cf20abc65848c9c70c6daa3b04f564" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>Resize</name></member>
-      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="protected" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_with_title_1a015d44ef2badab610a07efcb84dbff5e" prot="public" virt="virtual"><scope>Homework::ShapeWithTitle</scope><name>SetSelected</name></member>
       <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>Shape</name></member>
       <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>shape</name></member>
       <member refid="class_homework_1_1_shape_with_title_1a481c923e558234f6f7ce3f5d820e8adc" prot="public" virt="non-virtual"><scope>Homework::ShapeWithTitle</scope><name>ShapeWithTitle</name></member>

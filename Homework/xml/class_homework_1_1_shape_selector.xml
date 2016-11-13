@@ -162,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="37" column="1" bodyfile="ShapeSelector.cs" bodystart="37" bodyend="49"/>
+        <location file="ShapeSelector.cs" line="37" column="1" bodyfile="ShapeSelector.cs" bodystart="37" bodyend="47"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_selector_1a2b5ea6731f5d914c6530905226fa6c33" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="51" column="1" bodyfile="ShapeSelector.cs" bodystart="51" bodyend="57"/>
+        <location file="ShapeSelector.cs" line="49" column="1" bodyfile="ShapeSelector.cs" bodystart="49" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_selector_1aafb2cd55fdcd738ef99fbe9f421d6c37" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -196,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="59" column="1" bodyfile="ShapeSelector.cs" bodystart="59" bodyend="62"/>
+        <location file="ShapeSelector.cs" line="57" column="1" bodyfile="ShapeSelector.cs" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_selector_1a4443ee6b171119457bb1443e87a931b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -213,7 +213,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="64" column="1" bodyfile="ShapeSelector.cs" bodystart="64" bodyend="77"/>
+        <location file="ShapeSelector.cs" line="62" column="1" bodyfile="ShapeSelector.cs" bodystart="62" bodyend="75"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_selector_1a81c69ac825363910a88d711219d300d0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Point</type>
@@ -226,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="79" column="1" bodyfile="ShapeSelector.cs" bodystart="79" bodyend="89"/>
+        <location file="ShapeSelector.cs" line="77" column="1" bodyfile="ShapeSelector.cs" bodystart="77" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_shape_selector_1a9c1bfd618cdf826a4911cb6cbd4c1399" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Size</type>
@@ -239,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ShapeSelector.cs" line="91" column="1" bodyfile="ShapeSelector.cs" bodystart="91" bodyend="101"/>
+        <location file="ShapeSelector.cs" line="89" column="1" bodyfile="ShapeSelector.cs" bodystart="89" bodyend="99"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -247,19 +247,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="66">
+      <node id="64">
         <label>Homework.ShapeSelector</label>
         <link refid="class_homework_1_1_shape_selector"/>
-        <childnode refid="67" relation="usage">
+        <childnode refid="65" relation="usage">
           <edgelabel>currentShape</edgelabel>
         </childnode>
       </node>
-      <node id="67">
+      <node id="65">
         <label>Homework.Shape</label>
         <link refid="class_homework_1_1_shape"/>
       </node>
     </collaborationgraph>
-    <location file="ShapeSelector.cs" line="9" column="1" bodyfile="ShapeSelector.cs" bodystart="9" bodyend="102"/>
+    <location file="ShapeSelector.cs" line="9" column="1" bodyfile="ShapeSelector.cs" bodystart="9" bodyend="100"/>
     <listofallmembers>
       <member refid="class_homework_1_1_shape_selector_1aec8ce8ebb0a9100576d435ea219121d9" prot="private" virt="non-virtual"><scope>Homework::ShapeSelector</scope><name>currentCoords</name></member>
       <member refid="class_homework_1_1_shape_selector_1afd2e343e36f7a864ae9ebcec371f5b7f" prot="public" virt="non-virtual"><scope>Homework::ShapeSelector</scope><name>currentShape</name></member>

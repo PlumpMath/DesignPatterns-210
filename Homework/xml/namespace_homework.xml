@@ -4,18 +4,18 @@
     <compoundname>Homework</compoundname>
     <innerclass refid="class_homework_1_1_abstract_shape" prot="public">Homework::AbstractShape</innerclass>
     <innerclass refid="class_homework_1_1_add_ellipse" prot="public">Homework::AddEllipse</innerclass>
+    <innerclass refid="class_homework_1_1_add_group" prot="public">Homework::AddGroup</innerclass>
     <innerclass refid="class_homework_1_1_add_rectangle" prot="public">Homework::AddRectangle</innerclass>
     <innerclass refid="class_homework_1_1_add_text" prot="public">Homework::AddText</innerclass>
     <innerclass refid="interface_homework_1_1_command" prot="public">Homework::Command</innerclass>
     <innerclass refid="class_homework_1_1_composite_shape" prot="public">Homework::CompositeShape</innerclass>
-    <innerclass refid="class_homework_1_1_composit_shape_with_title" prot="public">Homework::CompositShapeWithTitle</innerclass>
-    <innerclass refid="class_homework_1_1_decorator" prot="public">Homework::Decorator</innerclass>
     <innerclass refid="class_homework_1_1_editor" prot="public">Homework::Editor</innerclass>
     <innerclass refid="class_homework_1_1_ellipse" prot="public">Homework::Ellipse</innerclass>
     <innerclass refid="class_homework_1_1_i_o_visitor" prot="public">Homework::IOVisitor</innerclass>
     <innerclass refid="class_homework_1_1_move_visitor" prot="public">Homework::MoveVisitor</innerclass>
     <innerclass refid="class_homework_1_1_program" prot="public">Homework::Program</innerclass>
     <innerclass refid="class_homework_1_1_rectangle" prot="public">Homework::Rectangle</innerclass>
+    <innerclass refid="class_homework_1_1_select_visitor" prot="public">Homework::SelectVisitor</innerclass>
     <innerclass refid="class_homework_1_1_shape" prot="public">Homework::Shape</innerclass>
     <innerclass refid="class_homework_1_1_shape_i_o" prot="public">Homework::ShapeIO</innerclass>
     <innerclass refid="class_homework_1_1_shape_selector" prot="public">Homework::ShapeSelector</innerclass>

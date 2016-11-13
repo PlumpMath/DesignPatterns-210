@@ -37,12 +37,8 @@
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cs.<ref refid="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0" kindref="member">Move</ref>(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="namespace_system" kindref="compound">System</ref>.Drawing.Point(X,<sp/>Y));</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_homework_1_1_move_visitor_1a9787622818bd53056e741c9ba5cca31b" kindref="member">Visit</ref>(<ref refid="class_homework_1_1_composit_shape_with_title" kindref="compound">CompositShapeWithTitle</ref><sp/>cs)<sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="MoveVisitor.cs"/>
   </compounddef>

@@ -65,7 +65,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="AddText.cs" line="14" column="1" bodyfile="AddText.cs" bodystart="14" bodyend="18"/>
+        <location file="AddText.cs" line="14" column="1" bodyfile="AddText.cs" bodystart="14" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_add_text_1a4937c30b9583114e492e32e726865128" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="AddText.cs" line="20" column="1" bodyfile="AddText.cs" bodystart="20" bodyend="31"/>
+        <location file="AddText.cs" line="32" column="1" bodyfile="AddText.cs" bodystart="32" bodyend="36"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_add_text_1abc3108851ca085de2c6d19898be8313d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="AddText.cs" line="33" column="1" bodyfile="AddText.cs" bodystart="33" bodyend="36"/>
+        <location file="AddText.cs" line="38" column="1" bodyfile="AddText.cs" bodystart="38" bodyend="41"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,30 +101,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="17">
         <label>Command</label>
         <link refid="interface_homework_1_1_command"/>
       </node>
-      <node id="12">
+      <node id="16">
         <label>Homework.AddText</label>
         <link refid="class_homework_1_1_add_text"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="17" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="15">
+      <node id="19">
         <label>Command</label>
         <link refid="interface_homework_1_1_command"/>
       </node>
-      <node id="14">
+      <node id="18">
         <label>Homework.AddText</label>
         <link refid="class_homework_1_1_add_text"/>
-        <childnode refid="15" relation="public-inheritance">
+        <childnode refid="19" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="AddText.cs" line="8" column="1" bodyfile="AddText.cs" bodystart="8" bodyend="38"/>
+    <location file="AddText.cs" line="8" column="1" bodyfile="AddText.cs" bodystart="8" bodyend="43"/>
     <listofallmembers>
       <member refid="class_homework_1_1_add_text_1a2c2197f46e1ff5ab22eb78d78457c197" prot="public" virt="non-virtual"><scope>Homework::AddText</scope><name>AddText</name></member>
       <member refid="class_homework_1_1_add_text_1a4937c30b9583114e492e32e726865128" prot="public" virt="non-virtual"><scope>Homework::AddText</scope><name>Execute</name></member>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="class_homework_1_1_add_group" kind="class" language="C#" prot="public">
+    <compoundname>Homework::AddGroup</compoundname>
+    <basecompoundref refid="interface_homework_1_1_command" prot="public" virt="non-virtual">Homework.Command</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_homework_1_1_add_group_1a72af21de81b6ecb6ad479970d5029a1a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_homework_1_1_composite_shape" kindref="compound">CompositeShape</ref></type>
+        <definition>CompositeShape Homework.AddGroup.newshape</definition>
+        <argsstring></argsstring>
+        <name>newshape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddGroup.cs" line="11" column="1" bodyfile="AddGroup.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_homework_1_1_add_group_1a95dcbbbd1208d6e1393ff0a44323883e" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+        <definition>List&lt;Shape&gt; Homework.AddGroup.selected</definition>
+        <argsstring></argsstring>
+        <name>selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddGroup.cs" line="12" column="1" bodyfile="AddGroup.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_homework_1_1_add_group_1acc5ffc7abec438afb6423506943c51dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Homework.AddGroup.AddGroup</definition>
+        <argsstring>(List&lt; Shape &gt; selected)</argsstring>
+        <name>AddGroup</name>
+        <param>
+          <type>List&lt; <ref refid="class_homework_1_1_shape" kindref="compound">Shape</ref> &gt;</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddGroup.cs" line="14" column="1" bodyfile="AddGroup.cs" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_group_1a07f53cb6732b9f72f8ff758713d63d58" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddGroup.Execute</definition>
+        <argsstring>()</argsstring>
+        <name>Execute</name>
+        <reimplements refid="interface_homework_1_1_command_1a525feb3aaffd0e6cc93843c5e632cc8b">Execute</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddGroup.cs" line="24" column="1" bodyfile="AddGroup.cs" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_add_group_1a23bca8ffe30e85096bbef95543329004" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Homework.AddGroup.Undo</definition>
+        <argsstring>()</argsstring>
+        <name>Undo</name>
+        <reimplements refid="interface_homework_1_1_command_1aeba07682e678fd5b9a5158a3a65fc2f7">Undo</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AddGroup.cs" line="31" column="1" bodyfile="AddGroup.cs" bodystart="31" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+      <node id="8">
+        <label>Homework.AddGroup</label>
+        <link refid="class_homework_1_1_add_group"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>Command</label>
+        <link refid="interface_homework_1_1_command"/>
+      </node>
+      <node id="10">
+        <label>Homework.AddGroup</label>
+        <link refid="class_homework_1_1_add_group"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="AddGroup.cs" line="9" column="1" bodyfile="AddGroup.cs" bodystart="9" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_homework_1_1_add_group_1acc5ffc7abec438afb6423506943c51dd" prot="public" virt="non-virtual"><scope>Homework::AddGroup</scope><name>AddGroup</name></member>
+      <member refid="class_homework_1_1_add_group_1a07f53cb6732b9f72f8ff758713d63d58" prot="public" virt="non-virtual"><scope>Homework::AddGroup</scope><name>Execute</name></member>
+      <member refid="class_homework_1_1_add_group_1a72af21de81b6ecb6ad479970d5029a1a" prot="private" virt="non-virtual"><scope>Homework::AddGroup</scope><name>newshape</name></member>
+      <member refid="class_homework_1_1_add_group_1a95dcbbbd1208d6e1393ff0a44323883e" prot="private" virt="non-virtual"><scope>Homework::AddGroup</scope><name>selected</name></member>
+      <member refid="class_homework_1_1_add_group_1a23bca8ffe30e85096bbef95543329004" prot="public" virt="non-virtual"><scope>Homework::AddGroup</scope><name>Undo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

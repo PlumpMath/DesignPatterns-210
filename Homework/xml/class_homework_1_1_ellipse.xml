@@ -94,25 +94,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="38">
+      <node id="34">
         <label>Homework.Ellipse</label>
         <link refid="class_homework_1_1_ellipse"/>
-        <childnode refid="39" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="39">
+      <node id="35">
         <label>Strategy</label>
         <link refid="interface_homework_1_1_strategy"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="40">
+      <node id="36">
         <label>Homework.Ellipse</label>
         <link refid="class_homework_1_1_ellipse"/>
-        <childnode refid="41" relation="public-inheritance">
+        <childnode refid="37" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="41">
+      <node id="37">
         <label>Strategy</label>
         <link refid="interface_homework_1_1_strategy"/>
       </node>

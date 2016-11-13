@@ -306,6 +306,24 @@
         </inbodydescription>
         <location file="AbstractShape.cs" line="69" column="1" bodyfile="AbstractShape.cs" bodystart="69" bodyend="71"/>
       </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_abstract_shape_1a4a01ad113c78e20d4a38795d55efcd8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.AbstractShape.SetSelected</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>SetSelected</name>
+        <reimplements refid="class_homework_1_1_shape_1afcf5cf0a1101811a086d82b5b6128609">SetSelected</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="AbstractShape.cs" line="73" column="1" bodyfile="AbstractShape.cs" bodystart="73" bodyend="75"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -335,7 +353,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="AbstractShape.cs" line="14" column="1" bodyfile="AbstractShape.cs" bodystart="14" bodyend="73"/>
+    <location file="AbstractShape.cs" line="14" column="1" bodyfile="AbstractShape.cs" bodystart="14" bodyend="77"/>
     <listofallmembers>
       <member refid="class_homework_1_1_abstract_shape_1a936a28759e8587dc1cb744b99c833a00" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>AbstractShape</name></member>
       <member refid="class_homework_1_1_abstract_shape_1aaa9567a35e047266ed0b11205a63b53f" prot="public" virt="virtual"><scope>Homework::AbstractShape</scope><name>Accept</name></member>
@@ -350,9 +368,10 @@
       <member refid="class_homework_1_1_abstract_shape_1a537c4ef3c16e0adf038d20713604cdca" prot="public" virt="virtual"><scope>Homework::AbstractShape</scope><name>Move</name></member>
       <member refid="class_homework_1_1_abstract_shape_1a68c2c93bc8d03c40adb8eaeda1d8e41a" prot="public" virt="virtual"><scope>Homework::AbstractShape</scope><name>MoveRelative</name></member>
       <member refid="class_homework_1_1_abstract_shape_1a0a972dd64c7f8036b85b3a3e0b0782c6" prot="public" virt="virtual"><scope>Homework::AbstractShape</scope><name>Resize</name></member>
-      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>Selected</name></member>
-      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>Shape</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="protected" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_abstract_shape_1a4a01ad113c78e20d4a38795d55efcd8f" prot="public" virt="virtual"><scope>Homework::AbstractShape</scope><name>SetSelected</name></member>
       <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>shape</name></member>
+      <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>Shape</name></member>
       <member refid="class_homework_1_1_abstract_shape_1a698c755c88675a0b35058c956dc64878" prot="private" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>strategy</name></member>
       <member refid="class_homework_1_1_abstract_shape_1a4fe2753ad3ca74d565b28d2322c382db" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>Width</name></member>
       <member refid="class_homework_1_1_abstract_shape_1a3e5945aeb7653d47edcb420bcb062400" prot="public" virt="non-virtual"><scope>Homework::AbstractShape</scope><name>X</name></member>

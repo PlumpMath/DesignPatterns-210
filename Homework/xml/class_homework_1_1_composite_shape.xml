@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="25" column="1" bodyfile="CompositeShape.cs" bodystart="25" bodyend="-1"/>
+        <location file="CompositeShape.cs" line="24" column="1" bodyfile="CompositeShape.cs" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="class_homework_1_1_composite_shape_1ae1184d6b3b945fd3fa96b2eafd93baac" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
         <type>override int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="38" column="1" bodyfile="CompositeShape.cs" bodystart="38" bodyend="-1"/>
+        <location file="CompositeShape.cs" line="37" column="1" bodyfile="CompositeShape.cs" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="property" id="class_homework_1_1_composite_shape_1a5c1e243aad316db915c20feff20434c9" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="yes">
         <type>override int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="49" column="1" bodyfile="CompositeShape.cs" bodystart="49" bodyend="-1"/>
+        <location file="CompositeShape.cs" line="48" column="1" bodyfile="CompositeShape.cs" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="60" column="1" bodyfile="CompositeShape.cs" bodystart="60" bodyend="-1"/>
+        <location file="CompositeShape.cs" line="59" column="1" bodyfile="CompositeShape.cs" bodystart="59" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="62" column="1" bodyfile="CompositeShape.cs" bodystart="62" bodyend="64"/>
+        <location file="CompositeShape.cs" line="61" column="1" bodyfile="CompositeShape.cs" bodystart="61" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1aecf6111c47f9c56993d405f2c64b72b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +102,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="67" column="1" bodyfile="CompositeShape.cs" bodystart="67" bodyend="69"/>
+        <location file="CompositeShape.cs" line="66" column="1" bodyfile="CompositeShape.cs" bodystart="66" bodyend="68"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1a5d75b11fce4b433793e44af08c374490" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="71" column="1" bodyfile="CompositeShape.cs" bodystart="71" bodyend="73"/>
+        <location file="CompositeShape.cs" line="70" column="1" bodyfile="CompositeShape.cs" bodystart="70" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1a60e7ae60951a348e0c28acd00faa07d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="75" column="1" bodyfile="CompositeShape.cs" bodystart="75" bodyend="79"/>
+        <location file="CompositeShape.cs" line="74" column="1" bodyfile="CompositeShape.cs" bodystart="74" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1aa89db853a0fbb1a412f1a8254b57053a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -154,7 +154,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="81" column="1" bodyfile="CompositeShape.cs" bodystart="81" bodyend="83"/>
+        <location file="CompositeShape.cs" line="80" column="1" bodyfile="CompositeShape.cs" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_homework_1_1_composite_shape_1a97a1bdabd47e1377d8e4d4b4061f94fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Homework.CompositeShape.SetSelected</definition>
+        <argsstring>(bool selected)</argsstring>
+        <name>SetSelected</name>
+        <reimplements refid="class_homework_1_1_shape_1afcf5cf0a1101811a086d82b5b6128609">SetSelected</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="CompositeShape.cs" line="84" column="1" bodyfile="CompositeShape.cs" bodystart="84" bodyend="89"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1ace7d4691102aa202755231f3a80e7521" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override bool</type>
@@ -172,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="85" column="1" bodyfile="CompositeShape.cs" bodystart="85" bodyend="97"/>
+        <location file="CompositeShape.cs" line="91" column="1" bodyfile="CompositeShape.cs" bodystart="91" bodyend="100"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1a07eb7371a036297109f185ef1c789ab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -190,7 +208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="99" column="1" bodyfile="CompositeShape.cs" bodystart="99" bodyend="104"/>
+        <location file="CompositeShape.cs" line="102" column="1" bodyfile="CompositeShape.cs" bodystart="102" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -208,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="106" column="1" bodyfile="CompositeShape.cs" bodystart="106" bodyend="108"/>
+        <location file="CompositeShape.cs" line="109" column="1" bodyfile="CompositeShape.cs" bodystart="109" bodyend="111"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1a8e4afa618f928f6ef4932035661451d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -239,7 +257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="110" column="1" bodyfile="CompositeShape.cs" bodystart="110" bodyend="112"/>
+        <location file="CompositeShape.cs" line="113" column="1" bodyfile="CompositeShape.cs" bodystart="113" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -257,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="114" column="1" bodyfile="CompositeShape.cs" bodystart="114" bodyend="118"/>
+        <location file="CompositeShape.cs" line="117" column="1" bodyfile="CompositeShape.cs" bodystart="117" bodyend="121"/>
       </memberdef>
       <memberdef kind="function" id="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>override void</type>
@@ -275,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="CompositeShape.cs" line="120" column="1" bodyfile="CompositeShape.cs" bodystart="120" bodyend="125"/>
+        <location file="CompositeShape.cs" line="123" column="1" bodyfile="CompositeShape.cs" bodystart="123" bodyend="128"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -283,30 +301,30 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="21">
+      <node id="26">
         <label>Homework.CompositeShape</label>
         <link refid="class_homework_1_1_composite_shape"/>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="22">
+      <node id="27">
         <label>Shape</label>
         <link refid="class_homework_1_1_shape"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="23">
+      <node id="28">
         <label>Homework.CompositeShape</label>
         <link refid="class_homework_1_1_composite_shape"/>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="24">
+      <node id="29">
         <label>Shape</label>
         <link refid="class_homework_1_1_shape"/>
       </node>
     </collaborationgraph>
-    <location file="CompositeShape.cs" line="9" column="1" bodyfile="CompositeShape.cs" bodystart="9" bodyend="126"/>
+    <location file="CompositeShape.cs" line="9" column="1" bodyfile="CompositeShape.cs" bodystart="9" bodyend="129"/>
     <listofallmembers>
       <member refid="class_homework_1_1_composite_shape_1a27241d34d1966ea75d34df2ed34b3ad7" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Accept</name></member>
       <member refid="class_homework_1_1_composite_shape_1aecf6111c47f9c56993d405f2c64b72b6" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Add</name></member>
@@ -322,7 +340,8 @@
       <member refid="class_homework_1_1_composite_shape_1af8a8dd321ff85c1a6a88958725a17e53" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>MoveRelative</name></member>
       <member refid="class_homework_1_1_composite_shape_1a5d75b11fce4b433793e44af08c374490" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Remove</name></member>
       <member refid="class_homework_1_1_composite_shape_1ab04a74ba4e71fb76ec42a387b96afc26" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>Resize</name></member>
-      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_shape_1a2b176050b5d4f6060f6baa6ad5aa5ccb" prot="protected" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Selected</name></member>
+      <member refid="class_homework_1_1_composite_shape_1a97a1bdabd47e1377d8e4d4b4061f94fe" prot="public" virt="virtual"><scope>Homework::CompositeShape</scope><name>SetSelected</name></member>
       <member refid="class_homework_1_1_shape_1a9f018fff4e631b0907b438fe64f7a863" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>Shape</name></member>
       <member refid="class_homework_1_1_shape_1a0c9ca1480c30b566a759edaccf28e02b" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>shape</name></member>
       <member refid="class_homework_1_1_composite_shape_1a5a2be2383164b8c01b64225fba157351" prot="public" virt="non-virtual"><scope>Homework::CompositeShape</scope><name>shapes</name></member>

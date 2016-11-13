@@ -13,7 +13,7 @@ namespace Homework {
         int maxidx;
 
         public void Visit(AbstractShape s) {
-            tree.Add(new String('\t', depth) + depth + " " + s.shape + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height);
+            tree.Add(new String('\t', depth) + " " + s.shape + " " + s.X + " " + s.Y + " " + s.Width + " " + s.Height);
             idx++;
             if(idx == maxidx) {
                 idx = 0;
@@ -22,7 +22,7 @@ namespace Homework {
         }
 
         public void Visit(CompositeShape cs) {
-            tree.Add(new String('\t', depth) + depth + " " + "group " + cs.shapes.Count());
+            tree.Add(new String('\t', depth) + " " + "group " + cs.shapes.Count());
             maxidx = cs.shapes.Count();
             
             depth++;
@@ -31,7 +31,7 @@ namespace Homework {
         }
 
         public void Visit(ShapeWithTitle s) {
-            string result = new String('\t', depth) + depth + " " + "ornament ";
+            string result = new String('\t', depth) + " " + "ornament ";
             foreach(TitleLocation loc in s.titles.Keys) {
                 tree.Add(result + loc + " " + s.titles[loc]);
             }
